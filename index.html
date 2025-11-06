@@ -6,29 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evana Thomson</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Caveat+Brush&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <div id="intro">
-        <h1 class="fade-in">Hello and welcome to my website!</h1>
-        <h2 class="fade-in-delay">I'm <span class="name">Evana Thomson</span></h2>
-    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const about = document.getElementById("about");
+        setTimeout(() => {
+            about.classList.remove("hidden");
+            about.classList.add("visible");
+        }, 3000); // reveals about me after 3 seconds
+    });
+</script>
 
+
+<body>
     <nav>
-        <button data-section="about">About Me</button>
-        <button data-section="education">Education</button>
-        <button data-section="projects">Personal Projects</button>
-        <button data-section="internships">Internships & Research</button>
-        <button data-section="skills">Skills</button>
+        <div class="nav-buttons">
+            <button>About Me</button>
+            <button>Education</button>
+            <button>Projects</button>
+            <button>Research</button>
+            <button>Skills</button>
+        </div>
     </nav>
 
-    <div id="content">
-        <section id="about" class="hidden">About me content here...</section>
-        <section id="education" class="hidden">Education content here...</section>
-        <section id="projects" class="hidden">Projects content here...</section>
-        <section id="internships" class="hidden">Internships and research...</section>
-        <section id="skills" class="hidden">Skills content here...</section>
-    </div>
+    <section id="intro" class="fade-in">
+        <h1 class="hello">hello!</h1>
+        <h2 class="name">I’m Evana Thomson</h2>
+    </section>
+
+    <section id="about" class="hidden fade-in-delay">
+        <h3>About Me</h3>
+        <p>Write a short intro about yourself here!</p>
+    </section>
+
 
     <script src="script.js"></script>
 </body>
