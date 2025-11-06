@@ -2,14 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evana Thomson</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
-    <p>Welcome to my personal website.</p>
+    <div id="intro">
+        <h1 class="fade-in">Hello and welcome to my website!</h1>
+        <h2 class="fade-in-delay">I'm <span class="name">Evana Thomson</span></h2>
+    </div>
+
+    <nav>
+        <button data-section="about">About Me</button>
+        <button data-section="education">Education</button>
+        <button data-section="projects">Personal Projects</button>
+        <button data-section="internships">Internships & Research</button>
+        <button data-section="skills">Skills</button>
+    </nav>
+
+    <div id="content">
+        <section id="about" class="hidden">About me content here...</section>
+        <section id="education" class="hidden">Education content here...</section>
+        <section id="projects" class="hidden">Projects content here...</section>
+        <section id="internships" class="hidden">Internships and research...</section>
+        <section id="skills" class="hidden">Skills content here...</section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
