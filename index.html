@@ -7,50 +7,78 @@
     <title>Evana Thomson</title>
     <link rel="stylesheet" href="style.css">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lazy+Dog&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/romaunt-gaolines" rel="stylesheet">
+    <!-- Font Imports (local fallback if LazyDog.ttf / RomauntGaolines.ttf exist) -->
+    <style>
+        @font-face {
+            font-family: "Lazy Dog";
+            src: url("fonts/LazyDog.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: "Romaunt Gaolines";
+            src: url("fonts/RomauntGaolines.ttf") format("truetype");
+        }
+    </style>
 </head>
 
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const about = document.getElementById("about");
-        setTimeout(() => {
-            about.classList.remove("hidden");
-            about.classList.add("visible");
-        }, 3000);
-    });
-</script>
-
 <body>
+    <!-- Home Icon -->
     <header>
-        <a href="#intro" class="home-icon">
+        <a href="#home" class="home-icon">
             <img src="images/lightbulb.png" alt="Home" class="lightbulb">
         </a>
     </header>
 
+    <!-- Navigation -->
     <nav>
         <div class="nav-buttons">
-            <button>About Me</button>
-            <button>Education</button>
-            <button>Projects</button>
-            <button>Research</button>
-            <button>Skills</button>
+            <button onclick="location.href='#about'">About Me</button>
+            <button onclick="location.href='#education'">Education</button>
+            <button onclick="location.href='#projects'">Projects</button>
+            <button onclick="location.href='#research'">Research</button>
+            <button onclick="location.href='#skills'">Skills</button>
         </div>
     </nav>
 
-    <section id="intro" class="fade-in">
+    <!-- HOME SECTION -->
+    <section id="home" class="fade-in">
         <h1 class="hello">hello!</h1>
         <h2 class="name">I’m Evana Thomson</h2>
     </section>
 
-    <section id="about" class="hidden fade-in-delay">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="fade-in-delay">
         <h3>About Me</h3>
-        <p>Write a short intro about yourself here!</p>
+        <p>Write a short intro about yourself here! You can talk about your interests, your field, or what drives you
+            creatively and academically.</p>
     </section>
 
-    <script src="script.js"></script>
-</body>
+    <!-- You can add more sections below -->
+    <section id="education">
+        <h3>Education</h3>
+        <p>Details about your studies and academic experiences.</p>
+    </section>
 
+    <section id="projects">
+        <h3>Personal Projects</h3>
+        <p>List or describe your favorite projects here.</p>
+    </section>
+
+    <section id="research">
+        <h3>Research & Internships</h3>
+        <p>Summaries or insights into your research work and internships.</p>
+    </section>
+
+    <section id="skills">
+        <h3>Skills</h3>
+        <p>List your technical, creative, or academic skills.</p>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add("loaded");
+        });
+    </script>
+</body>
 
 </html>
