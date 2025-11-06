@@ -1,6 +1,5 @@
 body {
     background-color: #f2edd0;
-    /* soft beige */
     font-family: "Poppins", sans-serif;
     text-align: center;
     margin: 0;
@@ -24,7 +23,7 @@ nav {
     border-radius: 12px;
     cursor: pointer;
     transition: 0.25s;
-    font-family: "Caveat Brush", cursive;
+    font-family: "Lazy Dog", sans-serif;
     font-size: 18px;
 }
 
@@ -43,14 +42,14 @@ nav {
 }
 
 .hello {
-    font-family: "Playfair Display", serif;
+    font-family: "Romaunt Gaolines", serif;
     font-size: 80px;
     margin: 0;
     animation: fadeInUp 1.5s ease forwards;
 }
 
 .name {
-    font-family: "Playfair Display", serif;
+    font-family: "Romaunt Gaolines", serif;
     font-size: 36px;
     margin-top: 10px;
     animation: fadeInUp 1.5s ease 1s forwards;
@@ -68,6 +67,7 @@ nav {
     height: 0;
     overflow: hidden;
     transition: height 1.5s ease;
+    font-family: "Lazy Dog", sans-serif;
 }
 
 #about.visible {
