@@ -67,7 +67,6 @@ nav {
     transition: 0.25s;
     font-family: "Lazydog", sans-serif;
     font-size: 18px;
-    color: #db7a73
 }
 
 .nav-buttons button:hover {
@@ -92,7 +91,7 @@ nav {
     font-size: 80px;
     margin: 0;
     animation: fadeInUp 1.5s ease forwards;
-    color:#6d788e
+    color: #6d788e
 }
 
 .name {
@@ -100,7 +99,7 @@ nav {
     font-size: 36px;
     margin-top: 10px;
     animation: fadeInUp 1.5s ease forwards;
-    color:#6d788e    
+    color: #6d788e
 }
 
 /* ABOUT SECTION */
@@ -145,4 +144,21 @@ section p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* DIFFERENT TITLE COLORS PER SECTION */
+#about h3 {
+    color: #db7a73
+}
+
+#projects h3 {
+    color: #d2c4df;
+}
+
+#research h3 {
+    color: #efd365;
+}
+
+#skills h3 {
+    color: #b9db97;
 }
