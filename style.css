@@ -56,6 +56,28 @@ nav {
     z-index: 100;
 }
 
+/* --- Default text colors per section --- */
+.nav-buttons button:nth-child(1) {
+    color: #db7a73;
+    /* About Me */
+}
+
+.nav-buttons button:nth-child(2) {
+    color: #d2c4df;
+    /* Projects */
+}
+
+.nav-buttons button:nth-child(3) {
+    color: #efd365;
+    /* Research */
+}
+
+.nav-buttons button:nth-child(4) {
+    color: #b9db97;
+    /* Skills */
+}
+
+
 /* Default nav button look */
 .nav-buttons button {
     margin: 6px;
