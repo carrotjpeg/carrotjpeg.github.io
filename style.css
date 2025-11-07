@@ -67,6 +67,7 @@ nav {
     transition: 0.25s;
     font-family: "Lazydog", sans-serif;
     font-size: 18px;
+    color: #db7a73
 }
 
 .nav-buttons button:hover {
@@ -91,6 +92,7 @@ nav {
     font-size: 80px;
     margin: 0;
     animation: fadeInUp 1.5s ease forwards;
+    color:#6d788e
 }
 
 .name {
@@ -98,6 +100,7 @@ nav {
     font-size: 36px;
     margin-top: 10px;
     animation: fadeInUp 1.5s ease forwards;
+    color:#6d788e    
 }
 
 /* ABOUT SECTION */
@@ -122,7 +125,7 @@ section p {
 }
 
 /* ANIMATIONS */
-/*.fade-in {
+.fade-in {
     opacity: 0;
     animation: fadeInUp 1.5s ease forwards;
 }
@@ -131,7 +134,6 @@ section p {
     opacity: 0;
     animation: fadeInUp 1.5s ease 1s forwards;
 }
-*/
 
 @keyframes fadeInUp {
     from {
