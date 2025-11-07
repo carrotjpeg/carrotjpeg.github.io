@@ -56,6 +56,7 @@ nav {
     z-index: 100;
 }
 
+/* Default nav button look */
 .nav-buttons button {
     margin: 6px;
     padding: 8px 16px;
@@ -68,10 +69,29 @@ nav {
     font-size: 18px;
 }
 
-.nav-buttons button:hover {
-    background-color: #222;
-    color: #fff;
-    transform: translateY(-2px);
+/* Hover colors for each section */
+.nav-buttons button:nth-child(1):hover {
+    /* About Me */
+    background-color: #db7a73;
+    color: white;
+}
+
+.nav-buttons button:nth-child(2):hover {
+    /* Projects */
+    background-color: #d2c4df;
+    color: white;
+}
+
+.nav-buttons button:nth-child(3):hover {
+    /* Research */
+    background-color: #efd365;
+    color: white;
+}
+
+.nav-buttons button:nth-child(4):hover {
+    /* Skills */
+    background-color: #b9db97;
+    color: white;
 }
 
 /* HOME SECTION */
