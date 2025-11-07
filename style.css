@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    font-family: "Romaunt Gaolines";
-    src: url("./fonts/RomauntGaolines.ttf") format("truetype");
+    font-family: "seasons";
+    src: url("./fonts/seasons.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
@@ -87,14 +87,14 @@ nav {
 }
 
 .hello {
-    font-family: "Romaunt Gaolines", serif;
+    font-family: "seasons", serif;
     font-size: 80px;
     margin: 0;
     animation: fadeInUp 1.5s ease forwards;
 }
 
 .name {
-    font-family: "Romaunt Gaolines", serif;
+    font-family: "seasons", serif;
     font-size: 36px;
     margin-top: 10px;
     animation: fadeInUp 1.5s ease forwards;
