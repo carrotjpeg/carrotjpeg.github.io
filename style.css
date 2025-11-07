@@ -146,18 +146,18 @@ section p {
 }
 
 /* DIFFERENT TITLE COLORS PER SECTION */
-#about {
-    color: #db7a73
+#about h3 {
+    color: #db7a73;
 }
 
-#projects.html {
+#projects h3 {
     color: #d2c4df;
 }
 
-#research.html {
+#research h3 {
     color: #efd365;
 }
 
-#skills.htlml {
+#skills h3 {
     color: #b9db97;
 }
