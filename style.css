@@ -187,6 +187,38 @@ section p {
     }
 }
 
+/* Initially hide nav, header, and sections except #home */
+header,
+nav,
+section:not(#home) {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Fade in header (lightbulb) and nav after the “hello” animation */
+body.loaded header {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.8s;
+    /* ~after hello animation ends */
+}
+
+body.loaded nav {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2s;
+    /* slight stagger after lightbulb */
+}
+
+/* Fade in the main sections a bit later */
+body.loaded section:not(#home) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2.3s;
+}
+
+
 /* DIFFERENT TITLE COLORS PER SECTION */
 #about h3 {
     color: #db7a73;
