@@ -122,7 +122,7 @@ section p {
 }
 
 /* ANIMATIONS */
-.fade-in {
+/*.fade-in {
     opacity: 0;
     animation: fadeInUp 1.5s ease forwards;
 }
@@ -131,6 +131,7 @@ section p {
     opacity: 0;
     animation: fadeInUp 1.5s ease 1s forwards;
 }
+*/
 
 @keyframes fadeInUp {
     from {
