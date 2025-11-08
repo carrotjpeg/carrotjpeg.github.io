@@ -161,7 +161,7 @@ nav {
 
 /* ABOUT SECTION */
 
-/*section {
+section {
     padding: 150px 10%;
     background-color: #fff8ee;
     border-top: 3px solid #6d788e;
@@ -169,7 +169,6 @@ nav {
     margin-top: 100px;
     /* prevents overlap under fixed header/nav */
 }
-
 
 section {
     padding: 250px 10%;
