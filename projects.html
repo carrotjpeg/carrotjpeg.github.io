@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Evana Thomson</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Evana Thomson</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- Home Icon -->
-  <header>
-    <a href="index.html" class="home-icon">
-      <img src="images/lightbulb.png" alt="Home" class="lightbulb">
-    </a>
-  </header>
+    <!-- Home Icon -->
+    <header>
+        <a href="index.html" class="home-icon">
+            <img src="images/lightbulb.png" alt="Home" class="lightbulb">
+        </a>
+    </header>
 
-  <!-- Navigation -->
-  <nav>
-    <div class="nav-buttons">
-      <button onclick="location.href='index.html#about'">About Me</button>
-      <button onclick="location.href='projects.html'">Projects</button>
-      <button onclick="location.href='research.html'">Research</button>
-      <button onclick="location.href='skills.html'">Skills</button>
-    </div>
-  </nav>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-buttons">
+            <button onclick="location.href='index.html#about'">About Me</button>
+            <button onclick="location.href='projects.html'">Projects</button>
+            <button onclick="location.href='research.html'">Research</button>
+            <button onclick="location.href='skills.html'">Skills</button>
+        </div>
+    </nav>
 
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="fade-in-delay">
-    <h3>Projects</h3>
-    <p>Here’s a showcase of some of my personal and academic projects. Include links, images, or short descriptions of what you’ve built!</p>
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="fade-in-delay">
+        <h3>Projects</h3>
+        <p>Here’s a showcase of some of my personal and academic projects. Include links, images, or short descriptions
+            of what you’ve built!</p>
 
-    <div class="project-list">
-      <div class="project-item">
-        <h4>Project Title 1</h4>
-        <p>A brief description of what this project is about, what tools you used, and what you learned.</p>
-      </div>
-      <div class="project-item">
-        <h4>Project Title 2</h4>
-        <p>Describe another project here. You can add screenshots or GitHub links if you’d like.</p>
-      </div>
-    </div>
-  </section>
+        <div class="project-list">
+            <div class="project-item">
+                <h4>Project Title 1</h4>
+                <p>A brief description of what this project is about, what tools you used, and what you learned.</p>
+            </div>
+            <div class="project-item">
+                <h4>Project Title 2</h4>
+                <p>Describe another project here. You can add screenshots or GitHub links if you’d like.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+
 </body>
+
 </html>
