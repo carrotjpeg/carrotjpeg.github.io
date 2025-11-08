@@ -33,14 +33,12 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f2edd0;
-    /* solid bar */
+    background-color: #fff8ee;
+    /* solid background */
+    padding: 20px 40px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
     z-index: 100;
-    box-sizing: border-box;
 }
 
 .lightbulb {
@@ -97,12 +95,6 @@ nav {
 
 
 /* Default nav button look */
-
-nav {
-    display: flex;
-    align-items: center;
-}
-
 .nav-buttons button {
     margin: 6px;
     padding: 8px 16px;
@@ -170,7 +162,7 @@ nav {
 /* ABOUT SECTION */
 
 section {
-    padding: 150px 10%;
+    padding: 160px 10%;
     background-color: #fff8ee;
     border-top: 3px solid #6d788e;
     font-family: "Lazydog", sans-serif;
