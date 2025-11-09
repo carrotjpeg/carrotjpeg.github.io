@@ -29,6 +29,7 @@ body {
 
 /* HOME ICON */
 header {
+    min-height: 50vh;
     position: fixed;
     top: 0;
     left: 0;
