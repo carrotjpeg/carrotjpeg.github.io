@@ -134,7 +134,7 @@ nav {
 
 /* HOME SECTION */
 #home {
-    min-height: 50vh;
+    min-height: 400px;
     /* smaller section */
     display: flex;
     flex-direction: column;
