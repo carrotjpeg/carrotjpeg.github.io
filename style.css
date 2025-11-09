@@ -301,6 +301,7 @@ body.loaded section:not(#home) {
 .about-images {
     position: relative;
     width: 280px;
+    border-radius: 20px;
     height: 320px;
 }
 
