@@ -231,27 +231,28 @@ section:not(#home) {
     transition: opacity 1s ease, transform 1s ease;
 }
 
-/* Fade in header (lightbulb) and nav after the “hello” animation */
+/* fade in header/lightbulb first */
 body.loaded header {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: 1.8s;
-    /* ~after hello animation ends */
+    transition-delay: 2.3s;
+    /* slightly later */
 }
 
+/* then fade in nav buttons */
 body.loaded nav {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: 2s;
-    /* slight stagger after lightbulb */
+    transition-delay: 2.6s;
 }
 
-/* Fade in the main sections a bit later */
+/* finally fade in all sections after nav */
 body.loaded section:not(#home) {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: 2.3s;
+    transition-delay: 3s;
 }
+
 
 
 /* DIFFERENT TITLE COLORS PER SECTION */
