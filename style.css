@@ -25,11 +25,11 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    max-height: 60vh;
 }
 
 /* HOME ICON */
 header {
-    min-height: 50vh;
     position: fixed;
     top: 0;
     left: 0;
