@@ -236,7 +236,7 @@ section:not(#home) {
 body.loaded header {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: 2s;
+    transition-delay: 1.5s;
     /* before: 2.3s */
 }
 
@@ -244,7 +244,7 @@ body.loaded header {
 body.loaded nav {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: 2.3s;
+    transition-delay: 1.8s;
     /* before: 2.6s */
 }
 
