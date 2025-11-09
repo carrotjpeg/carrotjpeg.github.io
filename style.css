@@ -141,16 +141,14 @@ nav {
 
 /* HOME SECTION */
 #home {
-    height: 200px;
-    /* shorter height */
-    padding: 60px 10%;
-    /* smaller vertical padding */
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .hello {
@@ -288,6 +286,8 @@ body.loaded section:not(#home) {
     font-size: 2.5rem;
     margin-bottom: 60px;
     text-align: center;
+    color: #db7a73;
+    /* title color */
 }
 
 .about-content {
@@ -305,26 +305,26 @@ body.loaded section:not(#home) {
     height: 320px;
 }
 
-.about-images img {
-    width: 200px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    transition: transform 0.3s ease;
+.about-images {
+    position: relative;
+    width: 280px;
+    height: 320px;
 }
 
 .about-images .img1 {
+    position: absolute;
     left: 0;
     top: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 .about-images .img2 {
-    right: 0;
-    bottom: 0;
+    position: absolute;
+    left: 40px;
+    /* overlap amount — adjust as you like */
+    top: 30px;
+    z-index: 2;
     transform: rotate(-3deg);
-    z-index: 1;
 }
 
 .about-images img:hover {
@@ -334,6 +334,8 @@ body.loaded section:not(#home) {
 .about-text {
     max-width: 500px;
     text-align: left;
+    color: #6d788e;
+    /* new text color */
 }
 
 .about-text p {
