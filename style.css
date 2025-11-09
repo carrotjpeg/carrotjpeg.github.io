@@ -134,7 +134,8 @@ nav {
 
 /* HOME SECTION */
 #home {
-    max-height: 50vh;
+    min-height: 50vh;
+    /* smaller section */
     display: flex;
     flex-direction: column;
     justify-content: center;
