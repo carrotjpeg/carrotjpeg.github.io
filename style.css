@@ -141,7 +141,7 @@ nav {
 
 /* HOME SECTION */
 #home {
-    height: 250px;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,6 +170,7 @@ nav {
 
 
 section {
+    scroll-margin-top: 100px;
     padding: 160px 10%;
     background-color: #fff8ee;
     border-top: 3px solid #6d788e;
@@ -178,6 +179,7 @@ section {
 }
 
 section {
+    scroll-margin-top: 100px;
     padding: 200px 10%;
     background-color: #fff8ee;
     border-top: 3px solid #6d788e;
