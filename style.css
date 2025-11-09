@@ -311,9 +311,9 @@ body.loaded section:not(#home) {
 
 .about-images .img2 {
     position: absolute;
-    left: 100px;
+    left: 200px;
     /* moves it a little further right → less overlap */
-    top: 60px;
+    top: 200px;
     /* moves it lower */
     z-index: 2;
     transform: rotate(-3deg);
