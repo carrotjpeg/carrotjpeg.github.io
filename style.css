@@ -148,6 +148,7 @@ nav {
     align-items: center;
     text-align: center;
     margin: 0;
+    margin-top: 0;
     padding: 0;
 }
 
@@ -167,18 +168,12 @@ nav {
     color: #6d788e
 }
 
-/* ABOUT SECTION */
-#about {
-    padding: 300px 10%;
-    /* more vertical space for this section */
-}
 
 section {
     padding: 160px 10%;
     background-color: #fff8ee;
     border-top: 3px solid #6d788e;
     font-family: "Lazydog", sans-serif;
-    margin-top: 100px;
     /* prevents overlap under fixed header/nav */
 }
 
@@ -298,12 +293,6 @@ body.loaded section:not(#home) {
     flex-wrap: wrap;
 }
 
-.about-images {
-    position: relative;
-    width: 280px;
-    border-radius: 20px;
-    height: 320px;
-}
 
 .about-images {
     position: relative;
@@ -329,6 +318,15 @@ body.loaded section:not(#home) {
 
 .about-images img:hover {
     transform: scale(1.05);
+}
+
+.about-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transition: transform 0.3s ease;
 }
 
 .about-text {
