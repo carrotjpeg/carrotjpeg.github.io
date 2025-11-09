@@ -25,7 +25,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    max-height: 60vh;
 }
 
 /* HOME ICON */
@@ -135,7 +134,7 @@ nav {
 
 /* HOME SECTION */
 #home {
-    min-height: 70vh;
+    max-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
