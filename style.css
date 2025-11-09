@@ -309,7 +309,7 @@ body.loaded section:not(#home) {
 
 .about-images .img2 {
     position: absolute;
-    left: 40px;
+    left: 10px;
     /* overlap amount — adjust as you like */
     top: 30px;
     z-index: 2;
