@@ -141,8 +141,10 @@ nav {
 
 /* HOME SECTION */
 #home {
-    min-height: 400px;
-    /* smaller section */
+    height: 300px;
+    /* shorter height */
+    padding: 60px 10%;
+    /* smaller vertical padding */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,6 +170,10 @@ nav {
 }
 
 /* ABOUT SECTION */
+#about {
+    padding: 300px 10%;
+    /* more vertical space for this section */
+}
 
 section {
     padding: 160px 10%;
