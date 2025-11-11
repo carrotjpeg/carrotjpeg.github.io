@@ -386,9 +386,9 @@ body.loaded section:not(#home) {
     bottom: 120%;
     left: 50%;
     transform: translateX(-50%);
-    background: #4c9db0;
+    background: #ff7bac;
     /* popup background */
-    color: #ffebaf;
+    color: #6d1f42;
     /* popup text */
     font-size: 13px;
     padding: 5px 10px;
