@@ -20,12 +20,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Arc";
-    src: url("./fonts/sauce.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* GLOBAL STYLES */
 html {
