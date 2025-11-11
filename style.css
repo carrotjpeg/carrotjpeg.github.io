@@ -517,7 +517,7 @@ body.loaded section:not(#home) {
 
 /* Text beside images */
 .project-text {
-    font-family: "sauce", sans-serif;
+    font-family: "sauce", sans-serif !important;
     max-width: 500px;
     text-align: left;
     color: #6d788e;
