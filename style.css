@@ -459,7 +459,7 @@ body.loaded section:not(#home) {
     font-size: 1.6rem;
     color: #6d1f42;
     margin-bottom: 60px;
-    text-align: center;
+    text-align: left;
 }
 
 /* Project Content Layout */
