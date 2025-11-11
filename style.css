@@ -20,6 +20,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Arc";
+    src: url("./fonts/sauce.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* GLOBAL STYLES */
 html {
     scroll-behavior: smooth;
@@ -351,4 +358,54 @@ body.loaded section:not(#home) {
     line-height: 1.6;
     font-size: 1.1rem;
     color: #6d788e;
+}
+
+@font-face {
+    font-family: "Arc";
+    src: url("./fonts/Arc.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Email copy element bottom-left */
+.email-copy {
+    position: fixed;
+    bottom: 20px;
+    left: 25px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #f2edd0;
+    font-family: "Arc", sans-serif;
+    font-size: 15px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background 0.2s ease;
+    z-index: 999;
+}
+
+.email-copy:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.copy-popup {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    color: white;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    font-family: "Arc", sans-serif;
+}
+
+.copy-popup.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
 }
