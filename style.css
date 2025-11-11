@@ -359,21 +359,26 @@ body.loaded section:not(#home) {
     position: fixed;
     bottom: 20px;
     left: 25px;
-    background: rgba(0, 0, 0, 0.7);
-    color: #f2edd0;
-    font-family: "sauce", sans-serif;
+    background: #d3b6d3;
+    /* non-hover background */
+    color: #6d1f42;
+    /* non-hover text */
+    font-family: "Arc", sans-serif;
     font-size: 15px;
     padding: 10px 14px;
     border-radius: 12px;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease, background 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
     z-index: 999;
 }
 
 .email-copy:hover {
     transform: scale(1.05);
-    background: rgba(0, 0, 0, 0.85);
+    background: #6d1f42;
+    /* hover background */
+    color: #d3b6d3;
+    /* hover text */
 }
 
 .copy-popup {
@@ -381,15 +386,17 @@ body.loaded section:not(#home) {
     bottom: 120%;
     left: 50%;
     transform: translateX(-50%);
-    background: #000;
-    color: white;
+    background: #4c9db0;
+    /* popup background */
+    color: #ffebaf;
+    /* popup text */
     font-size: 13px;
     padding: 5px 10px;
     border-radius: 10px;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
     pointer-events: none;
-    font-family: "sauce", sans-serif;
+    font-family: "Arc", sans-serif;
 }
 
 .copy-popup.show {
