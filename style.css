@@ -403,3 +403,25 @@ body.loaded section:not(#home) {
     opacity: 1;
     transform: translateX(-50%) translateY(-5px);
 }
+
+/* --- Social Icons --- */
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    z-index: 20;
+}
+
+.social-icons img {
+    width: 34px;
+    height: 34px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.social-icons img:hover {
+    transform: translateY(-6px);
+}
