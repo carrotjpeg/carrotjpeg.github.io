@@ -460,7 +460,12 @@ body.loaded section:not(#home) {
     color: #6d1f42;
     margin-bottom: 60px;
     text-align: left;
+    align-self: flex-start;
+    /* aligns subtitle left */
+    margin-left: 0;
+    /* ensures no weird padding */
 }
+
 
 /* Project Content Layout */
 .project-content {
@@ -469,6 +474,13 @@ body.loaded section:not(#home) {
     justify-content: center;
     gap: 80px;
     flex-wrap: wrap;
+}
+
+.project-text p {
+    font-family: "sauce", sans-serif !important;
+    color: #6d788e;
+    line-height: 1.6;
+    font-size: 1.1rem;
 }
 
 /* Image Layout (like About Me) */
@@ -495,7 +507,8 @@ body.loaded section:not(#home) {
 
 .project-images .img3 {
     position: absolute;
-    top: 340px;
+    top: 300px;
+    /* was 340px, so it’s 40px closer */
     left: 60px;
     width: 180px;
     height: auto;
@@ -516,11 +529,11 @@ body.loaded section:not(#home) {
 }
 
 /* Text beside images */
-.project-text {
+.project-text p {
     font-family: "sauce", sans-serif !important;
-    max-width: 500px;
-    text-align: left;
     color: #6d788e;
-    font-size: 1.1rem;
     line-height: 1.6;
+    text-align: left;
+    font-size: 1.1rem;
+    max-width: 500px;
 }
