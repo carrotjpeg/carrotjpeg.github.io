@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="style.css">
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,6 +37,29 @@
             document.body.classList.add('loaded');
         });
     </script>
+
+    <!-- Email Copy Widget -->
+    <div class="email-copy" id="emailCopy">
+        <span class="email-text">evana@berkeley.edu</span>
+        <div class="copy-popup" id="copyPopup">copied to clipboard!</div>
+    </div>
+
+    <script>
+        const emailCopy = document.getElementById("emailCopy");
+        const popup = document.getElementById("copyPopup");
+        const email = "evana@berkeley.edu";
+
+        emailCopy.addEventListener("click", async () => {
+            try {
+                await navigator.clipboard.writeText(email);
+                popup.classList.add("show");
+                setTimeout(() => popup.classList.remove("show"), 1200);
+            } catch (err) {
+                window.prompt("Copy this email:", email);
+            }
+        });
+    </script>
+
 
 </body>
 
