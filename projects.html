@@ -25,24 +25,33 @@
             <button onclick="location.href='skills.html'">Skills</button>
         </div>
     </nav>
-
     <!-- PROJECTS SECTION -->
-    <section id="projects" class="fade-in-delay">
-        <h3>Projects</h3>
-        <p>Here’s a showcase of some of my personal and academic projects. Include links, images, or short descriptions
-            of what you’ve built!</p>
+    <section id="projects">
+        <h3 class="projects-title">Projects</h3>
 
-        <div class="project-list">
-            <div class="project-item">
-                <h4>Project Title 1</h4>
-                <p>A brief description of what this project is about, what tools you used, and what you learned.</p>
-            </div>
-            <div class="project-item">
-                <h4>Project Title 2</h4>
-                <p>Describe another project here. You can add screenshots or GitHub links if you’d like.</p>
+        <!-- First Project -->
+        <div class="project-item">
+            <h4 class="project-subtitle">01. —————— MIT Beaverworks Brailliance</h4>
+
+            <div class="project-content">
+                <div class="project-images">
+                    <img src="images/mit project/asic.png" alt="ASIC" class="img1">
+                    <img src="images/mit project/board.png" alt="Board" class="img2">
+                    <img src="images/mit project/logo.png" alt="Brailliance Logo" class="img3">
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        Brailliance is an affordable braille display. Translating text to ASCII, and converting ASCII to
+                        binary with an ASIC, the chip's data sends signals to actuators that move the braille pins,
+                        ultimately reducing the price of a portable braille reader by 90%, aiding visually-impaired
+                        people in their daily life.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+
 
     <script>
         window.addEventListener('load', () => {
