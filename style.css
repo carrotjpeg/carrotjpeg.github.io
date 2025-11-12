@@ -514,7 +514,7 @@ body.loaded section:not(#home) {
     top: 300px;
     /* was 340px, so it’s 40px closer */
     left: 60px;
-    width: 250px;
+    width: 350px;
     height: auto;
     z-index: 0;
 }
