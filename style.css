@@ -496,7 +496,7 @@ body.loaded section:not(#home) {
     /* moves it further left */
     top: 0;
     z-index: 1;
-    width: 220px;
+    width: 250px;
     /* make it bigger (default was 200px) */
     height: auto;
 }
@@ -547,7 +547,7 @@ body.loaded section:not(#home) {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-left: 100px;
-    margin-top: -200px;
+    margin-top: -200px; /* made changes here
     /* top */
     /* pushes it to the right */
 }
