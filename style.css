@@ -492,9 +492,13 @@ body.loaded section:not(#home) {
 
 .project-images .img1 {
     position: absolute;
-    left: 0;
+    left: -20px;
+    /* moves it further left */
     top: 0;
     z-index: 1;
+    width: 220px;
+    /* make it bigger (default was 200px) */
+    height: auto;
 }
 
 .project-images .img2 {
