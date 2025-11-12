@@ -504,13 +504,12 @@ body.loaded section:not(#home) {
 .project-images .img2 {
     position: absolute;
     left: 160px;
-    /* moved slightly right */
-    top: 200px;
+    top: 160px; /* was 200px, moved up by 40px */
     z-index: 2;
     transform: rotate(-3deg);
     width: 340px;
-    /* increase size */
 }
+
 
 
 .project-images .img3 {
