@@ -514,7 +514,7 @@ body.loaded section:not(#home) {
     top: 300px;
     /* was 340px, so it’s 40px closer */
     left: 60px;
-    width: 180px;
+    width: 250px;
     height: auto;
     z-index: 0;
 }
@@ -541,6 +541,6 @@ body.loaded section:not(#home) {
     color: #6d788e;
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-left: 40px;
+    margin-left: 60px;
     /* pushes it to the right */
 }
