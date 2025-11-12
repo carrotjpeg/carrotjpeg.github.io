@@ -499,11 +499,15 @@ body.loaded section:not(#home) {
 
 .project-images .img2 {
     position: absolute;
-    left: 130px;
-    top: 130px;
+    left: 160px;
+    /* moved slightly right */
+    top: 100px;
     z-index: 2;
     transform: rotate(-3deg);
+    width: 240px;
+    /* increase size */
 }
+
 
 .project-images .img3 {
     position: absolute;
@@ -514,6 +518,7 @@ body.loaded section:not(#home) {
     height: auto;
     z-index: 0;
 }
+
 
 .project-images img {
     width: 200px;
@@ -529,11 +534,13 @@ body.loaded section:not(#home) {
 }
 
 /* Text beside images */
-.project-text p {
+.project-text {
     font-family: "sauce", sans-serif !important;
-    color: #6d788e;
-    line-height: 1.6;
-    text-align: left;
-    font-size: 1.1rem;
     max-width: 500px;
+    text-align: left;
+    color: #6d788e;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-left: 40px;
+    /* pushes it to the right */
 }
