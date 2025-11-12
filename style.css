@@ -257,6 +257,15 @@ body.loaded section:not(#home) {
     transition-delay: 3s;
 }
 
+html,
+body {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+    /* enables vertical scrolling */
+    overflow-x: hidden;
+    /* prevents horizontal scrollbars */
+}
 
 
 /* DIFFERENT TITLE COLORS PER SECTION */
