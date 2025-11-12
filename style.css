@@ -505,7 +505,7 @@ body.loaded section:not(#home) {
     position: absolute;
     left: 160px;
     /* moved slightly right */
-    top: 100px;
+    top: 150px;
     z-index: 2;
     transform: rotate(-3deg);
     width: 340px;
@@ -520,7 +520,7 @@ body.loaded section:not(#home) {
     left: 60px;
     width: 350px;
     height: auto;
-    margin-bottom: -20 px;
+    margin-bottom: -10 px;
     z-index: 0;
 }
 
