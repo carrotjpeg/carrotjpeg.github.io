@@ -515,14 +515,14 @@ body.loaded section:not(#home) {
 
 .project-images .img3 {
     position: absolute;
-    top: 300px;
-    /* was 340px, so it’s 40px closer */
+    top: 360px;
+    /* increase this number to move it lower */
     left: 60px;
     width: 350px;
     height: auto;
-    margin-bottom: -20 px;
     z-index: 0;
 }
+
 
 
 .project-images img {
@@ -547,7 +547,8 @@ body.loaded section:not(#home) {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-left: 150px;
-    margin-top: -200px; /* made changes here
+    margin-top: -200px;
+    /* made changes here
     /* top */
     /* pushes it to the right */
 }
