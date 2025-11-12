@@ -504,7 +504,8 @@ body.loaded section:not(#home) {
 .project-images .img2 {
     position: absolute;
     left: 160px;
-    top: 160px; /* was 200px, moved up by 40px */
+    top: 160px;
+    /* was 200px, moved up by 40px */
     z-index: 2;
     transform: rotate(-3deg);
     width: 340px;
@@ -516,7 +517,7 @@ body.loaded section:not(#home) {
     position: absolute;
     top: 360px;
     /* increase this number to move it lower */
-    left: 60px;
+    left: 40px;
     width: 350px;
     height: auto;
     z-index: 0;
