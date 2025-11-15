@@ -63,12 +63,6 @@ header {
 }
 
 /* NAVIGATION */
-nav {
-    position: fixed;
-    top: 20px;
-    right: 40px;
-    z-index: 100;
-}
 
 nav {
     position: fixed;
