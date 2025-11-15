@@ -551,11 +551,13 @@ body {
 .braillance-video-container {
     width: 100%;
     max-width: 500px;
-    /* smaller video */
-    margin-left: 150px;
-    /* aligns with your .project-text */
-    margin-top: 40px;
-    /* space below the textbox */
+    margin-left: 220px; /* move to the right */
+    margin-top: -20px; /* move upward */
+    transition: transform 0.3s ease;
+}
+
+.braillance-video-container:hover {
+    transform: scale(1.03); /* slight grow on hover */
 }
 
 .braillance-video {
