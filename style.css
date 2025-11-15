@@ -564,6 +564,6 @@ body {
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 18px;
-    box-shadow: 0px 10px 25px #d2c4df;
+    box-shadow: 0px 10px 25px rgba(109, 31, 66, 2);
     border: none;
 }
