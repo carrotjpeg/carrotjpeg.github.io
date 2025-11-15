@@ -504,11 +504,9 @@ body {
     z-index: 2;
     transform: rotate(-2deg);
     width: 340px;
-    object-fit: contain;
 }
 
 .project-images .img3 {
-    border-radius: 8px;
     position: absolute;
     top: 360px;
     /* increase this number to move it lower */
@@ -516,6 +514,7 @@ body {
     width: 350px;
     height: auto;
     z-index: 0;
+    object-fit: contain;
 }
 
 .project-images img {
