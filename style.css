@@ -179,14 +179,6 @@ section {
     /* prevents overlap under fixed header/nav */
 }
 
-section {
-    scroll-margin-top: 100px;
-    padding: 200px 10%;
-    background-color: #fff8ee;
-    border-top: 3px solid #6d788e;
-    font-family: "Lazydog", sans-serif;
-}
-
 section h3 {
     font-size: 32px;
     margin-bottom: 10px;
@@ -520,8 +512,6 @@ body {
     width: 340px;
 }
 
-
-
 .project-images .img3 {
     position: absolute;
     top: 360px;
@@ -531,8 +521,6 @@ body {
     height: auto;
     z-index: 0;
 }
-
-
 
 .project-images img {
     width: 200px;
