@@ -491,6 +491,7 @@ body {
     /* moves it further left */
     top: 0;
     z-index: 1;
+    box-shadow: 0px 10px 25px #d2c4df;
     width: 250px;
     /* make it bigger (default was 200px) */
     height: auto;
@@ -512,6 +513,7 @@ body {
     /* increase this number to move it lower */
     left: 30px;
     width: 350px;
+    box-shadow: 0px 10px 25px #d2c4df;
     height: auto;
     z-index: 0;
     object-fit: contain;
@@ -521,7 +523,8 @@ body {
     width: 200px;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);*/
+    box-shadow: 0px 10px 25px #d2c4df;
     position: absolute;
     transition: transform 0.3s ease;
 }
@@ -547,21 +550,18 @@ body {
 
 .braillance-video-container {
     width: 100%;
-    max-width: 800px;
-    /* or whatever fits your layout */
-    margin: 60px auto 0 auto;
-    /* space below the text box without aligning exactly */
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    max-width: 500px;
+    /* smaller video */
+    margin-left: 150px;
+    /* aligns with your .project-text */
+    margin-top: 40px;
+    /* space below the textbox */
 }
 
 .braillance-video {
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 18px;
-    /* rounded edges */
     box-shadow: 0px 10px 25px #d2c4df;
-    /* drop shadow */
     border: none;
 }
