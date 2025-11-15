@@ -551,7 +551,7 @@ body {
 .braillance-video-container {
     width: 100%;
     max-width: 500px;
-    margin-left: 620px; /* move to the right */
+    margin-left: 600px; /* move to the right */
     margin-top: -210px; /* move upward */
     transition: transform 0.3s ease;
 }
