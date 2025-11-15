@@ -541,7 +541,7 @@ body {
     color: #6d788e;
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-left: 200px;
+    margin-left: 220px;
     margin-top: -200px;
     /* made changes here
     /* top */
@@ -552,7 +552,7 @@ body {
     width: 100%;
     max-width: 500px;
     margin-left: 620px; /* move to the right */
-    margin-top: -180px; /* move upward */
+    margin-top: -210px; /* move upward */
     transition: transform 0.3s ease;
 }
 
