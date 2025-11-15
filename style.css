@@ -507,6 +507,7 @@ body {
 }
 
 .project-images .img3 {
+    border-radius: 8px;
     position: absolute;
     top: 360px;
     /* increase this number to move it lower */
