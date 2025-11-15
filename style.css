@@ -544,3 +544,24 @@ body {
     /* top */
     /* pushes it to the right */
 }
+
+.braillance-video-container {
+    width: 100%;
+    max-width: 800px;
+    /* or whatever fits your layout */
+    margin: 60px auto 0 auto;
+    /* space below the text box without aligning exactly */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.braillance-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 18px;
+    /* rounded edges */
+    box-shadow: 0px 10px 25px #d2c4df;
+    /* drop shadow */
+    border: none;
+}
