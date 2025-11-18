@@ -300,7 +300,8 @@ body {
     position: relative;
     width: 280px;
     height: 320px;
-    margin-left: 120px; /* increase to move farther right */
+    margin-left: 120px;
+    /* increase to move farther right */
 }
 
 .about-images .img1 {
@@ -474,6 +475,21 @@ body {
     /* ensures no weird padding */
 }
 
+.project-subtitle .dash-line {
+    flex-grow: 1;
+    height: 1px;
+    background: #6d1f42;
+    opacity: .5;
+    margin-top: 4px;
+}
+
+.project-subtitle .num {
+    white-space: nowrap;
+}
+
+.project-subtitle .label {
+    white-space: nowrap;
+}
 
 /* Project Content Layout */
 .project-content {
