@@ -343,7 +343,7 @@ body {
 .about-text p {
     font-family: "sauce", sans-serif;
     margin-bottom: 20px;
-    text-indent: 2em;
+    text-indent: 0;
     line-height: 1.6;
     font-size: 1.1rem;
     color: #6d788e;
