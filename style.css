@@ -475,19 +475,6 @@ body {
     /* ensures no weird padding */
 }
 
-.project-subtitle {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.project-subtitle .dash-line {
-    flex-grow: 1;
-    height: 1px;
-    background: #6d1f42;
-    opacity: .5;
-}
-
 
 /* Project Content Layout */
 .project-content {
