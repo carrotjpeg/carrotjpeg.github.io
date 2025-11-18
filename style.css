@@ -313,12 +313,12 @@ body {
 .about-images .img2 {
     position: absolute;
     left: 130px;
-    margin-left: 30 px
     /* moves it a little further right → less overlap */
     top: 130px;
     /* moves it lower */
     z-index: 2;
     transform: rotate(-3deg);
+    margin-left: 30 px
 }
 
 .about-images img:hover {
