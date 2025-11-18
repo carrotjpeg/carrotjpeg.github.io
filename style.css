@@ -401,26 +401,31 @@ body {
 }
 
 /* --- Social Icons --- */
-.social-icons {
-    position: fixed;
-    bottom: 20px;
-    right: 40px;
+.social-buttons {
     display: flex;
-    gap: 18px;
-    align-items: center;
-    z-index: 20;
+    flex-direction: column;
+    gap: 12px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-family: "sauce", sans-serif;
 }
 
-.social-icons img {
-    width: 34px;
-    height: 34px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    cursor: pointer;
+.social-btn {
+    background: #f5e9ef;
+    color: #6d1f42;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform .15s ease, background .15s ease;
 }
 
-.social-icons img:hover {
-    transform: translateY(-6px);
+.social-btn:hover {
+    transform: scale(1.05);
+    background: #e8d3dd;
 }
+
 
 /* PROJECTS SECTION */
 #projects {
@@ -552,13 +557,16 @@ body {
 .braillance-video-container {
     width: 100%;
     max-width: 500px;
-    margin-left: 570px; /* move to the right */
-    margin-top: -210px; /* move upward */
+    margin-left: 570px;
+    /* move to the right */
+    margin-top: -210px;
+    /* move upward */
     transition: transform 0.3s ease;
 }
 
 .braillance-video-container:hover {
-    transform: scale(1.03); /* slight grow on hover */
+    transform: scale(1.03);
+    /* slight grow on hover */
 }
 
 .braillance-video {
