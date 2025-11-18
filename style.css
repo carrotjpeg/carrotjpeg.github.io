@@ -401,20 +401,14 @@ body {
 }
 
 /* --- Social Icons --- */
-.bottom-right-stack {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    font-family: "sauce", sans-serif;
-}
-
 .social-buttons {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-family: "sauce", sans-serif;
 }
 
 .social-btn {
@@ -424,15 +418,14 @@ body {
     border-radius: 12px;
     font-size: 1rem;
     text-decoration: none;
-    transition: transform .15s ease, background .15s ease, color .15s ease;
+    transition: transform .15s ease, background .15s ease;
 }
 
 .social-btn:hover {
     transform: scale(1.05);
     background: #6d1f42;
-    color: #d3b6d3;
+    color: #d3b6d3
 }
-
 
 
 /* PROJECTS SECTION */
