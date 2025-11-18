@@ -300,6 +300,7 @@ body {
     position: relative;
     width: 280px;
     height: 320px;
+    margin-left: 80px; /* increase to move farther right */
 }
 
 .about-images .img1 {
@@ -307,7 +308,6 @@ body {
     left: 0;
     top: 0;
     z-index: 1;
-    margin-left: 60 px
 }
 
 .about-images .img2 {
@@ -318,7 +318,6 @@ body {
     /* moves it lower */
     z-index: 2;
     transform: rotate(-3deg);
-    margin-left: 60 px
 }
 
 .about-images img:hover {
