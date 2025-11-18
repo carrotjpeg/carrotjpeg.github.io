@@ -300,7 +300,7 @@ body {
     position: relative;
     width: 280px;
     height: 320px;
-    margin-left: 80px; /* increase to move farther right */
+    margin-left: 100px; /* increase to move farther right */
 }
 
 .about-images .img1 {
