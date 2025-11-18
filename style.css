@@ -335,6 +335,7 @@ body {
 .about-text {
     font-family: "sauce", sans-serif;
     max-width: 500px;
+    margin-left: 60px;
     text-align: left;
     color: #6d788e;
     /* new text color */
