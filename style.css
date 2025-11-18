@@ -412,7 +412,7 @@ body {
 }
 
 .social-btn {
-    background: #f5e9ef;
+    background: #d3b6d3;
     color: #6d1f42;
     padding: 10px 16px;
     border-radius: 12px;
@@ -423,7 +423,8 @@ body {
 
 .social-btn:hover {
     transform: scale(1.05);
-    background: #e8d3dd;
+    background: #6d1f42;
+    color: #d3b6d3
 }
 
 
