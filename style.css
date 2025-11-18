@@ -403,8 +403,10 @@ body {
 /* --- Social Icons --- */
 .social-buttons {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    flex-direction: row;
+    /* puts them side by side */
+    gap: 10px;
+    /* spacing between buttons */
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -414,18 +416,21 @@ body {
 .social-btn {
     background: #d3b6d3;
     color: #6d1f42;
-    padding: 10px 16px;
-    border-radius: 12px;
-    font-size: 1rem;
+    padding: 6px 10px;
+    /* smaller size */
+    border-radius: 10px;
+    font-size: 0.85rem;
+    /* smaller text */
     text-decoration: none;
-    transition: transform .15s ease, background .15s ease;
+    transition: transform .15s ease, background .15s ease, color .15s ease;
 }
 
 .social-btn:hover {
     transform: scale(1.05);
     background: #6d1f42;
-    color: #d3b6d3
+    color: #d3b6d3;
 }
+
 
 
 /* PROJECTS SECTION */
