@@ -1,0 +1,586 @@
+/* FONT IMPORTS */
+@font-face {
+    font-family: "Lazydog";
+    src: url("../assets/fonts/Lazydog.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "seasons";
+    src: url("../assets/fonts/seasons.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "sauce";
+    src: url("../assets/fonts/sauce.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* GLOBAL STYLES */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff8ee;
+    font-family: "Lazydog", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* HOME ICON */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff8ee;
+    /* solid background */
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.lightbulb {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 0 0 rgba(255, 255, 150, 0));
+}
+
+.lightbulb:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 150, 0.8));
+}
+
+/* NAVIGATION */
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff8ee;
+    /* match header background */
+    padding: 20px 40px;
+    z-index: 100;
+}
+
+/* --- Default text colors per section --- */
+.nav-buttons button:nth-child(1) {
+    color: #db7a73;
+    /* About Me */
+}
+
+.nav-buttons button:nth-child(2) {
+    color: #d2c4df;
+    /* Projects */
+}
+
+.nav-buttons button:nth-child(3) {
+    color: #efd365;
+    /* Research */
+}
+
+.nav-buttons button:nth-child(4) {
+    color: #b9db97;
+    /* Skills */
+}
+
+
+/* Default nav button look */
+.nav-buttons button {
+    margin: 6px;
+    padding: 8px 16px;
+    background-color: transparent;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-family: "Lazydog", sans-serif;
+    font-size: 18px;
+}
+
+/* Hover colors for each section */
+.nav-buttons button:nth-child(1):hover {
+    /* About Me */
+    background-color: #db7a73;
+    color: white;
+}
+
+.nav-buttons button:nth-child(2):hover {
+    /* Projects */
+    background-color: #d2c4df;
+    color: white;
+}
+
+.nav-buttons button:nth-child(3):hover {
+    /* Research */
+    background-color: #efd365;
+    color: white;
+}
+
+.nav-buttons button:nth-child(4):hover {
+    /* Skills */
+    background-color: #b9db97;
+    color: white;
+}
+
+/* HOME SECTION */
+#home {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+.hello {
+    font-family: "seasons", serif;
+    font-size: 80px;
+    margin: 0;
+    animation: fadeInUp 1.5s ease forwards;
+    color: #6d788e
+}
+
+.name {
+    font-family: "seasons", serif;
+    font-size: 36px;
+    margin-top: 10px;
+    animation: fadeInUp 1.5s ease forwards;
+    color: #6d788e
+}
+
+
+section {
+    scroll-margin-top: 100px;
+    padding: 160px 10%;
+    background-color: #fff8ee;
+    border-top: 3px solid #6d788e;
+    font-family: "Lazydog", sans-serif;
+    /* prevents overlap under fixed header/nav */
+}
+
+section h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: "Lazydog", sans-serif;
+}
+
+section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+    font-family: "Lazydog", sans-serif;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+.fade-in-delay {
+    opacity: 0;
+    animation: fadeInUp 1.5s ease 1s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initially hide nav, header, and sections except #home */
+header,
+nav,
+section:not(#home) {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* fade in header/lightbulb first */
+/* fade in header/lightbulb first */
+body.loaded header {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.5s;
+    /* before: 2.3s */
+}
+
+/* then fade in nav buttons */
+body.loaded nav {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.8s;
+    /* before: 2.6s */
+}
+
+
+/* finally fade in all sections after nav */
+body.loaded section:not(#home) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 3s;
+}
+
+html,
+body {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+    /* enables vertical scrolling */
+    overflow-x: hidden;
+    /* prevents horizontal scrollbars */
+}
+
+
+/* DIFFERENT TITLE COLORS PER SECTION */
+#about h3 {
+    color: #db7a73;
+}
+
+#projects h3 {
+    color: #d2c4df;
+}
+
+#research h3 {
+    color: #efd365;
+}
+
+#skills h3 {
+    color: #b9db97;
+}
+
+#about {
+    background-color: #fff8ee;
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #db7a73;
+    /* title color */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+
+.about-images {
+    position: relative;
+    width: 280px;
+    height: 320px;
+    margin-left: 120px;
+    /* increase to move farther right */
+}
+
+.about-images .img1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.about-images .img2 {
+    position: absolute;
+    left: 130px;
+    /* moves it a little further right → less overlap */
+    top: 130px;
+    /* moves it lower */
+    z-index: 2;
+    transform: rotate(-3deg);
+}
+
+.about-images img:hover {
+    transform: scale(1.05);
+}
+
+.about-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.about-text {
+    font-family: "sauce", sans-serif;
+    max-width: 500px;
+    margin-left: 60px;
+    text-align: left;
+    color: #6d788e;
+    /* new text color */
+}
+
+.about-text p {
+    font-family: "sauce", sans-serif;
+    margin-bottom: 20px;
+    text-indent: 0;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #6d788e;
+}
+
+/* Email copy element bottom-left */
+.email-copy {
+    position: fixed;
+    bottom: 20px;
+    left: 25px;
+    background: #d3b6d3;
+    /* non-hover background */
+    color: #6d1f42;
+    /* non-hover text */
+    font-family: "sauce", sans-serif;
+    font-size: 15px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+    z-index: 999;
+}
+
+.email-copy:hover {
+    transform: scale(1.05);
+    background: #6d1f42;
+    /* hover background */
+    color: #d3b6d3;
+    /* hover text */
+}
+
+.copy-popup {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff7bac;
+    /* popup background */
+    color: #6d1f42;
+    /* popup text */
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    font-family: "sauce", sans-serif;
+}
+
+.copy-popup.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+/* --- Social Icons --- */
+.social-buttons {
+    display: flex;
+    flex-direction: row;
+    /* puts them side by side */
+    gap: 10px;
+    /* spacing between buttons */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-family: "sauce", sans-serif;
+}
+
+.social-btn {
+    background: #d3b6d3;
+    color: #6d1f42;
+    padding: 6px 10px;
+    /* smaller size */
+    border-radius: 10px;
+    font-size: 0.85rem;
+    /* smaller text */
+    text-decoration: none;
+    transition: transform .15s ease, background .15s ease, color .15s ease;
+}
+
+.social-btn:hover {
+    transform: scale(1.05);
+    background: #6d1f42;
+    color: #d3b6d3;
+}
+
+
+
+/* PROJECTS SECTION */
+#projects {
+    background-color: #fff8ee;
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-title {
+    font-family: "Lazydog", sans-serif;
+    font-size: 2.8rem;
+    text-align: center;
+    color: #db7a73;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    /* places it nicely near the top */
+}
+
+/* Each Project Block */
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Project Subtitle */
+.project-subtitle {
+    font-family: "seasons", sans-serif;
+    font-size: 1.6rem;
+    color: #6d1f42;
+    margin-bottom: 60px;
+    text-align: left;
+    align-self: flex-start;
+    /* aligns subtitle left */
+    margin-left: 0;
+    /* ensures no weird padding */
+}
+
+
+/* Project Content Layout */
+.project-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.project-text p {
+    font-family: "sauce", sans-serif !important;
+    color: #6d788e;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Image Layout (like About Me) */
+.project-images {
+    position: relative;
+    width: 280px;
+    height: 320px;
+}
+
+.project-images .img1 {
+    position: absolute;
+    left: -70px;
+    /* moves it further left */
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 10px 25px #d2c4df;
+    width: 250px;
+    /* make it bigger (default was 200px) */
+    height: auto;
+}
+
+.project-images .img2 {
+    position: absolute;
+    left: 160px;
+    top: 160px;
+    /* was 200px, moved up by 40px */
+    z-index: 2;
+    transform: rotate(-2deg);
+    width: 340px;
+}
+
+.project-images .img3 {
+    position: absolute;
+    top: 360px;
+    /* increase this number to move it lower */
+    left: 30px;
+    width: 350px;
+    box-shadow: 0px 10px 25px #d2c4df 2;
+    height: auto;
+    z-index: 0;
+    object-fit: contain;
+}
+
+.project-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);*/
+    box-shadow: 0px 10px 25px #d2c4df;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.project-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Text beside images */
+.project-text {
+    font-family: "sauce", sans-serif !important;
+    max-width: 500px;
+    text-align: left;
+    color: #6d788e;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-left: 220px;
+    margin-top: -200px;
+    /* made changes here
+    /* top */
+    /* pushes it to the right */
+}
+
+.braillance-video-container {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 570px;
+    /* move to the right */
+    margin-top: -210px;
+    /* move upward */
+    transition: transform 0.3s ease;
+}
+
+.braillance-video-container:hover {
+    transform: scale(1.03);
+    /* slight grow on hover */
+}
+
+.braillance-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 18px;
+    box-shadow: 0px 10px 25px rgba(109, 31, 66, 2);
+    border: none;
+}

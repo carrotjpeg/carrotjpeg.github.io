@@ -1,0 +1,27 @@
+{
+  "name": "carrotjpeg.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Evana Thomson showcasing projects, research, and skills",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 3000 -o",
+    "dev": "npx http-server -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carrotjpeg/carrotjpeg.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "personal-website",
+    "github-pages",
+    "eecs",
+    "material-science"
+  ],
+  "author": "Evana Thomson <evana@berkeley.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carrotjpeg/carrotjpeg.github.io/issues"
+  },
+  "homepage": "https://evanathomson.com"
+}

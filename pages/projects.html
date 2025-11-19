@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Evana Thomson</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="shortcut icon" href="../assets/images/lightbulb_favicon.png" type="image/png">
+</head>
+
+<body>
+    <!-- Home Icon -->
+    <header>
+        <a href="../index.html" class="home-icon">
+            <img src="../assets/images/lightbulb.png" alt="Home" class="lightbulb">
+        </a>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-buttons">
+            <button onclick="location.href='../index.html#about'">About Me</button>
+            <button onclick="location.href='projects.html'">Projects</button>
+            <button onclick="location.href='research.html'">Research</button>
+            <button onclick="location.href='skills.html'">Skills</button>
+        </div>
+    </nav>
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h3 class="projects-title">Projects</h3>
+
+        <!-- First Project -->
+        <div class="project-item">
+            <h4 class="project-subtitle">01. MIT Beaverworks Brailliance</h4>
+
+            <div class="project-content">
+                <div class="project-images">
+                    <img src="../assets/images/mit project/asic.png" alt="ASIC" class="img1">
+                    <img src="../assets/images/mit project/board.png" alt="Board" class="img2">
+                    <img src="../assets/images/mit project/logo2.png" alt="Brailliance Logo" class="img3">
+                </div>
+
+                <div class="project-text">
+                    <p>
+                        Brailliance is an affordable braille display. Translating text to ASCII, and converting ASCII to
+                        binary with an ASIC, the chip's data sends signals to actuators that move the braille pins,
+                        ultimately reducing the price of a portable braille reader by 90%, aiding visually-impaired
+                        people in their daily life.
+                    </p>
+                </div>
+                <div class="braillance-video-container">
+                    <iframe src="https://www.youtube.com/embed/OeYJcwqM8zU?mute=1&controls=1&autoplay=0"
+                        class="braillance-video"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+
+    <!-- Email Copy Widget -->
+    <div class="email-copy" id="emailCopy">
+        <span class="email-text">evana@berkeley.edu</span>
+        <div class="copy-popup" id="copyPopup">copied to clipboard!</div>
+    </div>
+
+    <script>
+        const emailCopy = document.getElementById("emailCopy");
+        const popup = document.getElementById("copyPopup");
+        const email = "evana@berkeley.edu";
+
+        emailCopy.addEventListener("click", async () => {
+            try {
+                await navigator.clipboard.writeText(email);
+                popup.classList.add("show");
+                setTimeout(() => popup.classList.remove("show"), 1200);
+            } catch (err) {
+                window.prompt("Copy this email:", email);
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
