@@ -518,7 +518,7 @@ body {
     /* was 200px, moved up by 40px */
     z-index: 2;
     transform: rotate(-2deg);
-    width: 340px;
+    width: 380px;
 }
 
 .project-images .img3 {
@@ -623,7 +623,7 @@ body {
 
 .whygreen-images .wg1 {
     position: absolute;
-    left: -70px;
+    left: -90px;
     /* moves it further left */
     top: 0;
     z-index: 1;
