@@ -623,7 +623,7 @@ body {
 
 .whygreen-images .wg1 {
     position: absolute;
-    left: -90px;
+    left: -200px;
     /* moves it further left */
     top: 0;
     z-index: 1;
