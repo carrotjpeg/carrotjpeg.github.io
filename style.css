@@ -613,3 +613,32 @@ body {
     align-self: flex-start;
     margin-left: 0;
 }
+
+/* WhyGreen custom image sizes */
+.whygreen-images {
+    position: relative;
+    width: 280px;
+    height: 320px;
+}
+
+.whygreen-images .wg1 {
+    position: absolute;
+    left: -70px;
+    /* moves it further left */
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 10px 25px #d2c4df;
+    width: 250px;
+    /* make it bigger (default was 200px) */
+    height: auto;
+}
+
+.whygreen-images .wg2 {
+    position: absolute;
+    left: 160px;
+    top: 160px;
+    /* was 200px, moved up by 40px */
+    z-index: 2;
+    transform: rotate(-2deg);
+    width: 340px;
+}
