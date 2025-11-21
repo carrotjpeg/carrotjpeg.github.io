@@ -584,3 +584,27 @@ body {
     box-shadow: 0px 10px 25px rgba(109, 31, 66, 2);
     border: none;
 }
+
+.project-header {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    margin-top: 80px;
+    /* matches spacing below Beaverworks */
+    margin-left: 150px;
+    /* same left alignment as your MIT header */
+}
+
+.project-number {
+    font-family: "seasons";
+    font-size: 32px;
+    color: #6d1f42;
+    font-weight: normal;
+}
+
+.project-title {
+    font-family: "Lazydog";
+    font-size: 32px;
+    color: #6d1f42;
+    font-weight: normal;
+}
