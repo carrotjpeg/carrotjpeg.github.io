@@ -497,10 +497,11 @@ body {
 .project-images {
     position: relative;
     width: 280px;
+    height: 320px;
 }
 
 .project-images .img1 {
-    position: relative;
+    position: absolute;
     left: -70px;
     /* moves it further left */
     top: 0;
@@ -512,7 +513,7 @@ body {
 }
 
 .project-images .img2 {
-    position: relative;
+    position: absolute;
     left: 160px;
     top: 160px;
     /* was 200px, moved up by 40px */
@@ -522,7 +523,7 @@ body {
 }
 
 .project-images .img3 {
-    position: relative;
+    position: absolute;
     top: 360px;
     /* increase this number to move it lower */
     left: 30px;
@@ -539,7 +540,7 @@ body {
     border-radius: 20px;
     /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);*/
     box-shadow: 0px 10px 25px #d2c4df;
-    position: relative;
+    position: absolute;
     transition: transform 0.3s ease;
 }
 
@@ -618,10 +619,11 @@ body {
 .whygreen-images {
     position: relative;
     width: 280px;
+    height: 320px;
 }
 
 .whygreen-images .wg1 {
-    position: relative;
+    position: absolute;
     left: -180px;
     /* moves it further left */
     top: 0;
@@ -633,7 +635,7 @@ body {
 }
 
 .whygreen-images .wg2 {
-    position: relative;
+    position: absolute;
     left: 60px;
     top: 260px;
     /* was 200px, moved up by 40px */
