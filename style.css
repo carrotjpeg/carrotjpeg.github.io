@@ -635,7 +635,7 @@ body {
 
 .whygreen-images .wg2 {
     position: absolute;
-    left: 160px;
+    left: 260px;
     top: 260px;
     /* was 200px, moved up by 40px */
     z-index: 2;
