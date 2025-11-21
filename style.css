@@ -628,7 +628,7 @@ body {
     top: 0;
     z-index: 1;
     box-shadow: 0px 10px 25px #d2c4df;
-    width: 250px;
+    width: 300px;
     /* make it bigger (default was 200px) */
     height: auto;
 }
