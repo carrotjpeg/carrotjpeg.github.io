@@ -640,5 +640,5 @@ body {
     /* was 200px, moved up by 40px */
     z-index: 2;
     transform: rotate(-2deg);
-    width: 340px;
+    width: 400px;
 }
