@@ -344,9 +344,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background: #ff7bac;
-    /* popup background */
     color: #6d1f42;
-    /* popup text */
     font-size: 13px;
     padding: 5px 10px;
     border-radius: 10px;
@@ -361,13 +359,10 @@ body {
     transform: translateX(-50%) translateY(-5px);
 }
 
-/* --- Social Icons --- */
 .social-buttons {
     display: flex;
     flex-direction: row;
-    /* puts them side by side */
     gap: 10px;
-    /* spacing between buttons */
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -378,10 +373,8 @@ body {
     background: #d3b6d3;
     color: #6d1f42;
     padding: 6px 10px;
-    /* smaller size */
     border-radius: 10px;
     font-size: 0.85rem;
-    /* smaller text */
     text-decoration: none;
     transition: transform .15s ease, background .15s ease, color .15s ease;
 }
@@ -392,9 +385,6 @@ body {
     color: #d3b6d3;
 }
 
-
-
-/* PROJECTS SECTION */
 #projects {
     background-color: #fff8ee;
     padding: 80px 10%;
@@ -410,10 +400,8 @@ body {
     color: #db7a73;
     margin-bottom: 60px;
     margin-top: 30px;
-    /* places it nicely near the top */
 }
 
-/* Each Project Block */
 .project-item {
     display: flex;
     flex-direction: column;
@@ -421,7 +409,6 @@ body {
     width: 100%;
 }
 
-/* Project Subtitle */
 .project-subtitle {
     font-family: "seasons", sans-serif;
     font-size: 1.6rem;
@@ -429,13 +416,10 @@ body {
     margin-bottom: 60px;
     text-align: left;
     align-self: flex-start;
-    /* aligns subtitle left */
     margin-left: 0;
-    /* ensures no weird padding */
 }
 
 
-/* Project Content Layout */
 .project-content {
     display: flex;
     align-items: center;
@@ -452,7 +436,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* Image Layout (like About Me) */
 .project-images {
     position: relative;
     width: 280px;
@@ -462,12 +445,10 @@ body {
 .project-images .img1 {
     position: absolute;
     left: -70px;
-    /* moves it further left */
     top: 0;
     z-index: 1;
     box-shadow: 0px 10px 25px #d2c4df;
     width: 250px;
-    /* make it bigger (default was 200px) */
     height: auto;
 }
 
@@ -475,7 +456,6 @@ body {
     position: absolute;
     left: 160px;
     top: 160px;
-    /* was 200px, moved up by 40px */
     z-index: 2;
     transform: rotate(-2deg);
     width: 380px;
@@ -484,7 +464,6 @@ body {
 .project-images .img3 {
     position: absolute;
     top: 360px;
-    /* increase this number to move it lower */
     left: 30px;
     width: 350px;
     box-shadow: 0px 10px 25px #d2c4df 2;
@@ -497,7 +476,6 @@ body {
     width: 200px;
     height: auto;
     border-radius: 20px;
-    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);*/
     box-shadow: 0px 10px 25px #d2c4df;
     position: absolute;
     transition: transform 0.3s ease;
@@ -507,7 +485,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Text beside images */
 .project-text {
     font-family: "sauce", sans-serif !important;
     max-width: 500px;
@@ -517,24 +494,18 @@ body {
     line-height: 1.6;
     margin-left: 220px;
     margin-top: -200px;
-    /* made changes here
-    /* top */
-    /* pushes it to the right */
 }
 
 .braillance-video-container {
     width: 100%;
     max-width: 500px;
     margin-left: 570px;
-    /* move to the right */
     margin-top: -210px;
-    /* move upward */
     transition: transform 0.3s ease;
 }
 
 .braillance-video-container:hover {
     transform: scale(1.03);
-    /* slight grow on hover */
 }
 
 .braillance-video {
@@ -550,12 +521,9 @@ body {
     align-items: baseline;
     gap: 15px;
     margin-top: 80px;
-    /* matches spacing below Beaverworks */
     margin-left: 150px;
-    /* same left alignment as your MIT header */
 }
 
-/* Each Project Block */
 .project-item {
     display: flex;
     flex-direction: column;
@@ -563,7 +531,6 @@ body {
     width: 100%;
 }
 
-/* Project Subtitle */
 .project-subtitle {
     font-family: "seasons", sans-serif;
     font-size: 1.6rem;
@@ -574,7 +541,6 @@ body {
     margin-left: 0;
 }
 
-/* WhyGreen custom image sizes */
 .whygreen-images {
     position: relative;
     width: 280px;
@@ -584,12 +550,10 @@ body {
 .whygreen-images .wg1 {
     position: absolute;
     left: -180px;
-    /* moves it further left */
     top: 0;
     z-index: 1;
     box-shadow: 0px 10px 25px #d2c4df;
     width: 500px;
-    /* make it bigger (default was 200px) */
     height: auto;
 }
 
@@ -597,7 +561,6 @@ body {
     position: absolute;
     left: -10px;
     top: 260px;
-    /* was 200px, moved up by 40px */
     z-index: 2;
     transform: rotate(-2deg);
     width: 500px;
