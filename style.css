@@ -559,9 +559,9 @@ body {
 
 .whygreen-images .wg2 {
     position: absolute;
-    left: -10px;
-    top: 260px;
+    left: -20px;
+    top: 280px;
     z-index: 2;
     transform: rotate(-2deg);
-    width: 500px;
+    width: 520px;
 }
