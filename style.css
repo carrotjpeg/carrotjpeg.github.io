@@ -516,6 +516,10 @@ body {
     border: none;
 }
 
+.project-subtitle.whygreen-header {
+    margin-top: 200px;
+}
+
 .project-header {
     display: flex;
     align-items: baseline;
