@@ -546,12 +546,6 @@ body {
     margin-left: 0;
 }
 
-.whygreen-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .whygreen-wrapper {
     position: relative;
     width: 600px;
