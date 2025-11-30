@@ -574,7 +574,7 @@ body {
     position: relative;
     width: 280px;
     height: 320px;
-    z-index: 1;       /* this is the fix */
+    z-index: 1;
 }
 
 .whygreen-images .wg1 {
@@ -594,4 +594,48 @@ body {
     z-index: 2;
     transform: rotate(-2deg);
     width: 520px;
+}
+
+/* allow per-project absolute positioning */
+.project-item {
+    position: relative;
+}
+
+/* target only the WhyGreen project's text (h4.whygreen-header + the following .project-text) */
+.whygreen-header+.project-text {
+    position: absolute;
+    top: 120px;
+    /* tweak this to move text up or down */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 420px;
+    /* width of the text box over the images */
+    z-index: 20;
+    /* above the images */
+    margin-left: 0;
+    /* cancel global offsets */
+    margin-top: 0;
+    text-align: center;
+    background: rgba(255, 248, 238, 0.85);
+    /* similar look to your whygreen-text */
+    padding: 20px;
+    border-radius: 14px;
+    backdrop-filter: blur(2px);
+    font-family: "sauce", sans-serif;
+    color: #6d1f42;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* smaller screens: keep it responsive */
+@media (max-width: 800px) {
+    .whygreen-header+.project-text {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin: 20px 0;
+        z-index: auto;
+        background: transparent;
+        backdrop-filter: none;
+    }
 }
