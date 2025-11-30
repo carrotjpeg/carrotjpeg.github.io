@@ -604,16 +604,13 @@ body {
 /* target only the WhyGreen project's text (h4.whygreen-header + the following .project-text) */
 .whygreen-header+.project-text {
     position: absolute;
-    top: 120px;
+    top: 140px;
     /* tweak this to move text up or down */
     left: 50%;
     transform: translateX(-50%);
     width: 420px;
-    /* width of the text box over the images */
     z-index: 20;
-    /* above the images */
     margin-left: 0;
-    /* cancel global offsets */
     margin-top: 0;
     text-align: center;
     background: rgba(255, 248, 238, 0.85);
