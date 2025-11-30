@@ -579,7 +579,7 @@ body {
 .whygreen-images .wg1 {
     position: absolute;
     left: -470px;
-    top: 0;
+    top: 150;
     z-index: 1;
     box-shadow: 0px 10px 25px #d2c4df;
     width: 520px;
@@ -589,7 +589,7 @@ body {
 .whygreen-images .wg2 {
     position: absolute;
     left: -360px;
-    top: 250px;
+    top: 400px;
     z-index: 2;
     transform: rotate(-2deg);
     width: 520px;
