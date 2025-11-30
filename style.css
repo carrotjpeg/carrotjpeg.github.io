@@ -606,7 +606,7 @@ body {
     position: absolute;
     top: 140px;
     /* tweak this to move text up or down */
-    left: 80%;
+    left: 20%;
     transform: translateX(-50%);
     width: 420px;
     z-index: 20;
