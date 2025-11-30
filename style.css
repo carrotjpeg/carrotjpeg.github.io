@@ -574,6 +574,7 @@ body {
     position: relative;
     width: 280px;
     height: 320px;
+    z-index: 1; 
 }
 
 .whygreen-images .wg1 {
