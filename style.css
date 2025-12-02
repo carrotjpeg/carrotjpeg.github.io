@@ -596,16 +596,13 @@ body {
     width: 520px;
 }
 
-/* allow per-project absolute positioning */
 .project-item {
     position: relative;
 }
 
-/* target only the WhyGreen project's text (h4.whygreen-header + the following .project-text) */
 .whygreen-header+.project-text {
     position: absolute;
     top: 140px;
-    /* tweak this to move text up or down */
     left: 20%;
     transform: translateX(-50%);
     width: 420px;
@@ -614,7 +611,6 @@ body {
     margin-top: 0;
     text-align: center;
     background: rgba(255, 248, 238, 0.85);
-    /* similar look to your whygreen-text */
     padding: 20px;
     border-radius: 14px;
     backdrop-filter: blur(2px);
@@ -624,7 +620,6 @@ body {
     line-height: 1.5;
 }
 
-/* smaller screens: keep it responsive */
 @media (max-width: 800px) {
     .whygreen-header+.project-text {
         position: static;
@@ -637,50 +632,86 @@ body {
     }
 }
 
-./* place aquapilot to the right of whygreen */
-.whygreen-images {
-    margin-right: 200px;
-}
 
 .aquapilot-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: -100px;
-}
-
-/* aqua block itself */
-.aquapilot-section {
     position: relative;
+    width: 600px;
+    margin-top: 40px;
     margin-left: 200px;
 }
 
-/* image */
-.aquapilot-images {
-    position: relative;
-    width: 420px;
-    height: auto;
-}
-
-.aquapilot-img {
-    width: 100%;
-    border-radius: 18px;
-    box-shadow: 0px 10px 25px #d2c4df;
-}
-
-/* text over image */
 .aquapilot-text {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 70%;
-    color: white;
+    text-align: center;
     font-family: "sauce", sans-serif;
-    font-size: 1.05rem;
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.35);
-    padding: 18px;
-    border-radius: 12px;
+    color: #6d1f42;
+    font-size: 1.2rem;
     line-height: 1.5;
+    z-index: 10;
+    background: rgba(255, 248, 238, 0.7);
+    padding: 20px;
+    border-radius: 14px;
+    backdrop-filter: blur(2px);
+}
+
+.aquapilot-images {
+    position: relative;
+    width: 520px;
+    height: auto;
+    z-index: 1;
+}
+
+.aquapilot-images .aq1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 10px 25px #d2c4df;
+    width: 520px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.project-item {
+    position: relative;
+}
+
+.aquapilot-header {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 420px;
+    z-index: 20;
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+    background: rgba(255, 248, 238, 0.85);
+    padding: 20px;
+    border-radius: 14px;
+    backdrop-filter: blur(2px);
+    font-family: "sauce", sans-serif;
+    color: #6d1f42;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+    .aquapilot-wrapper {
+        margin-left: 0;
+    }
+
+    .aquapilot-header {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin: 20px 0;
+        z-index: auto;
+        background: transparent;
+        backdrop-filter: none;
+    }
 }
