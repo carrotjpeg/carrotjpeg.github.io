@@ -666,7 +666,7 @@ body {
 .aquapilot-images .aq1 {
     position: absolute;
     left: 400px;
-    top: 100px;
+    top: -100px;
     width: 620px;
     height: auto;
     border-radius: 20px;
