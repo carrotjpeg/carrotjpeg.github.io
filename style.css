@@ -705,6 +705,7 @@ body {
         position: static;
         transform: none;
         width: 100%;
+        left: 400 px;
         margin-bottom: 20px;
         background: transparent;
         backdrop-filter: none;
