@@ -637,28 +637,50 @@ body {
     }
 }
 
+./* place aquapilot to the right of whygreen */
+.whygreen-images {
+    margin-right: 200px;
+}
+
+.aquapilot-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: -100px;
+}
+
+/* aqua block itself */
 .aquapilot-section {
     position: relative;
-    width: 400px;
     margin-left: 200px;
-    margin-top: 0;
 }
 
+/* image */
+.aquapilot-images {
+    position: relative;
+    width: 420px;
+    height: auto;
+}
+
+.aquapilot-img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0px 10px 25px #d2c4df;
+}
+
+/* text over image */
 .aquapilot-text {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    font-family: "Lazydog";
-    font-size: 22px;
-    color: #ffffff;
-    z-index: 3;
-    width: 80%;
-}
-
-.aquapilot-image {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    display: block;
-    z-index: 1;
+    top: 40px;
+    left: 40px;
+    width: 70%;
+    color: white;
+    font-family: "sauce", sans-serif;
+    font-size: 1.05rem;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 18px;
+    border-radius: 12px;
+    line-height: 1.5;
 }
