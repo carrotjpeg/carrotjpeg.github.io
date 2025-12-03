@@ -785,25 +785,25 @@ body {
 
 /* ai1 */
 .inspiritai-images .ai1 {
-    max-width: 600px; /* bigger arch */
+    max-width: 600px; 
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
     object-fit: contain;
-    margin-left: 40px; /* move right */
+    margin-left: 40px; 
 }
 
 
 /* ai2 */
 .inspiritai-images .ai2 {
-    max-width: 180px; /* smaller console */
+    max-width: 10px; 
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
     object-fit: contain;
-    margin: 0 25px; /* keeps it centered horizontally */
+    margin: 0 25px; 
 }
 
 
