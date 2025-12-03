@@ -780,7 +780,7 @@ body {
 
 /* ai1 */
 .inspiritai-images .ai1 {
-    max-width: 400px;   /* shrinks but never stretches */
+    max-width: 500px;   /* shrinks but never stretches */
     height: auto;
     left: 10px;
     top: 100 px;
