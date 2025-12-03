@@ -646,7 +646,7 @@ body {
     color: #6d1f42;
     position: absolute;
     top: -610px;
-    left: 480px;
+    left: 680px;
     transform: translateX(-50%);
     text-align: left;
     background: rgba(255, 248, 238, 0.85);
@@ -680,8 +680,8 @@ body {
 
 .aquapilot-text {
     position: absolute;
-    top: -540px;
-    left: 420px;
+    top: -500px;
+    left: 520px;
     transform: translateX(-50%);
     width: 500px;
     z-index: 20;
