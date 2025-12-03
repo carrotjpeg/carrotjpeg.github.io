@@ -751,6 +751,9 @@ body {
     font-size: 1.8rem;
     color: #6d1f42;
     text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    align-self: center;
     margin-bottom: 20px;
     background: rgba(255, 248, 238, 0.85);
     padding: 14px 24px;
@@ -758,6 +761,7 @@ body {
     backdrop-filter: blur(2px);
     white-space: nowrap;
 }
+
 
 /* Text */
 .inspiritai-text {
@@ -781,39 +785,40 @@ body {
 
 /* ai1 */
 .inspiritai-images .ai1 {
-    max-width: 500px;   /* shrinks but never stretches */
+    max-width: 600px; /* bigger arch */
     height: auto;
-    left: 10px;
-    top: 100 px;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
     object-fit: contain;
+    margin-left: 40px; /* move right */
 }
+
 
 /* ai2 */
 .inspiritai-images .ai2 {
-    max-width: 300px;
+    max-width: 180px; /* smaller console */
     height: auto;
-    left: 20px;
-    top: 200 px;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
     object-fit: contain;
+    margin: 0 25px; /* keeps it centered horizontally */
 }
+
 
 /* ai3 */
 .inspiritai-images .ai3 {
-    max-width: 300px;
+    max-width: 320px;
     height: auto;
-    left: 30px;
-    top: 300 px;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
     object-fit: contain;
+    margin-top: 40px; /* move down */
+    margin-left: 30px; /* move right */
 }
+
 
 /* Hover effect */
 .inspiritai-images .ai1:hover,
