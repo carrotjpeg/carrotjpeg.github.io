@@ -683,7 +683,7 @@ body {
     top: -540px;
     left: 420px;
     transform: translateX(-50%);
-    width: 420px;
+    width: 500px;
     z-index: 20;
     margin-left: 0;
     margin-top: 0;
@@ -722,11 +722,13 @@ body {
     }
 }
 
-/* FIX: AquaPilot text should be sauce + correct color */
-.aquapilot-text {
+/* FINAL OVERRIDE – force AquaPilot text font + color */
+.aquapilot-text, 
+.aquapilot-text * {
     font-family: "sauce", sans-serif !important;
     color: #6d788e !important;
 }
+
 
 
 .aquapilot-header {
