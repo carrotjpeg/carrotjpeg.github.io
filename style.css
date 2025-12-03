@@ -778,29 +778,36 @@ body {
     gap: 30px;
 }
 
+/* ai1 */
 .inspiritai-images .ai1 {
-    width: 300px;
+    max-width: 300px;   /* shrinks but never stretches */
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
+    object-fit: contain;
 }
 
+/* ai2 */
 .inspiritai-images .ai2 {
-    width: 300px;
+    max-width: 300px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
+    object-fit: contain;
 }
 
+/* ai3 */
 .inspiritai-images .ai3 {
-    width: 300px;
+    max-width: 300px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
+    object-fit: contain;
 }
+
 
 /* Hover effect */
 .inspiritai-images .ai1:hover,
