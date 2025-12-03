@@ -721,3 +721,12 @@ body {
         backdrop-filter: none;
     }
 }
+
+.aquapilot-text,
+.aquapilot-header {
+    font-family: "sauce", sans-serif !important;
+}
+
+.aquapilot-header {
+    white-space: nowrap;
+}
