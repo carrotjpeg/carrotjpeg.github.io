@@ -735,14 +735,17 @@ body {
 
 /* ------------------- Inspirit AI ------------------- */
 
+/* ------------------- Inspirit AI ------------------- */
+
 .inspiritai-wrapper {
     width: 100%;
-    margin-top: 200px; /* pushes it below AquaPilot */
+    margin-top: 200px; /* spacing below AquaPilot */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Header */
 .inspiritai-header {
     font-family: "seasons", sans-serif;
     font-size: 1.8rem;
@@ -753,8 +756,10 @@ body {
     padding: 14px 24px;
     border-radius: 14px;
     backdrop-filter: blur(2px);
+    white-space: nowrap;
 }
 
+/* Text */
 .inspiritai-text {
     max-width: 650px;
     text-align: center;
@@ -765,33 +770,55 @@ body {
     margin-bottom: 30px;
 }
 
+/* Images container */
 .inspiritai-images {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     gap: 30px;
 }
 
-.inspiritai-images img {
-    width: 500px;
+.inspiritai-images .ai1 {
+    width: 300px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
 }
 
-.inspiritai-images img:hover {
+.inspiritai-images .ai2 {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px #d2c4df;
+    transition: transform 0.3s ease;
+}
+
+.inspiritai-images .ai3 {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px #d2c4df;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.inspiritai-images .ai1:hover,
+.inspiritai-images .ai2:hover,
+.inspiritai-images .ai3:hover {
     transform: scale(1.05);
 }
 
-/* mobile */
+/* Responsive */
 @media (max-width: 800px) {
     .inspiritai-images {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
     }
 
-    .inspiritai-images img {
+    .inspiritai-images .ai1,
+    .inspiritai-images .ai2,
+    .inspiritai-images .ai3 {
         width: 90%;
     }
 }
