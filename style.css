@@ -763,6 +763,7 @@ body {
 .inspiritai-text {
     max-width: 650px;
     text-align: center;
+    left: 50%;
     top: -210px;
     font-family: "sauce", sans-serif;
     color: #6d788e;
