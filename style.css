@@ -645,8 +645,8 @@ body {
     font-size: 1.6rem;
     color: #6d1f42;
     position: absolute;
-    top: -700px;
-    left: 520px;
+    top: -600px;
+    left: 480px;
     transform: translateX(-50%);
     text-align: center;
     background: rgba(255, 248, 238, 0.85);
@@ -665,7 +665,7 @@ body {
 
 .aquapilot-images .aq1 {
     position: absolute;
-    left: 350px;
+    left: 300px;
     top: -100px;
     width: 650px;
     height: auto;
