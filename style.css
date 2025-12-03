@@ -763,6 +763,7 @@ body {
 .inspiritai-text {
     max-width: 650px;
     text-align: center;
+    top: -210px;
     font-family: "sauce", sans-serif;
     color: #6d788e;
     font-size: 1.1rem;
@@ -779,7 +780,7 @@ body {
 
 /* ai1 */
 .inspiritai-images .ai1 {
-    max-width: 300px;   /* shrinks but never stretches */
+    max-width: 400px;   /* shrinks but never stretches */
     height: auto;
     left: 10px;
     top: 100 px;
