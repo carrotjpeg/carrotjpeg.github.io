@@ -645,7 +645,7 @@ body {
     font-size: 1.6rem;
     color: #6d1f42;
     position: absolute;
-    top: -600px;
+    top: -580px;
     left: 480px;
     transform: translateX(-50%);
     text-align: left;
@@ -666,7 +666,7 @@ body {
 .aquapilot-images .aq1 {
     position: absolute;
     left: 300px;
-    top: -100px;
+    top: -90px;
     width: 650px;
     height: auto;
     border-radius: 20px;
@@ -692,7 +692,7 @@ body {
     padding: 20px;
     border-radius: 14px;
     backdrop-filter: blur(2px);
-    font-family: "sauce", sans-serif;
+    font-family: "sauce", sans-serif !important;
     color: #6d1f42;
     font-size: 1.1rem;
     line-height: 1.5;
