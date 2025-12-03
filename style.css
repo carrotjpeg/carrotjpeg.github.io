@@ -394,7 +394,7 @@ body {
 }
 
 .projects-title {
-    font-family: "seasons", sans-serif;
+    font-family: "Lazydog", sans-serif;
     font-size: 2.8rem;
     text-align: center;
     color: #db7a73;
@@ -731,4 +731,69 @@ body {
 
 .aquapilot-header {
     white-space: nowrap;
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------*/
+
+/* ------------------- Inspirit AI ------------------- */
+
+.inspiritai-wrapper {
+    width: 100%;
+    margin-top: 200px; /* pushes it below AquaPilot */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inspiritai-header {
+    font-family: "seasons", sans-serif;
+    font-size: 1.8rem;
+    color: #6d1f42;
+    text-align: center;
+    margin-bottom: 20px;
+    background: rgba(255, 248, 238, 0.85);
+    padding: 14px 24px;
+    border-radius: 14px;
+    backdrop-filter: blur(2px);
+}
+
+.inspiritai-text {
+    max-width: 650px;
+    text-align: center;
+    font-family: "sauce", sans-serif;
+    color: #6d788e;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.inspiritai-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.inspiritai-images img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px #d2c4df;
+    transition: transform 0.3s ease;
+}
+
+.inspiritai-images img:hover {
+    transform: scale(1.05);
+}
+
+/* mobile */
+@media (max-width: 800px) {
+    .inspiritai-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .inspiritai-images img {
+        width: 90%;
+    }
 }
