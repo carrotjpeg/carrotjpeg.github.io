@@ -693,7 +693,7 @@ body {
     border-radius: 14px;
     backdrop-filter: blur(2px);
     font-family: "sauce", sans-serif !important;
-    color: #6d1f42;
+    color: #6d788e;
     font-size: 1.1rem;
     line-height: 1.5;
 }
@@ -722,9 +722,12 @@ body {
     }
 }
 
+/* FIX: AquaPilot text should be sauce + correct color */
 .aquapilot-text {
     font-family: "sauce", sans-serif !important;
+    color: #6d788e !important;
 }
+
 
 .aquapilot-header {
     white-space: nowrap;
