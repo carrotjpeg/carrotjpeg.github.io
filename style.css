@@ -394,7 +394,7 @@ body {
 }
 
 .projects-title {
-    font-family: "Lazydog", sans-serif;
+    font-family: "seasons", sans-serif;
     font-size: 2.8rem;
     text-align: center;
     color: #db7a73;
@@ -645,7 +645,7 @@ body {
     font-size: 1.6rem;
     color: #6d1f42;
     position: absolute;
-    top: -580px;
+    top: -610px;
     left: 480px;
     transform: translateX(-50%);
     text-align: left;
