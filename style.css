@@ -648,7 +648,7 @@ body {
     top: -600px;
     left: 480px;
     transform: translateX(-50%);
-    text-align: center;
+    text-align: left;
     background: rgba(255, 248, 238, 0.85);
     padding: 14px 24px;
     border-radius: 14px;
