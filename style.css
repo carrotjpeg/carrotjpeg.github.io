@@ -797,7 +797,7 @@ body {
 
 /* ai2 */
 .inspiritai-images .ai2 {
-    max-width: 10px; 
+    max-width: 200px; 
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
@@ -809,7 +809,7 @@ body {
 
 /* ai3 */
 .inspiritai-images .ai3 {
-    max-width: 320px;
+    max-width: 420px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
