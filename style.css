@@ -787,6 +787,7 @@ body {
 .inspiritai-images .ai1 {
     max-width: 600px; 
     height: auto;
+    position: realtive;
     left: -220px;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
