@@ -688,8 +688,10 @@ body {
     margin-left: 0;
     margin-top: 0;
     text-align: center;
-    padding: 0; /* optional, keeps it tight */
-    border-radius: 0; /* optional */
+    padding: 0;
+    /* optional, keeps it tight */
+    border-radius: 0;
+    /* optional */
     font-family: "sauce", sans-serif !important;
     color: #6d788e !important;
     font-size: 1.1rem;
@@ -701,6 +703,7 @@ body {
         margin-left: 0;
         width: 100%;
     }
+
     .aquapilot-header {
         position: static;
         transform: none;
@@ -710,6 +713,7 @@ body {
         background: transparent;
         backdrop-filter: none;
     }
+
     .aquapilot-text {
         position: static;
         transform: none;
@@ -721,7 +725,7 @@ body {
 }
 
 /* FINAL OVERRIDE – force AquaPilot text font + color */
-.aquapilot-text, 
+.aquapilot-text,
 .aquapilot-text * {
     font-family: "sauce", sans-serif !important;
     color: #6d788e !important;
@@ -739,7 +743,8 @@ body {
 
 .inspiritai-wrapper {
     width: 100%;
-    margin-top: 200px; /* spacing below AquaPilot */
+    margin-top: 200px;
+    /* spacing below AquaPilot */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -778,52 +783,61 @@ body {
 
 /* Images container */
 .inspiritai-images {
-    position: relative;   /* parent */
-    width: 1700px;
-    height: 500px; 
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 420px;
+    /* reduced height so text comes closer */
+    margin: 0 auto;
 }
 
 /* ai1 */
 .inspiritai-images .ai1 {
-    max-width: 600px; 
+    position: absolute;
+    top: 0px;
+    /* moved upward */
+    left: 240px;
+    /* shifted more right */
+    max-width: 520px;
+    /* slightly smaller to tighten spacing */
     height: auto;
-    position: relative;
-    left: -60px;
-    top: -20px;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
     object-fit: contain;
-    margin-left: 40px; 
 }
 
 
 /* ai2 */
 .inspiritai-images .ai2 {
-    max-width: 400px; 
+    position: absolute;
+    top: 40px;
+    /* closer to ai1 */
+    left: 430px;
+    /* centered between ai1 and ai3 */
+    max-width: 260px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
     object-fit: contain;
-    margin-top: -20px; /* move down */
-    margin-left: 90px; /* move right */ 
 }
 
 
 /* ai3 */
 .inspiritai-images .ai3 {
-    max-width: 420px;
+    position: absolute;
+    top: 150px;
+    /* lowered but closer than before */
+    left: 520px;
+    /* shifted left so gap is smaller */
+    max-width: 330px;
     height: auto;
     border-radius: 20px;
-    position: relative;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
     object-fit: contain;
-    margin-top: 150px; /* move down */
-    margin-left: 20px; /* move right */
 }
-
 
 /* Hover effect */
 .inspiritai-images .ai1:hover,
@@ -846,7 +860,7 @@ body {
     }
 }
 
-.inspiritai-text, 
+.inspiritai-text,
 .inspiritai-text * {
     font-family: "sauce", sans-serif !important;
     color: #6d788e !important;
