@@ -778,9 +778,9 @@ body {
 
 /* Images container */
 .inspiritai-images {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    position: relative;   /* parent */
+    width: 100%;
+    height: 600px; 
 }
 
 /* ai1 */
@@ -821,7 +821,7 @@ body {
     transition: transform 0.3s ease;
     object-fit: contain;
     margin-top: 150px; /* move down */
-    margin-left: 70px; /* move right */
+    margin-left: 50px; /* move right */
 }
 
 
