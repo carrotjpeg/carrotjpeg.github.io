@@ -779,7 +779,7 @@ body {
 /* Images container */
 .inspiritai-images {
     position: relative;   /* parent */
-    width: 2400px;
+    width: 1800px;
     height: 500px; 
 }
 
