@@ -796,9 +796,9 @@ body {
     position: absolute;
     top: 10px;
     /* moved upward */
-    left: 80px;
+    left: 50px;
     /* shifted more right */
-    max-width: 600px;
+    max-width: 630px;
     /* slightly smaller to tighten spacing */
     height: auto;
     border-radius: 20px;
