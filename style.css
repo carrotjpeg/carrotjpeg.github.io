@@ -794,11 +794,11 @@ body {
 /* ai1 */
 .inspiritai-images .ai1 {
     position: absolute;
-    top: 0px;
+    top: 10px;
     /* moved upward */
-    left: 100px;
+    left: 80px;
     /* shifted more right */
-    max-width: 570px;
+    max-width: 600px;
     /* slightly smaller to tighten spacing */
     height: auto;
     border-radius: 20px;
