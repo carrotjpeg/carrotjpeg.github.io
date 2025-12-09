@@ -796,7 +796,7 @@ body {
     position: absolute;
     top: 10px;
     /* moved upward */
-    left: 10px;
+    left: -10px;
     /* shifted more right */
     max-width: 630px;
     /* slightly smaller to tighten spacing */
@@ -813,7 +813,7 @@ body {
     position: absolute;
     top: 40px;
     /* closer to ai1 */
-    left: 880px;
+    left: 680px;
     /* centered between ai1 and ai3 */
     max-width: 260px;
     height: auto;
