@@ -827,7 +827,7 @@ body {
 /* ai3 */
 .inspiritai-images .ai3 {
     position: absolute;
-    top: 180px;
+    top: 200px;
     /* lowered but closer than before */
     left: 900px;
     /* shifted left so gap is smaller */
