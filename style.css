@@ -688,8 +688,10 @@ body {
     margin-left: 0;
     margin-top: 0;
     text-align: center;
-    padding: 0; /* optional, keeps it tight */
-    border-radius: 0; /* optional */
+    padding: 0;
+    /* optional, keeps it tight */
+    border-radius: 0;
+    /* optional */
     font-family: "sauce", sans-serif !important;
     color: #6d788e !important;
     font-size: 1.1rem;
@@ -701,6 +703,7 @@ body {
         margin-left: 0;
         width: 100%;
     }
+
     .aquapilot-header {
         position: static;
         transform: none;
@@ -710,6 +713,7 @@ body {
         background: transparent;
         backdrop-filter: none;
     }
+
     .aquapilot-text {
         position: static;
         transform: none;
@@ -721,7 +725,7 @@ body {
 }
 
 /* FINAL OVERRIDE – force AquaPilot text font + color */
-.aquapilot-text, 
+.aquapilot-text,
 .aquapilot-text * {
     font-family: "sauce", sans-serif !important;
     color: #6d788e !important;
@@ -739,7 +743,8 @@ body {
 
 .inspiritai-wrapper {
     width: 100%;
-    margin-top: 200px; /* spacing below AquaPilot */
+    margin-top: 200px;
+    /* spacing below AquaPilot */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -778,52 +783,61 @@ body {
 
 /* Images container */
 .inspiritai-images {
-    position: relative;   /* parent */
-    width: 1700px;
-    height: 500px; 
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    /* keeps layout inside the website */
+    height: 520px;
+    /* enough room for staggered layout */
+    margin: 0 auto;
+    /* center the whole image set */
 }
 
-/* ai1 */
+/* ai1 — large arch image */
 .inspiritai-images .ai1 {
-    max-width: 600px; 
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    /* moves 300px to the right */
+    max-width: 550px;
+    /* fits better in frame */
     height: auto;
-    position: relative;
-    left: -60px;
-    top: -20px;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
     object-fit: contain;
-    margin-left: 40px; 
 }
 
-
-/* ai2 */
+/* ai2 — console, centered horizontally under ai1 */
 .inspiritai-images .ai2 {
-    max-width: 400px; 
+    position: absolute;
+    top: 140px;
+    /* moves it down closer to ai1 */
+    left: 480px;
+    /* puts it roughly centered under ai1 */
+    max-width: 260px;
+    /* makes it smaller */
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
     object-fit: contain;
-    margin-top: -20px; /* move down */
-    margin-left: 90px; /* move right */ 
 }
 
-
-/* ai3 */
+/* ai3 — window, 50px right of ai2 and further down */
 .inspiritai-images .ai3 {
-    max-width: 420px;
+    position: absolute;
+    top: 230px;
+    /* below ai2 */
+    left: 540px;
+    /* 50px right of ai2 */
+    max-width: 330px;
     height: auto;
     border-radius: 20px;
-    position: relative;
     box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
     object-fit: contain;
-    margin-top: 150px; /* move down */
-    margin-left: 20px; /* move right */
 }
-
 
 /* Hover effect */
 .inspiritai-images .ai1:hover,
@@ -832,22 +846,21 @@ body {
     transform: scale(1.05);
 }
 
-/* Responsive */
+/* Mobile responsive */
 @media (max-width: 800px) {
     .inspiritai-images {
+        height: auto;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .inspiritai-images .ai1,
     .inspiritai-images .ai2,
     .inspiritai-images .ai3 {
-        width: 90%;
+        position: static;
+        max-width: 90%;
+        margin: 0;
     }
-}
-
-.inspiritai-text, 
-.inspiritai-text * {
-    font-family: "sauce", sans-serif !important;
-    color: #6d788e !important;
 }
