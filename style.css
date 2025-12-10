@@ -947,7 +947,6 @@ body {
     font-size: 1.2rem;
     color: #6d788e;
     text-align: left;
-    margin: 0;
     margin-left: 80px;
 }
 
@@ -989,7 +988,7 @@ body {
 
 /* Spin Up */
 .robot-img-su {
-    width: 240px;
+    width: 340px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
@@ -1002,7 +1001,7 @@ body {
 
 /* Over Under */
 .robot-img-ou {
-    width: 240px;
+    width: 340px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
