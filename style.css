@@ -873,26 +873,16 @@ body {
 /* ------------------- Robotics ------------------- */
 
 /* ------------------- ROBOTICS FINAL POSITIONING FIXES ------------------- */
-/* ------------------- ROBOTICS FINAL POSITIONING FIXES ------------------- */
 
-/* Robotics wrapper */
-.robo-wrapper {
-    width: 100%;
-    margin-top: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-}
+/* 1. Move "06. Robotics" header to the left */
 
-/* Header left */
 .robo-header {
     align-self: flex-start;
     margin-left: 0;
     text-align: left;
 }
 
-/* Text alignment rules */
+/* 2. Text alignment: first line left-centered, second line right-centered */
 .robo-text {
     width: 100%;
     margin-top: 10px;
@@ -908,32 +898,34 @@ body {
     margin-right: 25%;
 }
 
-/* Tipping Point image shift */
+/* 3. Move Tipping Point image left and higher */
 .robo-row:first-of-type .robo-card {
     position: relative;
     left: -470px;
     top: -60px;
+    /* adjust higher or lower if needed */
 }
 
-/* Tipping Point video shift */
+/* 4. Move Tipping Point video directly below the TP image */
 .robo-video-card {
     position: relative;
     left: -470px;
     top: -40px;
+    /* adjust for perfect alignment under image */
 }
 
-/* Keep lower row images on one row */
+/* 5. Keep SU / OU / HS on ONE row with 30px spacing */
 .robo-row:last-of-type {
     gap: 30px;
     flex-wrap: nowrap;
 }
 
-/* Card width */
+/* Make all cards equal width so they stay on one row */
 .robo-card {
     width: 300px;
 }
 
-/* Hover scale for images */
+/* Ensure hover scaling works for ALL images */
 .robo-img {
     transition: transform 0.3s ease;
 }
@@ -947,7 +939,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Caption font */
+/* Caption font fix (Lazydog) */
 .robo-caption {
     font-family: "Lazydog", sans-serif !important;
     font-size: 1rem;
