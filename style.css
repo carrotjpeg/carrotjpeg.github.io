@@ -865,3 +865,66 @@ body {
     font-family: "sauce", sans-serif !important;
     color: #6d788e !important;
 }
+
+/* -----------------------------------------------------------------------------------------------------------------------------------*/
+
+/* ------------------- Robotics ------------------- */
+
+.robo-wrapper {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.robo-header {
+    font-family: "seasons", serif;
+    font-size: 2rem;
+    color: #6d1f42;
+    margin-bottom: 10px;
+}
+
+.robo-stats p {
+    font-family: "Lazydog", sans-serif;
+    font-size: 1.2rem;
+    margin: 4px 0;
+    color: #6d788e;
+}
+
+.robo-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.robo-card {
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.robo-img,
+.robo-video {
+    width: 100%;
+    border-radius: 22px;
+    box-shadow: 0 10px 25px #d2c4df;
+}
+
+/* keep video at 16:9 and remove border */
+.robo-video {
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+/* hover scale only for the video card */
+.robo-video-card:hover {
+    transform: scale(1.04);
+}
+
+.robo-caption {
+    margin-top: 10px;
+    font-family: "sauce", sans-serif;
+    font-size: 1rem;
+    color: #6d1f42;
+}
