@@ -914,9 +914,9 @@ body {
     color: #ff7f6b;
     font-size: 1rem;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 70px;
     position: relative;
-    left: -40px;
+    left: -60px;
     /* keeps caption aligned with moved image */
 }
 
@@ -1029,7 +1029,7 @@ body {
 /* ------------------- Video ------------------- */
 
 .robotics-video {
-    width: 500px;
+    width: 400px;
     aspect-ratio: 16 / 9;
     border-radius: 20px;
     box-shadow: 0px 10px 25px rgba(109, 31, 66, 0.25);
