@@ -914,9 +914,9 @@ body {
     color: #ff7f6b;
     font-size: 1rem;
     text-align: center;
-    margin-top: 270px;
+    margin-top: 300px;
     position: relative;
-    left: -260px;
+    left: -360px;
     /* keeps caption aligned with moved image */
 }
 
@@ -925,6 +925,10 @@ body {
 }
 
 /* Right-side text block */
+.robotics-text-block {
+    margin-left: 100px;
+    margin-top: 40px;
+}
 
 /* Header */
 .robotics-header {
@@ -1025,6 +1029,7 @@ body {
 
 .robotics-video {
     width: 400px;
+    top: 40px;
     aspect-ratio: 16 / 9;
     border-radius: 20px;
     box-shadow: 0px 10px 25px rgba(109, 31, 66, 0.25);
