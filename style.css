@@ -878,7 +878,7 @@ body {
 
 .robo-wrapper {
     width: 100%;
-    margin-top: 500px;
+    margin-top: 900px;
     /* spacing below inspirit */
     display: flex;
     flex-direction: column;
@@ -920,8 +920,8 @@ body {
 .robo-images {
     position: relative;
     width: 100%;
-    max-width: 1200px;
-    height: 420px;
+    max-width: 2000px;
+    height: 920px;
     /* reduced height so text comes closer */
     margin: 0 auto;
 }
