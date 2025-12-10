@@ -898,7 +898,7 @@ body {
 
 /* Big Tipping Point Image */
 .robot-img-tp {
-    width: 520px;
+    width: 320px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
@@ -1008,7 +1008,7 @@ body {
 /* ------------------- Video ------------------- */
 
 .robotics-video {
-    width: 240px;
+    width: 500px;
     aspect-ratio: 16 / 9;
     border-radius: 20px;
     box-shadow: 0px 10px 25px rgba(109, 31, 66, 0.25);
