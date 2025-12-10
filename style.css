@@ -870,75 +870,92 @@ body {
 
 /* ------------------- Robotics ------------------- */
 
-.
 /* ------------------- Robotics ------------------- */
 
+/* ------------------- ROBOTICS FINAL POSITIONING FIXES ------------------- */
+/* ------------------- ROBOTICS FINAL POSITIONING FIXES ------------------- */
+
+/* Robotics wrapper */
 .robo-wrapper {
     width: 100%;
-    margin-top: 160px;
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-/* header fix */
-.robo-header {
-    font-family: "seasons", sans-serif;
-    font-size: 1.8rem;
-    color: #6d1f42;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* text fix */
-.robo-text p {
-    font-family: "sauce", sans-serif !important;
-    color: #6d788e;
-    font-size: 1.1rem;
-    margin: 6px 0;
-    max-width: 700px;
-}
-
-/* layout for rows */
-.robo-row {
-    display: flex;
-    justify-content: center;
     align-items: flex-start;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-top: 40px;
+    position: relative;
 }
 
-/* wrapper for each image/video */
-.robo-card {
-    width: 320px;
-    text-align: center;
-    transition: transform 0.3s ease;
+/* Header left */
+.robo-header {
+    align-self: flex-start;
+    margin-left: 0;
+    text-align: left;
 }
 
-/* image styling */
-.robo-img {
+/* Text alignment rules */
+.robo-text {
     width: 100%;
-    border-radius: 22px;
-    box-shadow: 0px 10px 25px #d2c4df;
+    margin-top: 10px;
+}
+
+.robo-text p:first-child {
+    text-align: left;
+    margin-left: 25%;
+}
+
+.robo-text p:last-child {
+    text-align: right;
+    margin-right: 25%;
+}
+
+/* Tipping Point image shift */
+.robo-row:first-of-type .robo-card {
+    position: relative;
+    left: -470px;
+    top: -60px;
+}
+
+/* Tipping Point video shift */
+.robo-video-card {
+    position: relative;
+    left: -470px;
+    top: -40px;
+}
+
+/* Keep lower row images on one row */
+.robo-row:last-of-type {
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+/* Card width */
+.robo-card {
+    width: 300px;
+}
+
+/* Hover scale for images */
+.robo-img {
     transition: transform 0.3s ease;
 }
 
-/* hover effect */
-.robo-img:hover,
+.robo-img:hover {
+    transform: scale(1.05);
+}
+
+/* Hover scale for video */
 .robo-video-card:hover {
     transform: scale(1.05);
 }
 
-/* caption font fix */
+/* Caption font */
 .robo-caption {
-    margin-top: 10px;
-    font-family: "Lazydog", sans-serif;
+    font-family: "Lazydog", sans-serif !important;
     font-size: 1rem;
     color: #6d1f42;
+    margin-top: 10px;
 }
 
-/* video style */
+/* Video styling */
 .robo-video {
     width: 100%;
     aspect-ratio: 16 / 9;
