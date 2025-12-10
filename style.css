@@ -874,3 +874,155 @@ body {
 
 /* ------------------- ROBOTICS FINAL POSITIONING FIXES ------------------- */
 
+/* ------------------- ROBOTICS ------------------- */
+
+.robotics-wrapper {
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* ------------------- TOP ROW ------------------- */
+
+.robotics-top {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+/* Big Tipping Point Image */
+.robot-img-tp {
+    width: 520px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px #d2c4df;
+    position: relative;
+    left: -80px;
+    transition: transform 0.3s ease;
+}
+.robot-img-tp:hover {
+    transform: scale(1.05);
+}
+
+/* Right-side text block */
+.robotics-text-block {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+/* Header */
+.robotics-header {
+    font-family: "seasons", sans-serif;
+    font-size: 1.8rem;
+    color: #6d1f42;
+    margin-bottom: 20px;
+}
+
+/* Left-positioned text */
+.robotics-left-text {
+    font-family: "sauce", sans-serif;
+    font-size: 1.2rem;
+    color: #6d788e;
+    text-align: left;
+    margin: 0;
+}
+
+/* Right-positioned text */
+.robotics-right-text {
+    font-family: "sauce", sans-serif;
+    font-size: 1.2rem;
+    color: #6d788e;
+    text-align: right;
+    margin: 5px 0 0 0;
+}
+
+/* ------------------- BOTTOM ROW ------------------- */
+
+.robotics-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+    flex-wrap: nowrap;
+}
+
+.robotics-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Captions */
+.robotics-caption {
+    font-family: "Lazydog", sans-serif;
+    color: #ff7f6b;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ------------------- Individual Images ------------------- */
+
+/* Spin Up */
+.robot-img-su {
+    width: 240px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px #d2c4df;
+    transition: transform 0.3s ease;
+}
+.robot-img-su:hover {
+    transform: scale(1.05);
+}
+
+/* Over Under */
+.robot-img-ou {
+    width: 240px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px #d2c4df;
+    transition: transform 0.3s ease;
+}
+.robot-img-ou:hover {
+    transform: scale(1.05);
+}
+
+/* High Stakes */
+.robot-img-hs {
+    width: 240px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px #d2c4df;
+    transition: transform 0.3s ease;
+}
+.robot-img-hs:hover {
+    transform: scale(1.05);
+}
+
+/* ------------------- Video ------------------- */
+
+.robotics-video {
+    width: 240px;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(109, 31, 66, 0.25);
+    border: none;
+    transition: transform 0.3s ease;
+}
+.robotics-video:hover {
+    transform: scale(1.05);
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+
+@media (max-width: 1000px) {
+    .robotics-bottom {
+        flex-wrap: wrap;
+    }
+}
