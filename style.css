@@ -904,7 +904,7 @@ body {
     box-shadow: 0px 10px 25px #d2c4df;
     position: relative;
     left: -40px;
-    top: 20px;
+    top: 70px;
     transition: transform 0.3s ease;
 
 }
@@ -914,9 +914,9 @@ body {
     color: #ff7f6b;
     font-size: 1rem;
     text-align: center;
-    margin-top: 470px;
+    margin-top: 270px;
     position: relative;
-    left: -160px;
+    left: -260px;
     /* keeps caption aligned with moved image */
 }
 
@@ -943,7 +943,7 @@ body {
     font-size: 1.2rem;
     color: #6d788e;
     text-align: left;
-    margin-left: 80px;
+    margin-left: 280px;
 }
 
 /* Right-positioned text */
