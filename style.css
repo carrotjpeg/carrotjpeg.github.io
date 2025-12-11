@@ -914,9 +914,9 @@ body {
     color: #ff7f6b;
     font-size: 1rem;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 320px;
     position: relative;
-    left: -360px;
+    left: -280px;
     /* keeps caption aligned with moved image */
 }
 
