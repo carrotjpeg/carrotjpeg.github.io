@@ -1028,8 +1028,8 @@ body {
 /* ------------------- Video ------------------- */
 
 .robotics-video {
-    width: 415px;
-    top: 70px;
+    width: 400px;
+    top: 85px;
     aspect-ratio: 16 / 9;
     border-radius: 20px;
     box-shadow: 0px 10px 25px rgba(109, 31, 66, 0.25);
@@ -1066,7 +1066,7 @@ body {
 
 /* 3. Move ALL the text in the yellow box downward */
 .robotics-text-block {
-    margin-top: 170px;
+    margin-top: 150px;
     /* was 40px → now lower */
 }
 
