@@ -1054,19 +1054,19 @@ body {
 /* 1. Move header slightly to the right */
 .robotics-header {
     position: relative;
-    left: 160;
+    left: 180;
     /* adjust if you want more or less */
 }
 
 /* 2. Move ONLY the first text line to the far left */
 .robotics-left-text {
-    margin-left: -100px;
+    margin-left: -120px;
     /* shift left */
 }
 
 /* 3. Move ALL the text in the yellow box downward */
 .robotics-text-block {
-    margin-top: 90px;
+    margin-top: 120px;
     /* was 40px → now lower */
 }
 
