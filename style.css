@@ -1054,13 +1054,13 @@ body {
 /* 1. Move header slightly to the right */
 .robotics-header {
     position: relative;
-    left: 60px;
+    left: 160;
     /* adjust if you want more or less */
 }
 
 /* 2. Move ONLY the first text line to the far left */
 .robotics-left-text {
-    margin-left: -60px;
+    margin-left: -100px;
     /* shift left */
 }
 
@@ -1069,6 +1069,13 @@ body {
     margin-top: 90px;
     /* was 40px → now lower */
 }
+
+/* Move the video caption downward */
+.robotics-bottom .robotics-item:first-child .robotics-caption {
+    margin-top: 25px;
+    /* adjust higher for more spacing */
+}
+
 
 /* 4. Decrease gap between the top row and bottom row */
 .robotics-bottom {
