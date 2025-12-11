@@ -1060,7 +1060,7 @@ body {
 
 /* 2. Move ONLY the first text line to the far left */
 .robotics-left-text {
-    margin-left: -170px;
+    margin-left: -230px;
     /* shift left */
 }
 
@@ -1118,7 +1118,7 @@ body {
 
 /* 1. Header 30px further right */
 .robotics-header {
-    left: 300px !important;
+    left: 270px !important;
 }
 
 /* 2. Reduce space between InspiritAI and Robotics */
