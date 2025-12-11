@@ -904,7 +904,7 @@ body {
     box-shadow: 0px 10px 25px #d2c4df;
     position: relative;
     left: -40px;
-    top: 120px;
+    top: 140px;
     transition: transform 0.3s ease;
 
 }
@@ -914,7 +914,7 @@ body {
     color: #ff7f6b;
     font-size: 1rem;
     text-align: center;
-    margin-top: 380px;
+    margin-top: 400px;
     position: relative;
     left: -280px;
     /* keeps caption aligned with moved image */
