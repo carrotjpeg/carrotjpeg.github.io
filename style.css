@@ -1060,13 +1060,13 @@ body {
 
 /* 2. Move ONLY the first text line to the far left */
 .robotics-left-text {
-    margin-left: -120px;
+    margin-left: -190px;
     /* shift left */
 }
 
 /* 3. Move ALL the text in the yellow box downward */
 .robotics-text-block {
-    margin-top: 220px;
+    margin-top: 170px;
     /* was 40px → now lower */
 }
 
