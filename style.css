@@ -1098,12 +1098,6 @@ body {
 
 /* ---------------- TEXT POSITION FIX ---------------- */
 
-/* Remove the earlier global downward shift */
-.robotics-text-block {
-    margin-top: 40px !important;
-    /* reset closer to normal */
-}
-
 /* Move ONLY the two text lines downward */
 .robotics-left-text,
 .robotics-right-text {
