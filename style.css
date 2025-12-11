@@ -1054,7 +1054,7 @@ body {
 /* 1. Move header slightly to the right */
 .robotics-header {
     position: relative;
-    left: 180;
+    left: 200;
     /* adjust if you want more or less */
 }
 
@@ -1092,5 +1092,30 @@ body {
 
 /* Add 20px vertical spacing between the two robotics text lines */
 .robotics-right-text {
-    margin-top: 20px !important;   /* was 5px */
+    margin-top: 20px !important;
+    /* was 5px */
+}
+
+/* ---------------- TEXT POSITION FIX ---------------- */
+
+/* Remove the earlier global downward shift */
+.robotics-text-block {
+    margin-top: 40px !important;
+    /* reset closer to normal */
+}
+
+/* Move ONLY the two text lines downward */
+.robotics-left-text,
+.robotics-right-text {
+    position: relative;
+    top: 30px;
+    /* adjust this for more or less drop */
+}
+
+/* ---------------- SINGLE-LINE CAPTION FIX ---------------- */
+.big-tp-caption {
+    white-space: nowrap;
+    /* prevents wrapping */
+    display: inline-block;
+    /* lets the width expand naturally */
 }
