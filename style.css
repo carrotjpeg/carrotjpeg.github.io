@@ -1118,7 +1118,7 @@ body {
 
 /* 1. Header 30px further right */
 .robotics-header {
-    left: 390px !important;
+    left: 320px !important;
 }
 
 /* 2. Reduce space between InspiritAI and Robotics */
@@ -1130,5 +1130,5 @@ body {
 .robotics-left-text,
 .robotics-right-text {
     position: relative !important;
-    top: -80px !important;   /* adjust if you want more/less */
+    top: -40px !important;   /* adjust if you want more/less */
 }
