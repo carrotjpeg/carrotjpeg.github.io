@@ -1028,7 +1028,7 @@ body {
 /* ------------------- Video ------------------- */
 
 .robotics-video {
-    width: 400px;
+    width: 415px;
     top: 70px;
     aspect-ratio: 16 / 9;
     border-radius: 20px;
@@ -1072,7 +1072,7 @@ body {
 
 /* Move the video caption downward */
 .robotics-bottom .robotics-item:first-child .robotics-caption {
-    margin-top: 25px;
+    margin-top: 40px;
     /* adjust higher for more spacing */
 }
 
@@ -1088,4 +1088,9 @@ body {
     position: relative;
     top: 20px;
     /* move video down */
+}
+
+/* Add 20px vertical spacing between the two robotics text lines */
+.robotics-right-text {
+    margin-top: 20px !important;   /* was 5px */
 }
