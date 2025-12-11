@@ -1130,5 +1130,5 @@ body {
 .robotics-left-text,
 .robotics-right-text {
     position: relative !important;
-    top: 50px !important;   /* adjust if you want more/less */
+    top: 150px !important;   /* adjust if you want more/less */
 }
