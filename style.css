@@ -1066,7 +1066,7 @@ body {
 
 /* 3. Move ALL the text in the yellow box downward */
 .robotics-text-block {
-    margin-top: 120px;
+    margin-top: 220px;
     /* was 40px → now lower */
 }
 
