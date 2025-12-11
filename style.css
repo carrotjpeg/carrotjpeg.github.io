@@ -1147,7 +1147,7 @@ body {
     font-size: 3rem;
     color: #6d1f42;
     text-align: left;
-    margin-left: 180px;
+    margin-left: 20px;
 }
 
 .cad-subtitle {
@@ -1175,7 +1175,7 @@ body {
 }
 
 .labubu-img {
-    width: 130px;
+    width: 170px;
     height: auto;
 }
 
@@ -1185,6 +1185,7 @@ body {
 
 .labubu-top {
     margin-top: -30px;
+    margin-right: 70px;
 }
 
 .cad-caption {
