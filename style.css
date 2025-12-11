@@ -236,7 +236,7 @@ body {
     color: #efd365;
 }
 
-#skills h3 {
+#clubs h3 {
     color: #b9db97;
 }
 
@@ -1130,5 +1130,5 @@ body {
 .robotics-left-text,
 .robotics-right-text {
     position: relative !important;
-    top: 20px !important;   /* adjust if you want more/less */
+    top: -20px !important;   /* adjust if you want more/less */
 }
