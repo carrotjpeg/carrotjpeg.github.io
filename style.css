@@ -1185,7 +1185,7 @@ body {
 
 .labubu-top {
     margin-top: -30px;
-    margin-right: 70px;
+    margin-right: -70px;
 }
 
 .cad-caption {
@@ -1202,8 +1202,8 @@ body {
 }
 
 .cad-slides-wrapper {
-    width: 500px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
 }
 
 .cad-slides {
@@ -1212,6 +1212,7 @@ body {
     border-radius: 0;
     /* no rounded corners */
     border: none;
+    margin-right: 200px;
 }
 
 /* RIGHT COLUMN — PDF */
@@ -1220,11 +1221,12 @@ body {
 }
 
 .pdf-wrapper {
-    width: 350px;
+    width: 400px;
     height: 500px;
     overflow: hidden;
     border: 2px solid #dcdcdc;
     border-radius: 10px;
+    margin-right: 130px;
 }
 
 .pdf-viewer {
