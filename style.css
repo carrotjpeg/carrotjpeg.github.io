@@ -1185,7 +1185,7 @@ body {
 
 .labubu-top {
     margin-top: -30px;
-    margin-right: -70px;
+    margin-right: -170px;
 }
 
 .cad-caption {
@@ -1212,7 +1212,6 @@ body {
     border-radius: 0;
     /* no rounded corners */
     border: none;
-    margin-right: 200px;
 }
 
 /* RIGHT COLUMN — PDF */
@@ -1226,7 +1225,6 @@ body {
     overflow: hidden;
     border: 2px solid #dcdcdc;
     border-radius: 10px;
-    margin-right: 130px;
 }
 
 .pdf-viewer {
@@ -1234,6 +1232,13 @@ body {
     height: 100%;
     border: none;
 }
+
+.cad-center,
+.cad-right {
+    margin-left: 80px;
+    /* pushes both center and right rightward */
+}
+
 
 /* Link styling */
 .cad-link {
