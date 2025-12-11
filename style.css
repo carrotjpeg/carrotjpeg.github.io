@@ -916,7 +916,7 @@ body {
     text-align: center;
     margin-top: 400px;
     position: relative;
-    left: -320px;
+    left: -300px;
     /* keeps caption aligned with moved image */
 }
 
@@ -1054,7 +1054,7 @@ body {
 /* 1. Move header slightly to the right */
 .robotics-header {
     position: relative;
-    left: 200;
+    left: 250;
     /* adjust if you want more or less */
 }
 
