@@ -1113,3 +1113,22 @@ body {
     display: inline-block;
     /* lets the width expand naturally */
 }
+
+/* ------------------- ROBOTICS CLEAN OVERRIDES ------------------- */
+
+/* 1. Header 30px further right */
+.robotics-header {
+    left: 30px !important;
+}
+
+/* 2. Reduce space between InspiritAI and Robotics */
+.robotics-wrapper {
+    margin-top: -40px !important;
+}
+
+/* 3. Move ONLY the two robotics text lines downward */
+.robotics-left-text,
+.robotics-right-text {
+    position: relative !important;
+    top: 50px !important;   /* adjust if you want more/less */
+}
