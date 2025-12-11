@@ -1130,5 +1130,111 @@ body {
 .robotics-left-text,
 .robotics-right-text {
     position: relative !important;
-    top: -20px !important;   /* adjust if you want more/less */
+    top: -20px !important;
+    /* adjust if you want more/less */
+}
+
+/* ===================== CAD SECTION ===================== */
+
+.cad-section {
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 80px;
+}
+
+.cad-header {
+    font-family: "seasons", sans-serif;
+    font-size: 3rem;
+    color: #6d1f42;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.cad-subtitle {
+    text-align: center;
+    color: #ff9c8f;
+    font-family: "Lazydog", sans-serif;
+    font-size: 1.4rem;
+    margin-top: -10px;
+    margin-bottom: 60px;
+}
+
+/* Layout: 3 columns */
+.cad-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+/* LEFT COLUMN — LABUBU */
+.cad-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.labubu-img {
+    width: 230px;
+    height: auto;
+}
+
+.labubu-front {
+    margin-bottom: -20px;
+}
+
+.labubu-top {
+    margin-top: -20px;
+}
+
+.cad-caption {
+    font-family: "Lazydog", sans-serif;
+    font-size: 1.1rem;
+    color: #6d788e;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* CENTER COLUMN — SLIDESHOW */
+.cad-center {
+    text-align: center;
+}
+
+.cad-slides-wrapper {
+    width: 960px;
+    height: 569px;
+}
+
+.cad-slides {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    /* no rounded corners */
+    border: none;
+}
+
+/* RIGHT COLUMN — PDF */
+.cad-right {
+    text-align: center;
+}
+
+.pdf-wrapper {
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Link styling */
+.cad-link {
+    color: #6d788e;
+    text-decoration: underline;
+    font-family: "Lazydog", sans-serif;
 }
