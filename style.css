@@ -1184,8 +1184,8 @@ body {
 }
 
 .labubu-top {
-    margin-top: -30px;
-    margin-right: -170px;
+    margin-top: -25px;
+    margin-right: -190px;
 }
 
 .cad-caption {
@@ -1233,10 +1233,12 @@ body {
     border: none;
 }
 
-.cad-center,
 .cad-right {
     margin-left: 80px;
-    /* pushes both center and right rightward */
+}
+
+.cad-caption{
+    margin-left: 120px;
 }
 
 
