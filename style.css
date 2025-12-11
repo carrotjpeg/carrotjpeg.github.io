@@ -1048,3 +1048,37 @@ body {
         flex-wrap: wrap;
     }
 }
+
+/* ------------------- ROBOTICS FINAL OVERRIDES ------------------- */
+
+/* 1. Move header slightly to the right */
+.robotics-header {
+    position: relative;
+    left: 60px;
+    /* adjust if you want more or less */
+}
+
+/* 2. Move ONLY the first text line to the far left */
+.robotics-left-text {
+    margin-left: -60px;
+    /* shift left */
+}
+
+/* 3. Move ALL the text in the yellow box downward */
+.robotics-text-block {
+    margin-top: 90px;
+    /* was 40px → now lower */
+}
+
+/* 4. Decrease gap between the top row and bottom row */
+.robotics-bottom {
+    margin-top: 40px;
+    /* was 80px */
+}
+
+/* 5. Move the Tipping Point video downward */
+.robotics-video {
+    position: relative;
+    top: 20px;
+    /* move video down */
+}
