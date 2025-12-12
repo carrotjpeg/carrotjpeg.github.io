@@ -1157,6 +1157,7 @@ body {
     font-size: 1.4rem;
     margin-top: -10px;
     margin-bottom: 60px;
+    margin-right: 100px;
 }
 
 /* Layout: 3 columns */
@@ -1226,7 +1227,6 @@ body {
     overflow: hidden;
     border: 2px solid #dcdcdc;
     border-radius: 10px;
-    margin-right: -50px;
 }
 
 .pdf-viewer {
@@ -1239,7 +1239,7 @@ body {
     margin-left: 80px;
 }
 
-.cad-center{
+.cad-center {
     margin-left: 120px;
 }
 
@@ -1249,4 +1249,9 @@ body {
     color: #6d788e;
     text-decoration: underline;
     font-family: "Lazydog", sans-serif;
+}
+
+.cad-right {
+    text-align: center;
+    transform: translateX(80px);
 }
