@@ -1260,3 +1260,7 @@ body {
 .cad-section {
     border-top: none !important;
 }
+
+.cad-section {
+    padding-top: 40px !important;  /* was effectively 160px */
+}
