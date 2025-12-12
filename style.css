@@ -1255,3 +1255,8 @@ body {
     text-align: center;
     transform: translateX(50px);
 }
+
+#cad,
+.cad-section {
+    border-top: none !important;
+}
