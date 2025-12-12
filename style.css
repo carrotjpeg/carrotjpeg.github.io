@@ -1204,6 +1204,7 @@ body {
 .cad-slides-wrapper {
     width: 600px;
     height: 500px;
+    margin-right: -200px;
 }
 
 .cad-slides {
