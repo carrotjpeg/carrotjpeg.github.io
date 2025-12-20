@@ -1329,7 +1329,7 @@ body {
 .research-text {
     position: relative;
     top: 400px;
-    margin-left: -30px;
+    margin-left: 60px;
     font-family: "sauce", sans-serif;
     color: #6b7c93;
     font-size: 0.95rem;
@@ -1399,9 +1399,9 @@ body {
 
 .img2-caption {
     position: relative;
-    margin-left: -30px;
+    margin-left: 60px;
     top: -100px;
-    margin-top: -370px;
+    margin-top: -400px;
     font-family: "Lazydog", sans-serif;
     color: #db7a73;
     font-size: 1.05rem;
