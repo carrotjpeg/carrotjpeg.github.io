@@ -1262,5 +1262,95 @@ body {
 }
 
 .cad-section {
-    padding-top: 40px !important;  /* was effectively 160px */
+    padding-top: 40px !important;
+    /* was effectively 160px */
+}
+
+/* ------------------------------------------------------------------------------ research*/
+
+.research-section {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.research-title {
+    font-family: "Lazydog", sans-serif;
+    color: #f2c94c;
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+}
+
+.research-columns {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.research-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.research-center {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.research-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.research-img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.research-caption {
+    font-family: "Lazydog", sans-serif;
+    color: #db7a73;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.research-text {
+    font-family: "Lazydog", sans-serif;
+    color: #6b7c93;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 360px;
+}
+
+.research-pdf {
+    width: 360px;
+    height: 480px;
+    border: none;
+    border-radius: 12px;
+}
+
+
+.research-left-text {
+    font-family: "Lazydog", sans-serif;
+    color: #6b7c93;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 360px;
+    margin-bottom: 25px;
+    text-align: center;
 }
