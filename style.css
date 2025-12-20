@@ -1344,7 +1344,9 @@ body {
 
 
 .research-left-text {
+    position: relative;
     top: 500px;
+
     font-family: "sauce", sans-serif;
     color: #6b7c93;
     font-size: 0.95rem;
@@ -1353,6 +1355,7 @@ body {
     margin-bottom: 125px;
     text-align: left;
 }
+
 
 /* ===================== RESEARCH IMAGES ===================== */
 
@@ -1368,7 +1371,7 @@ body {
     width: 520px;
     border-radius: 20px;
     margin-top: -200px;
-    margin-left: -50px;
+    margin-left: -80px;
     transition: transform 0.3s ease;
 }
 
@@ -1392,7 +1395,7 @@ body {
 }
 
 .img2-caption {
-    margin-top: -350px;
+    margin-top: -330px;
     font-family: "Lazydog", sans-serif;
     color: #db7a73;
     font-size: 1.05rem;
