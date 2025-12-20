@@ -1274,6 +1274,11 @@ body {
     padding-bottom: 80px;
 }
 
+#research {
+    border-top: none !important;
+}
+
+
 .research-title {
     font-family: "Lazydog", sans-serif;
     color: #f2c94c;
