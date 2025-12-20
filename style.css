@@ -1409,3 +1409,8 @@ body {
     color: #db7a73;
     font-size: 1.05rem;
 }
+
+#research,
+.research-section {
+    border-top: none !important;
+}
