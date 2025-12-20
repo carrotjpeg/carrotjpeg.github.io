@@ -1344,6 +1344,7 @@ body {
 
 
 .research-left-text {
+    top: 500px;
     font-family: "sauce", sans-serif;
     color: #6b7c93;
     font-size: 0.95rem;
@@ -1367,6 +1368,7 @@ body {
     width: 520px;
     border-radius: 20px;
     margin-top: -200px;
+    margin-left: -50px;
     transition: transform 0.3s ease;
 }
 
@@ -1378,7 +1380,7 @@ body {
 
 /* ---------- IMAGE 2 (group photo) ---------- */
 .research-img2 {
-    width: 500px;
+    width: 450px;
     border-radius: 22px;
     transition: transform 0.3s ease;
 }
