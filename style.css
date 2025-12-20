@@ -1429,9 +1429,8 @@ section#research {
 /* ===================== CLUBS ===================== */
 
 .club-section {
-    padding: 40px 10% 60px;
+    padding: 120px 10%;
 }
-
 
 .club-content {
     display: flex;
@@ -1508,4 +1507,8 @@ section#research {
 
 .club-section {
     border-top: none !important;
+}
+
+.cali-section {
+    padding-top: 40px;
 }
