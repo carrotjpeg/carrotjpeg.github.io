@@ -1280,7 +1280,7 @@ body {
 
 .research-columns {
     display: flex;
-    margin-left: 40px;
+    margin-left: -10px;
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
