@@ -1414,3 +1414,11 @@ body {
 .research-section {
     border-top: none !important;
 }
+
+.research-section {
+    padding-top: 40px;
+}
+
+#research h3 {
+    margin-bottom: 20px;
+}
