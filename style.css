@@ -1361,7 +1361,7 @@ body {
 
 /* ---------- IMAGE 1 (bottom left) ---------- */
 .research-img1 {
-    width: 360px;
+    width: 520px;
     border-radius: 20px;
     transition: transform 0.3s ease;
 }
@@ -1386,7 +1386,7 @@ body {
 }
 
 .img2-caption {
-    margin-top: 120px;
+    margin-top: -50px;
     font-family: "Lazydog", sans-serif;
     color: #db7a73;
     font-size: 1.05rem;
