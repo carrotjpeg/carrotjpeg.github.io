@@ -1442,6 +1442,7 @@ section#research {
 /* TEXT */
 .club-text {
     max-width: 520px;
+    text-align: left;
 }
 
 .club-title {
@@ -1449,6 +1450,8 @@ section#research {
     font-size: 2.2rem;
     color: #6d1f42;
     margin-bottom: 30px;
+    white-space: nowrap;
+    
 }
 
 .club-text p {
@@ -1464,4 +1467,5 @@ section#research {
 .club-image-single img {
     width: 420px;
     border-radius: 20px;
+    margin-left: 40px;
 }
