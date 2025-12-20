@@ -1280,13 +1280,15 @@ body {
 
 .research-columns {
     display: flex;
-    margin-left: -100px;
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
     max-width: 1400px;
-    margin: 0 auto;
+
+    margin-left: -100px;
+    margin-right: auto;
 }
+
 
 .research-left {
     flex: 1;
