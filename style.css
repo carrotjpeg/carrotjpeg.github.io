@@ -1424,3 +1424,44 @@ section.research-section {
 section#research {
     margin-bottom: 0 !important;
 }
+
+
+/* ===================== CLUBS ===================== */
+
+.club-section {
+    padding: 120px 10%;
+}
+
+.club-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+/* TEXT */
+.club-text {
+    max-width: 520px;
+}
+
+.club-title {
+    font-family: "seasons", serif;
+    font-size: 2.2rem;
+    color: #6d1f42;
+    margin-bottom: 30px;
+}
+
+.club-text p {
+    font-family: "sauce", sans-serif;
+    color: #6b7c93;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+/* IMAGES */
+/* SINGLE IMAGE (ESB) */
+.club-image-single img {
+    width: 420px;
+    border-radius: 20px;
+}
