@@ -1330,7 +1330,7 @@ body {
     position: relative;
     top: 350px;
     margin-left: 60px;
-    left: 30px;
+    left: 18px;
     font-family: "sauce", sans-serif;
     color: #6b7c93;
     font-size: 0.95rem;
@@ -1387,7 +1387,7 @@ body {
     position: relative;
     top: -100px;
     width: 400px;
-    left: 30px;
+    left: 20px;
     border-radius: 22px;
     margin-left: 40px;
     transition: transform 0.3s ease;
@@ -1404,7 +1404,7 @@ body {
     margin-left: 170px;
     top: -100px;
     margin-top: -330px;
-    left: 30px;
+    left: 20px;
     font-family: "Lazydog", sans-serif;
     color: #db7a73;
     font-size: 1.05rem;
