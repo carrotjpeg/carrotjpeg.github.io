@@ -1330,7 +1330,7 @@ body {
     position: relative;
     top: 350px;
     margin-left: 60px;
-    left: 18px;
+    left: 17px;
     font-family: "sauce", sans-serif;
     color: #6b7c93;
     font-size: 0.95rem;
@@ -1412,5 +1412,21 @@ body {
 
 #research,
 .research-section {
+    border-top: none !important;
+}
+
+/* tighten ONLY the Research title section spacing */
+section#research {
+    padding-top: 160px !important;
+    /* keep your header spacing the same */
+    padding-bottom: 20px !important;
+    /* this removes the huge gap */
+    border-top: none !important;
+}
+
+/* tighten ONLY the Research content section spacing */
+section.research-section {
+    padding-top: 20px !important;
+    padding-bottom: 70px !important;
     border-top: none !important;
 }
