@@ -1414,8 +1414,3 @@ body {
 .research-section {
     border-top: none !important;
 }
-
-/* Tighten Research section ONLY (no layout changes) */
-section.research-section {
-    padding-top: 40px !important;
-}
