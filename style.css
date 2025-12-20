@@ -1274,10 +1274,9 @@ body {
 
 .research-section {
     width: 100%;
-    padding-top: 40px;   /* smaller = less space above */
-    padding-bottom: 70px;
+    padding-top: 120px;
+    padding-bottom: 80px;
 }
-
 
 .research-columns {
     display: flex;
@@ -1416,3 +1415,7 @@ body {
     border-top: none !important;
 }
 
+/* Tighten Research section ONLY (no layout changes) */
+section.research-section {
+    padding-top: 40px !important;
+}
