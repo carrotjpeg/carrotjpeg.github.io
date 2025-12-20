@@ -1324,7 +1324,7 @@ body {
 }
 
 .research-text {
-    font-family: "Lazydog", sans-serif;
+    font-family: "sauce", sans-serif;
     color: #6b7c93;
     font-size: 0.95rem;
     line-height: 1.6;
@@ -1363,7 +1363,6 @@ body {
 .research-img1 {
     width: 360px;
     border-radius: 20px;
-    box-shadow: 0px 10px 25px #d2c4df;
     transition: transform 0.3s ease;
 }
 
@@ -1377,7 +1376,6 @@ body {
 .research-img2 {
     width: 420px;
     border-radius: 22px;
-    box-shadow: 0px 12px 28px #d2c4df;
     transition: transform 0.3s ease;
 }
 
@@ -1390,6 +1388,6 @@ body {
 .img2-caption {
     margin-top: 10px;
     font-family: "Lazydog", sans-serif;
-    color: #efd365;
+    color: #db7a73;
     font-size: 1.05rem;
 }
