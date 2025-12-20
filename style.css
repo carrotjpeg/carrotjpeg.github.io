@@ -1417,7 +1417,7 @@ body {
 
 /* pull research content UP toward the title */
 section.research-section {
-    margin-top: -180px !important;
+    margin-top: -170px !important;
 }
 
 /* optional: reduce extra space under the title */
