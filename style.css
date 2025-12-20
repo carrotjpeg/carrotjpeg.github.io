@@ -1349,7 +1349,7 @@ body {
     font-size: 0.95rem;
     line-height: 1.6;
     max-width: 360px;
-    margin-bottom: 0px;
+    margin-bottom: 125px;
     text-align: left;
 }
 
@@ -1366,6 +1366,7 @@ body {
 .research-img1 {
     width: 520px;
     border-radius: 20px;
+    margin-top: -200px;
     transition: transform 0.3s ease;
 }
 
