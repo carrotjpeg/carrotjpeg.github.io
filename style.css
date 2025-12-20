@@ -1280,7 +1280,7 @@ body {
 
 .research-columns {
     display: flex;
-    margin-left: -10px;
+    margin-left: -100px;
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
@@ -1387,7 +1387,7 @@ body {
 }
 
 .img2-caption {
-    margin-top: -50px;
+    margin-top: -450px;
     font-family: "Lazydog", sans-serif;
     color: #db7a73;
     font-size: 1.05rem;
