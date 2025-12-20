@@ -1451,7 +1451,7 @@ section#research {
     color: #6d1f42;
     margin-bottom: 30px;
     white-space: nowrap;
-    
+
 }
 
 .club-text p {
@@ -1470,4 +1470,33 @@ section#research {
     border-radius: 20px;
     margin-left: 100px;
     margin-top: 20px;
+}
+
+
+/* ===================== CALI ===================== */
+
+.cali-content {
+    justify-content: center;
+}
+
+.cali-text {
+    max-width: 900px;
+    text-align: center;
+}
+
+.cali-text p {
+    margin-left: 0;
+}
+
+/* Wide image underneath text */
+.cali-image-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.cali-image-wrapper img {
+    width: 900px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px #d2c4df;
 }
