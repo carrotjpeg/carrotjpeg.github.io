@@ -1327,6 +1327,8 @@ body {
 }
 
 .research-text {
+    position: relative;
+    top: 500px;
     font-family: "sauce", sans-serif;
     color: #6b7c93;
     font-size: 0.95rem;
@@ -1344,9 +1346,6 @@ body {
 
 
 .research-left-text {
-    position: relative;
-    top: 500px;
-
     font-family: "sauce", sans-serif;
     color: #6b7c93;
     font-size: 0.95rem;
@@ -1395,7 +1394,7 @@ body {
 }
 
 .img2-caption {
-    margin-top: -330px;
+    margin-top: -370px;
     font-family: "Lazydog", sans-serif;
     color: #db7a73;
     font-size: 1.05rem;
