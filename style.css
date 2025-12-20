@@ -1278,14 +1278,6 @@ body {
     border-top: none !important;
 }
 
-
-.research-title {
-    font-family: "Lazydog", sans-serif;
-    color: #f2c94c;
-    font-size: 1.4rem;
-    margin-bottom: 50px;
-}
-
 .research-columns {
     display: flex;
     justify-content: center;
