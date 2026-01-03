@@ -689,9 +689,7 @@ body {
     margin-top: 0;
     text-align: center;
     padding: 0;
-    /* optional, keeps it tight */
     border-radius: 0;
-    /* optional */
     font-family: "sauce", sans-serif !important;
     color: #6d788e !important;
     font-size: 1.1rem;
@@ -724,7 +722,7 @@ body {
     }
 }
 
-/* FINAL OVERRIDE – force AquaPilot text font + color */
+
 .aquapilot-text,
 .aquapilot-text * {
     font-family: "sauce", sans-serif !important;
@@ -739,18 +737,15 @@ body {
 
 /* ------------------- Inspirit AI ------------------- */
 
-/* ------------------- Inspirit AI ------------------- */
 
 .inspiritai-wrapper {
     width: 100%;
     margin-top: 200px;
-    /* spacing below AquaPilot */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Header */
 .inspiritai-header {
     font-family: "seasons", sans-serif;
     font-size: 1.8rem;
@@ -787,7 +782,6 @@ body {
     width: 100%;
     max-width: 1200px;
     height: 420px;
-    /* reduced height so text comes closer */
     margin: 0 auto;
 }
 
@@ -795,11 +789,8 @@ body {
 .inspiritai-images .ai1 {
     position: absolute;
     top: 10px;
-    /* moved upward */
     left: -80px;
-    /* shifted more right */
     max-width: 630px;
-    /* slightly smaller to tighten spacing */
     height: auto;
     border-radius: 20px;
     box-shadow: 0px 10px 25px #d2c4df;
@@ -812,9 +803,7 @@ body {
 .inspiritai-images .ai2 {
     position: absolute;
     top: 10px;
-    /* closer to ai1 */
     left: 570px;
-    /* centered between ai1 and ai3 */
     max-width: 360px;
     height: auto;
     border-radius: 20px;
@@ -828,9 +817,7 @@ body {
 .inspiritai-images .ai3 {
     position: absolute;
     top: 190px;
-    /* lowered but closer than before */
     left: 870px;
-    /* shifted left so gap is smaller */
     max-width: 430px;
     height: auto;
     border-radius: 20px;
@@ -869,12 +856,6 @@ body {
 /* -----------------------------------------------------------------------------------------------------------------------------------*/
 
 /* ------------------- Robotics ------------------- */
-
-/* ------------------- Robotics ------------------- */
-
-/* ------------------- ROBOTICS FINAL POSITIONING FIXES ------------------- */
-
-/* ------------------- ROBOTICS ------------------- */
 
 .robotics-wrapper {
     width: 100%;
@@ -917,14 +898,12 @@ body {
     margin-top: 400px;
     position: relative;
     left: -300px;
-    /* keeps caption aligned with moved image */
 }
 
 .robot-img-tp:hover {
     transform: scale(1.05);
 }
 
-/* Right-side text block */
 .robotics-text-block {
     margin-left: 100px;
     margin-top: 40px;
@@ -1055,73 +1034,53 @@ body {
 .robotics-header {
     position: relative;
     left: 250;
-    /* adjust if you want more or less */
 }
 
-/* 2. Move ONLY the first text line to the far left */
 .robotics-left-text {
     margin-left: -230px;
-    /* shift left */
 }
 
-/* 3. Move ALL the text in the yellow box downward */
 .robotics-text-block {
     margin-top: 150px;
-    /* was 40px → now lower */
 }
 
-/* Move the video caption downward */
 .robotics-bottom .robotics-item:first-child .robotics-caption {
     margin-top: 40px;
-    /* adjust higher for more spacing */
 }
 
-
-/* 4. Decrease gap between the top row and bottom row */
 .robotics-bottom {
     margin-top: 40px;
-    /* was 80px */
 }
 
-/* 5. Move the Tipping Point video downward */
 .robotics-video {
     position: relative;
     top: 20px;
-    /* move video down */
 }
 
-/* Add 20px vertical spacing between the two robotics text lines */
 .robotics-right-text {
     margin-top: 20px !important;
-    /* was 5px */
 }
 
 /* ---------------- TEXT POSITION FIX ---------------- */
 
-/* Move ONLY the two text lines downward */
 .robotics-left-text,
 .robotics-right-text {
     position: relative;
     top: 30px;
-    /* adjust this for more or less drop */
 }
 
 /* ---------------- SINGLE-LINE CAPTION FIX ---------------- */
 .big-tp-caption {
     white-space: nowrap;
-    /* prevents wrapping */
     display: inline-block;
-    /* lets the width expand naturally */
 }
 
 /* ------------------- ROBOTICS CLEAN OVERRIDES ------------------- */
 
-/* 1. Header 30px further right */
 .robotics-header {
     left: 270px !important;
 }
 
-/* 2. Reduce space between InspiritAI and Robotics */
 .robotics-wrapper {
     margin-top: -40px !important;
 }
@@ -1131,7 +1090,6 @@ body {
 .robotics-right-text {
     position: relative !important;
     top: -20px !important;
-    /* adjust if you want more/less */
 }
 
 /* ===================== CAD SECTION ===================== */
@@ -1212,7 +1170,6 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 0;
-    /* no rounded corners */
     border: none;
 }
 
@@ -1263,7 +1220,6 @@ body {
 
 .cad-section {
     padding-top: 40px !important;
-    /* was effectively 160px */
 }
 
 /* ------------------------------------------------------------------------------ research*/
@@ -1415,18 +1371,15 @@ body {
     border-top: none !important;
 }
 
-/* pull research content UP toward the title */
 section.research-section {
     margin-top: -170px !important;
 }
 
-/* optional: reduce extra space under the title */
 section#research {
     margin-bottom: 0 !important;
 }
 
 
-/* ===================== CLUBS ===================== */
 
 .club-section {
     padding: 120px 10%;
@@ -1463,7 +1416,6 @@ section#research {
     margin-left: 50px;
 }
 
-/* IMAGES */
 /* SINGLE IMAGE (ESB) */
 .club-image-single img {
     width: 420px;
