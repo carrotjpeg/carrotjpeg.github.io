@@ -1,251 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9G61XN2FL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evana Thomson — Projects</title>
+  <meta name="description" content="Selected hardware, electrical, and software projects by Evana Thomson." />
 
-        gtag('config', 'G-Q9G61XN2FL');
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects | Evana Thomson</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="images/lightbulb_favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="preload" href="fonts/Seasons.otf" as="font" type="font/otf" crossorigin />
+  <link rel="preload" href="fonts/Lazydog.otf" as="font" type="font/otf" crossorigin />
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600&family=Lilita+One&display=swap" />
+
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body>
-    <header>
-        <a href="index.html" class="home-icon">
-            <img src="images/lightbulb.png" alt="Home" class="lightbulb">
-        </a>
+<body data-page="projects">
+
+  <div id="site-nav-mount"></div>
+
+  <main class="page">
+
+    <header class="projects-head">
+      <div class="intro">Selected Work</div>
+      <nav class="projects-filters" aria-label="Project filter">
+        <button type="button" class="is-active" data-filter="all">all</button>
+        <button type="button" data-filter="compe">comp e</button>
+        <button type="button" data-filter="ee">ee</button>
+        <button type="button" data-filter="cs">cs</button>
+      </nav>
     </header>
 
-    <nav>
-        <div class="nav-buttons">
-            <button onclick="location.href='index.html#about'">About Me</button>
-            <button onclick="location.href='projects.html'">Projects</button>
-            <button onclick="location.href='research.html'">Research</button>
-            <button onclick="location.href='clubs.html'">clubs</button>
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- ── Computer Engineering ── -->
+      <a class="project-tile" data-cat="compe" href="projects/mit-beaverworks.html">
+        <div class="ph">drop image · mit-beaverworks.png</div>
+        <img class="cover" src="images/projects/mit-beaverworks.png" alt="" onerror="this.remove()" />
+        <div class="overlay">
+          <div class="pt-name">MIT Beaverworks</div>
+          <div class="pt-date">Summer 2024</div>
         </div>
-    </nav>
+      </a>
 
-
-    <section id="projects">
-        <h3 class="projects-title">Projects</h3>
-        <div class="project-item">
-            <h4 class="project-subtitle">01. MIT Beaverworks Brailliance</h4>
-
-
-            <div class="project-content">
-                <div class="project-images">
-                    <img src="images/mit project/asic.png" alt="ASIC" class="img1">
-                    <img src="images/mit project/board.png" alt="Board" class="img2">
-                    <img src="images/mit project/logo2.png" alt="Brailliance Logo" class="img3">
-                </div>
-
-                <div class="project-text">
-                    <p>
-                        Brailliance is an affordable braille display. Translating text to ASCII, and converting ASCII to
-                        binary with an ASIC, the chip's data sends signals to actuators that move the braille pins,
-                        ultimately reducing the price of a portable braille reader by 90%, aiding visually-impaired
-                        people in their daily life.
-                    </p>
-                </div>
-                <div class="braillance-video-container">
-                    <iframe src="https://www.youtube.com/embed/OeYJcwqM8zU?mute=1&controls=1&autoplay=0"
-                        class="braillance-video"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-
-            </div>
+      <a class="project-tile" data-cat="compe" href="projects/cs61c-cpu.html">
+        <div class="ph">drop image · cs61c-cpu.png</div>
+        <img class="cover" src="images/projects/cs61c-cpu.png" alt="" onerror="this.remove()" />
+        <div class="overlay">
+          <div class="pt-name">CS 61C CPU</div>
+          <div class="pt-date">Spring 2026</div>
         </div>
+      </a>
 
-        <div class="project-item">
-            <h4 class="project-subtitle whygreen-header">02. WhyGreen</h4>
-
-            <div class="project-text">
-                <p>WhyGreen works to close the knowledge gap regarding environmentalism by providing a website where
-                    students can find volunteering opportunities using a map-based platform.</p>
-            </div>
-
-            <div class="project-content">
-                <div class="project-images whygreen-images">
-                    <img src="images/wanda/whygreen1.png" class="wg1">
-                    <img src="images/wanda/whygreen2.png" class="wg2">
-                </div>
-
-
-            </div>
+      <!-- ── Electrical Engineering ── -->
+      <a class="project-tile" data-cat="ee" href="projects/qb3-mass-spec.html">
+        <div class="ph">drop image · qb3-mass-spec.jpg</div>
+        <img class="cover" src="images/projects/qb3-mass-spec.jpg" style="object-position: 72% 50%" alt="" onerror="this.remove()" />
+        <div class="overlay">
+          <div class="pt-name">QB3 Mass Spectrometer</div>
+          <div class="pt-date">Spring 2026</div>
         </div>
+      </a>
 
-        <div class="aquapilot-wrapper">
-            <h4 class="project-subtitle aquapilot-header">03. AquaPilot</h4>
-
-            <div class="aquapilot-images">
-                <img src="images/wanda/aquapilot.png" class="aq1">
-            </div>
-
-            <div class="aquapilot-text">
-                <p>AquaPilot is an AI-driven irrigation system I built with a team to optimize school garden watering.
-                    Using soil moisture and climate sensors connected to a Raspberry Pi, we trained supervised ML models
-                    on agricultural datasets to automate scheduling and control solenoid valves, reducing water waste
-                    through real-time prediction and feedback.</p>
-            </div>
+      <a class="project-tile" data-cat="ee" href="projects/cali-neuropatch.html">
+        <div class="ph">drop image · cali-neuropatch.png</div>
+        <img class="cover" src="images/projects/cali-neuropatch.png" alt="" onerror="this.remove()" />
+        <div class="overlay">
+          <div class="pt-name">CALI Neuropatch</div>
+          <div class="pt-date">Fall 2025</div>
         </div>
+      </a>
 
-        <div class="inspiritai-wrapper">
-            <h4 class="project-subtitle inspiritai-header">05. Inspirit AI</h4>
-
-            <div class="inspiritai-images">
-                <img src="images/inspirit/arch.png" class="ai1">
-                <img src="images/inspirit/console.png" class="ai2">
-                <img src="images/inspirit/window.png" class="ai3">
-            </div>
-
-            <div class="inspiritai-text">
-                <p>Developed a real-time video object detection model with confidence scoring for autonomous vehicles
-                    using YOLO, covering concepts like sliding windows, IoU, NMS, Darknet inputs, and demonstrating
-                    outputs and results from the machine learning model.</p>
-            </div>
+      <a class="project-tile" data-cat="ee" href="projects/aquapilot.html">
+        <div class="ph">drop image · aquapilot.png</div>
+        <img class="cover" src="images/projects/aquapilot.png" alt="" onerror="this.remove()" />
+        <div class="overlay">
+          <div class="pt-name">AquaPilot</div>
+          <div class="pt-date">Spring 2025</div>
         </div>
+      </a>
 
-        <!-- 06. Robotics -->
-        <div class="robotics-wrapper">
-
-            <div class="robotics-top">
-                <!-- Big Tipping Point Image -->
-                <img src="images/robo/tp.png" class="robot-img-tp" alt="Tipping Point Robot">
-                <p class="big-tp-caption">Tipping Point '21-'22</p>
-
-                <!-- Right Text Block -->
-                <div class="robotics-text-block">
-                    <h4 class="robotics-header">06. Robotics</h4>
-
-                    <p class="robotics-left-text">18 awards, 3 levels of competition, 7 years of VEX Robotics.</p>
-                    <p class="robotics-right-text">Create, Build, Community @ Nationals, 4x Tournament Champions, 2x
-                        Tournament Finalists, 2x Excellence, and the rest.</p>
-                </div>
-            </div>
-
-            <!-- Bottom Row -->
-            <div class="robotics-bottom">
-
-                <!-- Tipping Point Video -->
-                <div class="robotics-item">
-                    <iframe src="https://www.youtube.com/embed/aAEsTeUsn8g?mute=1&controls=1&autoplay=0"
-                        class="robotics-video"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <p class="robotics-caption">Tipping Point Worlds Reveal</p>
-                </div>
-
-                <!-- Spin Up -->
-                <div class="robotics-item">
-                    <img src="images/robo/su.png" class="robot-img-su" alt="Spin Up Robot">
-                    <p class="robotics-caption">Spin Up ’22–’23</p>
-                </div>
-
-                <!-- Over Under -->
-                <div class="robotics-item">
-                    <img src="images/robo/ou.png" class="robot-img-ou" alt="Over Under Robot">
-                    <p class="robotics-caption">Over Under ’23–’24</p>
-                </div>
-
-                <!-- High Stakes -->
-                <div class="robotics-item">
-                    <img src="images/robo/hs.png" class="robot-img-hs" alt="High Stakes Robot">
-                    <p class="robotics-caption">High Stakes ’24–’25</p>
-                </div>
-
-            </div>
-
+      <a class="project-tile" data-cat="ee" href="projects/robotics.html">
+        <div class="ph">drop image · robotics.png</div>
+        <img class="cover" src="images/projects/robotics.png" alt="" onerror="this.remove()" />
+        <div class="overlay">
+          <div class="pt-name">Robotics</div>
         </div>
+      </a>
 
-        <!-- ===================== 07. CAD SECTION ===================== -->
+      <a class="project-tile" data-cat="ee" href="projects/cad.html">
+        <div class="ph">drop image · cad.png</div>
+        <img class="cover" src="images/projects/cad.png" alt="" onerror="this.remove()" />
+        <div class="overlay">
+          <div class="pt-name">CAD</div>
+        </div>
+      </a>
 
-        <section class="cad-section" id="cad">
-            <h2 class="cad-header">07. CAD</h2>
-            <p class="cad-subtitle">Three of the many CADs that I’ve made before!</p>
+      <!-- ── Computer Science ── -->
+      <a class="project-tile" data-cat="cs" href="projects/inspirit-ai.html">
+        <div class="ph">drop image · inspirit-ai.png</div>
+        <img class="cover" src="images/projects/inspirit-ai.png" alt="" onerror="this.remove()" />
+        <div class="overlay">
+          <div class="pt-name">Inspirit AI</div>
+          <div class="pt-date">Fall 2023</div>
+        </div>
+      </a>
 
-            <div class="cad-container">
+      <a class="project-tile" data-cat="cs" href="projects/whygreen.html">
+        <div class="ph">drop image · whygreen.png</div>
+        <img class="cover" src="images/projects/whygreen.png" alt="" onerror="this.remove()" />
+        <div class="overlay">
+          <div class="pt-name">WhyGreen</div>
+          <div class="pt-date">Fall 2023</div>
+        </div>
+      </a>
 
-                <!-- LEFT COLUMN : LABUBU CADS -->
-                <div class="cad-left">
-                    <img src="images/cad/labfront.png" class="labubu-img labubu-front">
-                    <img src="images/cad/labtop.png" class="labubu-img labubu-top">
-                    <p class="cad-caption">LABUBU!</p>
-                </div>
-
-                <!-- CENTER COLUMN : GOOGLE SLIDES EMBED -->
-                <div class="cad-center">
-                    <div class="cad-slides-wrapper">
-                        <iframe
-                            src="https://docs.google.com/presentation/d/e/2PACX-1vQVis5AdT8VXDDu95g4FgkAk6D1R5-9DcIkWJRerMpyKCsC0ltPprhkNOWH847Iy2-SNYLKoFbiGiqE/pubembed?start=true&loop=false&delayms=3000"
-                            class="cad-slides" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p class="cad-caption">ADAPTIVE PROSTHETIC GRIPPER PRESENTATION</p>
-                </div>
-
-                <!-- RIGHT COLUMN : LOCKING CLAMP PDF + LINK -->
-                <div class="cad-right">
-                    <div class="pdf-wrapper">
-                        <iframe src="Locking Clamp Instructions.pdf" class="pdf-viewer"></iframe>
-                    </div>
-
-                    <p class="cad-caption">LOCKING CLAMP INSTRUCTIONS MANUAL (awarded finalists)</p>
-
-                    <p class="cad-caption">
-                        <a href="https://challenges.robotevents.com/challenge/264/build-instruction-guide-high-school/entry/14817"
-                            target="_blank" class="cad-link">
-                            FULL SUBMISSION LINK with Video Tutorial
-                        </a>
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-
-
-
-
-    </section>
-
-
-    <script>
-        window.addEventListener('load', () => {
-            document.body.classList.add('loaded');
-        });
-    </script>
-
-    <div class="email-copy" id="emailCopy">
-        <span class="email-text">evana@berkeley.edu</span>
-        <div class="copy-popup" id="copyPopup">copied to clipboard!</div>
     </div>
+  </main>
 
-    <script>
-        const emailCopy = document.getElementById("emailCopy");
-        const popup = document.getElementById("copyPopup");
-        const email = "evana@berkeley.edu";
+  <footer class="site-foot">
+    <span>© 2026 Evana Thomson</span>
+    <span>Built with Carrots &amp; Care ·
+      <a href="https://github.com/carrotjpeg/carrotjpeg.github.io" target="_blank" rel="noopener" style="border-bottom:1px solid currentColor">source</a>
+    </span>
+  </footer>
 
-        emailCopy.addEventListener("click", async () => {
-            try {
-                await navigator.clipboard.writeText(email);
-                popup.classList.add("show");
-                setTimeout(() => popup.classList.remove("show"), 1200);
-            } catch (err) {
-                window.prompt("Copy this email:", email);
-            }
-        });
-    </script>
-
-
+  <script src="js/nav.js"></script>
+  <script>
+    (function () {
+      const grid = document.getElementById('projectsGrid');
+      const btns = document.querySelectorAll('.projects-filters button');
+      btns.forEach(b => b.addEventListener('click', () => {
+        btns.forEach(x => x.classList.toggle('is-active', x === b));
+        const f = b.dataset.filter;
+        grid.classList.remove('f-compe', 'f-ee', 'f-cs');
+        if (f !== 'all') grid.classList.add('f-' + f);
+      }));
+    })();
+  </script>
 </body>
-
 </html>

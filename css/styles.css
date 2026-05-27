@@ -1,0 +1,744 @@
+/* ============================================================
+   EVANA THOMSON — design tokens
+   ------------------------------------------------------------
+   EDIT THESE VARIABLES TO RESKIN THE WHOLE SITE.
+   ============================================================ */
+
+:root {
+  /* Backgrounds */
+  --bg:            #FFFFFF;
+
+  /* Text */
+  --text:          #6D788E;   /* body / sidebar text */
+  --text-heading:  #6D1F42;   /* name + "Hello!" (Seasons) */
+  --text-muted:    #9AA3B2;   /* small / supporting text */
+  --rule:          #E8EAEE;   /* hairline rules + borders */
+
+  /* Section / nav accent colors (Lazydog) */
+  --c-about:       #DB7A73;   /* About Me  — coral */
+  --c-coursework:  #B9DB97;   /* Coursework — green */
+  --c-projects:    #B89DC7;   /* Projects   — lavender (placeholder; you gave #FFF8EE which is invisible on white) */
+  --c-research:    #EFD365;   /* Research   — yellow */
+  --c-resume:      #98C9B5;   /* Resume     — sage (you didn't specify, easy to change) */
+
+  /* Fonts */
+  --font-display:  'Seasons',  'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans:     'Sauce',    'DM Sans',          'Inter',              system-ui, sans-serif;
+  --font-display-chunky: 'Lazydog', 'Lilita One', 'Fredoka', 'Patrick Hand SC', cursive;
+
+  /* Spacing scale */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  24px;
+  --s-6:  32px;
+  --s-7:  48px;
+  --s-8:  64px;
+  --s-9:  96px;
+
+  /* Layout */
+  --page-max:      1180px;
+  --gutter:        clamp(20px, 4vw, 56px);
+  --sidebar-w:     300px;
+}
+
+/* ============================================================
+   RESET-ISH
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+ul { list-style: none; padding: 0; margin: 0; }
+h1, h2, h3, h4, p { margin: 0; }
+
+/* ============================================================
+   TOP NAV (shared across all pages — injected by /js/nav.js)
+   Nav scrolls away with the page (not sticky) so it disappears
+   as the user scrolls down.
+   ============================================================ */
+.site-nav {
+  border-bottom: 1px solid var(--rule);
+  background: var(--bg);
+}
+.nav-inner {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 22px var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-5);
+}
+.nav-brand {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-heading);
+  line-height: 0;
+  transition: opacity .15s ease;
+}
+.nav-brand:hover { opacity: 0.7; }
+.nav-brand svg { width: 28px; height: 28px; display: block; }
+.nav-brand img  { width: 54px; height: 54px; display: block; object-fit: cover; border-radius: 50%; }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 3vw, 38px);
+}
+.nav-link {
+  font-family: var(--font-display-chunky);
+  font-size: 19px;
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
+  padding: 8px 18px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: background-color .18s ease, color .18s ease;
+  background: transparent;
+}
+.nav-link:hover,
+.nav-link.is-active {
+  background: var(--link-c);
+  color: #fff;
+}
+.nav-about      { --link-c: var(--c-about);      color: var(--c-about); }
+.nav-coursework { --link-c: var(--c-coursework); color: var(--c-coursework); }
+.nav-projects   { --link-c: var(--c-projects);   color: var(--c-projects); }
+.nav-research   { --link-c: var(--c-research);   color: var(--c-research); }
+.nav-resume     { --link-c: var(--c-resume);     color: var(--c-resume); }
+
+/* ============================================================
+   PAGE SHELL
+   ============================================================ */
+.page {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: clamp(40px, 7vw, 88px) var(--gutter) var(--s-9);
+}
+
+/* About page = fits in one viewport, vertically centered between nav & footer */
+body[data-page="about"] {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+body[data-page="about"] main.page {
+  display: flex;
+  align-items: center;
+  padding-top: var(--s-5);
+  padding-bottom: var(--s-5);
+}
+body[data-page="about"] .about-grid {
+  width: 100%;
+}
+.page-title {
+  font-family: var(--font-display-chunky);
+  font-size: clamp(48px, 7vw, 84px);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+  margin-bottom: var(--s-7);
+}
+.page-title.is-about      { color: var(--c-about); }
+.page-title.is-coursework { color: var(--c-coursework); }
+.page-title.is-projects   { color: var(--c-projects); }
+.page-title.is-research   { color: var(--c-research); }
+.page-title.is-resume     { color: var(--c-resume); }
+
+/* ============================================================
+   ABOUT ME / HOME — sidebar + content layout
+   ============================================================ */
+.about-grid {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: start;
+}
+
+/* ---- Sidebar (Jason-style) ---- */
+.sidebar {
+  position: sticky;
+  top: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+}
+.sidebar .photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #F3F4F6;
+}
+.sidebar .photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.sidebar .name {
+  font-family: var(--font-display);
+  font-size: 34px;
+  line-height: 1.1;
+  color: var(--text-heading);
+  margin-top: var(--s-2);
+}
+.sidebar .role {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.5;
+}
+.sidebar .role-item + .role-item {
+  margin-top: 2px;
+}
+
+/* social icon links */
+.sidebar .socials {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  margin-top: 0;
+}
+.sidebar .socials a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--text);
+  padding: 4px 0;
+  transition: color .15s ease;
+}
+.sidebar .socials a:hover { color: var(--text-heading); }
+.sidebar .socials .icon {
+  width: 18px; height: 18px;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--text);
+  flex-shrink: 0;
+}
+.sidebar .socials .icon svg { width: 18px; height: 18px; }
+
+/* ---- Right content ---- */
+.about-content {
+  max-width: 640px;
+  padding-top: 90px;
+}
+.about-content .hello {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5vw, 56px);
+  line-height: 1;
+  color: var(--text-heading);
+  margin-bottom: var(--s-5);
+}
+.about-content p {
+  font-family: var(--font-sans);
+  font-size: 16.5px;
+  color: var(--text);
+  line-height: 1.75;
+}
+.about-content p + p { margin-top: var(--s-4); }
+.about-content strong {
+  font-weight: 600;
+  color: var(--text);
+}
+.about-content a.inline-link {
+  color: var(--c-about);
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+}
+.about-content a.inline-link:hover { opacity: 0.75; }
+
+.about-content .closer {
+  margin-top: var(--s-6);
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   COURSEWORK PAGE
+   ------------------------------------------------------------
+   Reuses .about-grid + .sidebar so the left column matches the
+   about page exactly. Right column gets a Seasons heading
+   (matches "Hello,") and semester-grouped bullet lists.
+   ============================================================ */
+body[data-page="coursework"] main.page {
+  padding-top: var(--s-5);
+}
+body[data-page="coursework"] .about-content {
+  padding-top: 90px;
+}
+.coursework-title {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5vw, 56px);
+  line-height: 1.05;
+  color: var(--text-heading);
+  margin-bottom: var(--s-6);
+  font-weight: 600;
+}
+.coursework-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-6);
+}
+.coursework-semester {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+.coursework-semester .term {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-heading);
+  letter-spacing: 0.005em;
+}
+.coursework-semester ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 0;
+}
+.coursework-semester li {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2e323b;
+  padding-left: 22px;
+  position: relative;
+}
+.coursework-semester li::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0.7em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--text-heading);
+}
+.coursework-semester li .code {
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+/* ============================================================
+   PROJECTS PAGE
+   ------------------------------------------------------------
+   Full-width 3×3 grid of square tiles. Hover darkens the
+   image and fades in the project name + date in white.
+   Click → dedicated project page.
+   ============================================================ */
+body[data-page="projects"] main.page {
+  max-width: 1400px;
+  padding-top: clamp(40px, 5vw, 64px);
+}
+.projects-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-5);
+  margin-bottom: clamp(28px, 4vw, 48px);
+  flex-wrap: wrap;
+}
+.projects-head .intro {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.4vw, 40px);
+  color: var(--text-heading);
+  line-height: 1.1;
+  font-weight: 600;
+}
+.projects-filters {
+  display: flex;
+  gap: clamp(18px, 2.4vw, 32px);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color: var(--text);
+}
+.projects-filters button {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 4px 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  letter-spacing: 0.01em;
+  position: relative;
+  transition: color .15s ease;
+}
+.projects-filters button:hover { color: var(--text-heading); }
+.projects-filters button.is-active {
+  color: var(--text-heading);
+}
+.projects-filters button.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  bottom: 0;
+  height: 1px;
+  background: currentColor;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(14px, 1.6vw, 22px);
+}
+.project-tile {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #d9dde4;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  isolation: isolate;
+}
+.project-tile .ph,
+.project-tile img.cover {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: filter .35s ease, transform .6s ease;
+}
+.project-tile .ph {
+  /* striped placeholder so empty tiles read as "drop image here" */
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,.35) 0 14px,
+      rgba(255,255,255,0)   14px 28px),
+    var(--tile-bg, #c7ccd5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.9);
+}
+.project-tile .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 22, 28, 0.0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--s-5);
+  opacity: 0;
+  transition: opacity .3s ease, background-color .3s ease;
+  z-index: 1;
+}
+.project-tile:hover .overlay,
+.project-tile:focus-visible .overlay {
+  opacity: 1;
+  background: rgba(20, 22, 28, 0.55);
+}
+.project-tile:hover .ph,
+.project-tile:hover img.cover {
+  filter: brightness(0.55);
+  transform: scale(1.03);
+}
+.project-tile .pt-name {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 2.2vw, 30px);
+  line-height: 1.1;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.project-tile .pt-date {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.92);
+}
+
+/* category color hint for the placeholder bg */
+.project-tile[data-cat="compe"] { --tile-bg: #b9c4d3; }
+.project-tile[data-cat="ee"]    { --tile-bg: #c9b7c4; }
+.project-tile[data-cat="cs"]    { --tile-bg: #b9c9be; }
+
+/* filter state */
+.projects-grid.f-compe .project-tile:not([data-cat="compe"]),
+.projects-grid.f-ee    .project-tile:not([data-cat="ee"]),
+.projects-grid.f-cs    .project-tile:not([data-cat="cs"]) {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .projects-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   PROJECT DETAIL PAGE (per-project subpages in /projects/)
+   ============================================================ */
+.pd-head {
+  margin-bottom: clamp(24px, 3vw, 40px);
+}
+.pd-eyebrow {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2vw, 26px);
+  line-height: 1.15;
+  color: var(--text-heading);
+  font-weight: 600;
+}
+.pd-eyebrow .sub {
+  color: var(--text-muted);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.85em;
+}
+
+.pd-media {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: clamp(16px, 2vw, 28px);
+  margin-bottom: clamp(28px, 4vw, 44px);
+  align-items: start;
+}
+.pd-video {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: #000;
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow:
+    0 0 0 1px rgba(162, 181, 237, 0.25),
+    0 0 28px rgba(162, 181, 237, 0.45),
+    0 14px 38px -6px rgba(162, 181, 237, 0.55);
+}
+.pd-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+.pd-images {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(28px, 3vw, 44px);
+}
+.pd-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #f3f4f6;
+  border-radius: 18px;
+  box-shadow:
+    0 0 0 1px rgba(162, 181, 237, 0.22),
+    0 0 22px rgba(162, 181, 237, 0.38),
+    0 12px 30px -6px rgba(162, 181, 237, 0.5);
+}
+.pd-img-1 {
+  align-self: center;
+  width: 88%;
+}
+.pd-img-2 {
+  align-self: center;
+  width: 100%;
+}
+
+.pd-text {
+  max-width: 980px;
+  border: 1px solid var(--rule);
+  padding: clamp(24px, 3vw, 36px) clamp(24px, 3vw, 40px);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+}
+.pd-text p {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.75;
+  color: #2e323b;
+  margin: 0;
+}
+.pd-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--text);
+  margin-top: clamp(28px, 4vw, 44px);
+  transition: color .15s ease;
+}
+.pd-back:hover { color: var(--text-heading); }
+
+@media (max-width: 820px) {
+  .pd-media {
+    grid-template-columns: 1fr;
+  }
+  .pd-img-1, .pd-img-2 { width: 100%; }
+}
+
+/* ============================================================
+   PROJECT SUBPAGE — SHARED SECTION SYSTEM
+   Use these on every project page so layout/colors/fonts stay
+   uniform. Replaces page-local .qb-* / .cl-* variants.
+   ============================================================ */
+
+/* image with the blue aura — no gray padded container */
+.proj-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: transparent;
+  border-radius: 18px;
+  box-shadow:
+    0 0 0 1px rgba(162, 181, 237, 0.22),
+    0 0 22px rgba(162, 181, 237, 0.38),
+    0 12px 30px -6px rgba(162, 181, 237, 0.5);
+}
+
+/* sections + dividers */
+.proj-section {
+  margin-top: clamp(48px, 6vw, 80px);
+}
+.proj-section + .proj-section {
+  border-top: 1px solid var(--rule);
+  padding-top: clamp(40px, 5vw, 64px);
+}
+.proj-section.proj-hero {
+  margin-top: clamp(16px, 2vw, 24px);
+}
+
+/* eyebrow + heading + body — same on every page */
+.proj-kicker {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--s-3);
+}
+.proj-section h2 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.2vw, 40px);
+  color: var(--text-heading);
+  margin: 0 0 var(--s-2) 0;
+  line-height: 1.1;
+  font-weight: 600;
+}
+.proj-section p {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.75;
+  color: #2e323b;
+  margin: 0;
+}
+.proj-section p + p { margin-top: var(--s-4); }
+.proj-section .gap { height: clamp(20px, 3vw, 32px); }
+
+/* hero figure: image(s) sit directly on the page, no gray box */
+.proj-hero-figure {
+  margin-bottom: clamp(24px, 3vw, 36px);
+  display: flex;
+  justify-content: center;
+}
+.proj-hero-figure .proj-img {
+  max-height: 540px;
+  width: auto;
+  max-width: 100%;
+}
+
+/* boxed text blurb (border, no fill) */
+.proj-blurb {
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: clamp(24px, 3vw, 36px) clamp(24px, 3vw, 40px);
+}
+
+/* side-by-side image pair */
+.proj-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(20px, 2.4vw, 32px);
+  align-items: center;
+}
+.proj-grid-2 .proj-img { max-height: 420px; width: auto; margin: 0 auto; }
+
+/* image + text two-column */
+.proj-split {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(28px, 4vw, 56px);
+  align-items: center;
+  margin-top: clamp(20px, 3vw, 32px);
+}
+.proj-split.reverse { grid-template-columns: 1fr 1.1fr; }
+.proj-split.reverse .proj-media { order: 2; }
+.proj-media { display: flex; justify-content: center; }
+.proj-media .proj-img { max-height: 380px; width: auto; }
+
+@media (max-width: 820px) {
+  .proj-split,
+  .proj-split.reverse { grid-template-columns: 1fr; }
+  .proj-split.reverse .proj-media { order: 0; }
+  .proj-grid-2 { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-foot {
+  width: 100%;
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: var(--s-7) var(--gutter) var(--s-6);
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-4);
+  flex-wrap: wrap;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 820px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--s-7);
+  }
+  .sidebar {
+    position: static;
+    max-width: 320px;
+  }
+  .nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--s-3);
+    padding: 18px var(--gutter);
+  }
+  .nav-links {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+}

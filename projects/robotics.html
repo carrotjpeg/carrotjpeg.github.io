@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Robotics — Evana Thomson</title>
+  <meta name="description" content="Seven seasons of VEX Robotics — competition robots from Tipping Point through High Stakes." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="preload" href="../fonts/Seasons.otf" as="font" type="font/otf" crossorigin />
+  <link rel="preload" href="../fonts/Lazydog.otf" as="font" type="font/otf" crossorigin />
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600&family=Lilita+One&display=swap" />
+
+  <link rel="stylesheet" href="../css/fonts.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    /* ── Top row: hero photo + summary text ──────────────────── */
+    .rb-top {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: clamp(32px, 4vw, 56px);
+      align-items: center;
+      margin-top: clamp(8px, 1.5vw, 16px);
+    }
+    .rb-summary {
+      font-family: var(--font-sans);
+      font-size: 17px;
+      line-height: 1.85;
+      color: #2e323b;
+    }
+    .rb-summary p { margin: 0; }
+    .rb-summary p + p { margin-top: var(--s-4); }
+
+    /* ── Bottom row: video + 3 season photos ─────────────────── */
+    .rb-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: clamp(20px, 2.4vw, 32px);
+      margin-top: clamp(16px, 2vw, 28px);
+      align-items: start;
+    }
+    @media (max-width: 980px) {
+      .rb-top { grid-template-columns: 1fr; }
+      .rb-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 520px) {
+      .rb-strip { grid-template-columns: 1fr; }
+    }
+
+    /* ── Card primitives (photo / video + caption) ───────────── */
+    .rb-card {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: clamp(12px, 1.4vw, 18px);
+    }
+    .rb-photo,
+    .rb-video {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      background: transparent;
+      box-shadow:
+        0 0 0 1px rgba(162, 181, 237, 0.22),
+        0 0 22px rgba(162, 181, 237, 0.38),
+        0 12px 30px -6px rgba(162, 181, 237, 0.5);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .rb-photo {
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+    .rb-video {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      background: #000;
+      overflow: hidden;
+    }
+    .rb-video iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+    .rb-photo:hover,
+    .rb-video:hover {
+      transform: scale(1.03);
+      box-shadow:
+        0 0 0 1px rgba(162, 181, 237, 0.32),
+        0 0 30px rgba(162, 181, 237, 0.6),
+        0 20px 42px -6px rgba(162, 181, 237, 0.65);
+    }
+
+    /* Hero photo: same size as strip cards */
+    .rb-hero-photo {
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      box-shadow:
+        0 0 0 1px rgba(162, 181, 237, 0.22),
+        0 0 22px rgba(162, 181, 237, 0.38),
+        0 12px 30px -6px rgba(162, 181, 237, 0.5);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .rb-hero-photo:hover {
+      transform: scale(1.03);
+      box-shadow:
+        0 0 0 1px rgba(162, 181, 237, 0.32),
+        0 0 30px rgba(162, 181, 237, 0.6),
+        0 20px 42px -6px rgba(162, 181, 237, 0.65);
+    }
+
+    .rb-caption {
+      font-family: var(--font-display);
+      font-size: 20px;
+      color: var(--text-heading);
+      text-align: center;
+      line-height: 1.2;
+    }
+    .rb-caption .year {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      color: var(--text-muted);
+      margin-top: 5px;
+      text-transform: uppercase;
+    }
+    .rb-hero-cap {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body data-page="projects">
+
+  <div id="site-nav-mount"></div>
+
+  <main class="page">
+
+    <header class="pd-head">
+      <div class="pd-eyebrow">
+        <div>robotics</div>
+        <div class="sub">project page · 2018–2025</div>
+      </div>
+    </header>
+
+    <!-- ── Section: hero photo + summary text ──────────────────── -->
+    <section class="proj-section proj-hero">
+      <div class="rb-top">
+        <figure class="rb-card">
+          <img class="rb-hero-photo" src="../images/projects/robotics-tipping-point.png" alt="Two VEX Tipping Point robots staged on the competition field with trophies in front" />
+          <figcaption class="rb-caption rb-hero-cap">Tipping Point<span class="year">'21 – '22</span></figcaption>
+        </figure>
+        <div class="rb-summary">
+          <p>18 awards, 3 levels of competition, 7 years of VEX Robotics.</p>
+          <p style="text-align: right">Create, Build, and Community awards at Nationals; 4× Tournament Champions, 2× Tournament Finalists, 2× Excellence — and the rest.</p>
+        </div>
+      </div>
+
+      <!-- ── Bottom strip: Worlds Reveal video + three season photos ── -->
+      <div class="rb-strip">
+        <figure class="rb-card">
+          <div class="rb-video">
+            <iframe
+              src="https://www.youtube.com/embed/aAEsTeUsn8g?vq=hd2160&hd=1&rel=0"
+              title="VEX Robotics Tipping Point Worlds Reveal — 2496J"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <figcaption class="rb-caption">Tipping Point Worlds Reveal<span class="year">'21 – '22</span></figcaption>
+        </figure>
+
+        <figure class="rb-card">
+          <img class="rb-photo" src="../images/projects/robotics-spin-up.png" alt="VEX Spin Up robot 2496N with disc shooter and a competition trophy" />
+          <figcaption class="rb-caption">Spin Up<span class="year">'22 – '23</span></figcaption>
+        </figure>
+
+        <figure class="rb-card">
+          <img class="rb-photo" src="../images/projects/robotics-over-under.png" alt="VEX Over Under robot with intake rollers, photographed on black" />
+          <figcaption class="rb-caption">Over Under<span class="year">'23 – '24</span></figcaption>
+        </figure>
+
+        <figure class="rb-card">
+          <img class="rb-photo" src="../images/projects/robotics-high-stakes.png" alt="VEX High Stakes robot with vertical lift arm" />
+          <figcaption class="rb-caption">High Stakes<span class="year">'24 – '25</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div style="margin-top: clamp(48px, 6vw, 72px)">
+      <a class="pd-back" href="../projects.html">← back to all projects</a>
+    </div>
+
+  </main>
+
+  <footer class="site-foot">
+    <span>© 2026 Evana Thomson</span>
+    <span>Built with Carrots &amp; Care ·
+      <a href="https://github.com/carrotjpeg/carrotjpeg.github.io" target="_blank" rel="noopener" style="border-bottom:1px solid currentColor">source</a>
+    </span>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

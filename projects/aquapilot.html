@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AquaPilot — Evana Thomson</title>
+  <meta name="description" content="AquaPilot — AI-driven school-garden irrigation system using soil moisture and climate sensors with a Raspberry Pi controller." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="preload" href="../fonts/Seasons.otf" as="font" type="font/otf" crossorigin />
+  <link rel="preload" href="../fonts/Lazydog.otf" as="font" type="font/otf" crossorigin />
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600&family=Lilita+One&display=swap" />
+
+  <link rel="stylesheet" href="../css/fonts.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body data-page="projects">
+
+  <div id="site-nav-mount"></div>
+
+  <main class="page">
+
+    <header class="pd-head">
+      <div class="pd-eyebrow">
+        <div>aquapilot</div>
+        <div class="sub">project page · spring 2025</div>
+      </div>
+    </header>
+
+    <!-- ── HERO ─────────────────────────────────────────────────── -->
+    <section class="proj-section proj-hero">
+      <div class="proj-hero-figure">
+        <img class="proj-img" style="max-height:380px" src="../images/projects/aquapilot.png" alt="AquaPilot prototype circuit — Arduino UNO breadboarded with a soil moisture sensor, temperature sensor and trim pot, alongside the control sketch reading moisture, temperature, and humidity to drive a valve pin" />
+      </div>
+      <div class="proj-blurb">
+        <p>AquaPilot is an AI-driven irrigation system I built with a team from robotics to optimize school garden watering. Inspired by WhyGreen, an environmental volunteering platform I co-founded, I wanted to take service further through hardware. We engineered a Raspberry Pi controller interfacing with capacitive soil moisture and DHT22 climate sensors, and trained supervised ML models on a UC Davis terrestrial plant database to predict watering schedules in Java, C++, and Python. Sensor telemetry drives solenoid valves in real time, reducing waste. The system is now operational in our school's gardens, and we are expanding across the Tustin Unified School District.</p>
+      </div>
+    </section>
+
+    <div style="margin-top: clamp(48px, 6vw, 72px)">
+      <a class="pd-back" href="../projects.html">← back to all projects</a>
+    </div>
+
+  </main>
+
+  <footer class="site-foot">
+    <span>© 2026 Evana Thomson</span>
+    <span>Built with Carrots &amp; Care ·
+      <a href="https://github.com/carrotjpeg/carrotjpeg.github.io" target="_blank" rel="noopener" style="border-bottom:1px solid currentColor">source</a>
+    </span>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

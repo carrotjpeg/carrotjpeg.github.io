@@ -1,123 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9G61XN2FL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evana Thomson — About</title>
+  <meta name="description" content="Evana Thomson — EECS + MSE at UC Berkeley. Digital chip design, semiconductors, VLSI." />
 
-        gtag('config', 'G-Q9G61XN2FL');
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evana Thomson</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/lightbulb_favicon.png" type="image/png">
+  <!-- Google Font fallbacks (used until your Seasons/Sauce/Lazydog files load from /fonts/) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Preload custom display fonts so headings don't flash a heavier fallback first -->
+  <link rel="preload" href="fonts/Seasons.otf" as="font" type="font/otf" crossorigin />
+  <link rel="preload" href="fonts/Lazydog.otf" as="font" type="font/otf" crossorigin />
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600&family=Lilita+One&display=swap" />
+
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* Email click-to-copy */
+    .sidebar .socials li.email-row {
+      position: relative;
+    }
+    .sidebar .socials a.email-link {
+      cursor: pointer;
+    }
+    .copy-toast {
+      position: absolute;
+      left: 28px; /* line up with the text, past the icon */
+      top: calc(100% + 6px);
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      color: var(--text-heading);
+      background: #fff;
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      padding: 5px 12px;
+      box-shadow: 0 6px 16px -8px rgba(20,22,28,0.18);
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(-4px);
+      transition: opacity .18s ease, transform .18s ease;
+      white-space: nowrap;
+    }
+    .copy-toast.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 
-<body>
-    <!-- Home Icon -->
-    <header>
-        <a href="#home" class="home-icon">
-            <img src="images/lightbulb.png" alt="Home" class="lightbulb">
-        </a>
-    </header>
+<body data-page="about">
 
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-buttons">
-            <button onclick="location.href='#about'">About Me</button>
-            <button onclick="location.href='projects.html'">Projects</button>
-            <button onclick="location.href='research.html'">Research</button>
-            <button onclick="location.href='clubs.html'">clubs</button>
+  <!-- Nav is injected by /js/nav.js -->
+  <div id="site-nav-mount"></div>
+
+  <main class="page">
+    <div class="about-grid">
+
+      <!-- ───── SIDEBAR ───── -->
+      <aside class="sidebar">
+        <div class="photo">
+          <img src="images/prof.jpg" class="img1" alt="Profile photo" onerror="this.onerror=null;this.src='images/headshot.svg';" />
         </div>
-    </nav>
 
-    <!-- HOME SECTION -->
-    <section id="home" class="fade-in">
-        <h1 class="hello">Hello</h1>
-        <h2 class="name">I’m Evana Thomson and I study EECS and Material Science at UC Berkeley</h2>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2 class="about-title">About Me</h2>
-
-        <div class="about-content">
-            <div class="about-images">
-                <img src="images/prof.jpg" class="img1" alt="Profile photo">
-                <img src="images/stuffy.jpg" class="img2" alt="Stuffy photo">
-            </div>
-
-            <div class="about-text">
-                <p>
-                    I’m interested in digital chip design, semiconductor technology, and VLSI. I’m also drawn to industry-driven
-                    research that creates real-world impact and chip optimization. Feel free to email me so we can chat about anything :D.
-                </p>
-                <p>
-                    Besides this, I’m also a very fun person to be with (according to my family and friends...). Hailing
-                    from Irvine, California, I enjoy spontaneous side-quests, binge watching TV shows and
-                    comics, editing photos on LR, and karaoke on car rides.
-                </p>
-            </div>
+        <div>
+          <div class="name" style="font-weight: 600">Evana Thomson</div>
         </div>
-    </section>
 
+        <div class="role">
+          <div class="role-item">EECS + MSE</div>
+          <div class="role-item">Sophomore · Class of 2029</div>
+        </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.body.classList.add("loaded");
-        });
-    </script>
+        <ul class="socials">
+          <li>
+            <a href="https://www.berkeley.edu/" target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+              </span>
+              <span>UC Berkeley</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/evana-thomson/" target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7.5v.01M12 17v-4a2 2 0 0 1 4 0v4M12 13v4"/></svg>
+              </span>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/carrotjpeg" target="_blank" rel="noopener">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4 1.2-4-2-6-2"/><path d="M15 22v-3.5a3.4 3.4 0 0 0-1-2.6c3.3-.4 6-1.7 6-7a5.4 5.4 0 0 0-1.5-3.8 5 5 0 0 0-.1-3.8s-1.2-.4-3.9 1.4a13.4 13.4 0 0 0-7 0C4.8 1.9 3.6 2.3 3.6 2.3a5 5 0 0 0-.1 3.8A5.4 5.4 0 0 0 2 9.9c0 5.3 2.7 6.6 6 7a3.4 3.4 0 0 0-1 2.6V22"/></svg>
+              </span>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li class="email-row">
+            <a href="mailto:evana@berkeley.edu" class="email-link" data-copy="evana@berkeley.edu" aria-label="Copy email address evana@berkeley.edu">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              </span>
+              <span>Email</span>
+            </a>
+            <span class="copy-toast" id="emailToast" role="status" aria-live="polite">copied!</span>
+          </li>
+        </ul>
+      </aside>
 
-    <!-- Email Copy Widget -->
-    <div class="email-copy" id="emailCopy">
-        <span class="email-text">evana@berkeley.edu</span>
-        <div class="copy-popup" id="copyPopup">copied to clipboard!</div>
-    </div>
+      <!-- ───── CONTENT ───── -->
+      <section class="about-content">
+        <p class="hello" style="font-weight: 600">Hello,</p>
 
-    <script>
-        const emailCopy = document.getElementById("emailCopy");
-        const popup = document.getElementById("copyPopup");
-        const email = "evana@berkeley.edu";
+        <p>I'm Evana Thomson and I study Electrical Engineering and Computer Science (EECS) with a minor in Materials Science at UC Berkeley. I'm interested in digital chip design, semiconductor technology, and VLSI. I'm also drawn to industry-driven research that creates real-world impact and pushes the limits of chip optimization. Feel free to email me — I'm always happy to chat.</p>
 
-        emailCopy.addEventListener("click", async () => {
-            try {
-                await navigator.clipboard.writeText(email);
-                popup.classList.add("show");
-                setTimeout(() => popup.classList.remove("show"), 1200);
-            } catch (err) {
-                window.prompt("Copy this email:", email);
-            }
-        });
-    </script>
+        <p>I'm a member of Engineering Solutions at Berkeley, a student-run hardware consulting club where we prototype and build end-to-end designs for industry clients. I do undergraduate research at QB3 on advancing electron-beam lithography processes, and I've worked on firmware and PCB designs across a handful of embedded projects.</p>
 
-    <div class="social-buttons">
-
-        <a class="social-btn" href="https://x.com/evanatthomson" target="_blank">
-            [x]
-        </a>
-
-        <a class="social-btn" href="https://github.com/carrotjpeg" target="_blank">
-            [gh]
-        </a>
-
-        <a class="social-btn" href="https://www.linkedin.com/in/evana-thomson/" target="_blank">
-            [in]
-        </a>
-
-        <a class="social-btn" href="https://open.spotify.com/user/31codoc53qs2c4tzhbtwvfh6p6re?si=8f552b1bfe234016"
-            target="_blank">
-            [jams]
-        </a>
+        <p class="closer" style="color: rgb(109, 120, 142)">
+          To learn more, check out the other tabs :)
+        </p>
+      </section>
 
     </div>
+  </main>
 
+  <footer class="site-foot">
+    <span>© 2026 Evana Thomson</span>
+    <span>Built with Carrots &amp; Care ·
+      <a href="https://github.com/carrotjpeg/carrotjpeg.github.io" target="_blank" rel="noopener" style="border-bottom:1px solid currentColor">source</a>
+    </span>
+  </footer>
 
+  <script src="js/nav.js"></script>
+  <script>
+    (function () {
+      const link = document.querySelector('a.email-link');
+      const toast = document.getElementById('emailToast');
+      if (!link || !toast) return;
+      let hideTimer;
 
+      link.addEventListener('click', async function (e) {
+        e.preventDefault();
+        const value = link.dataset.copy || 'evana@berkeley.edu';
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(value);
+          } else {
+            // Fallback for older browsers
+            const ta = document.createElement('textarea');
+            ta.value = value;
+            ta.setAttribute('readonly', '');
+            ta.style.position = 'absolute';
+            ta.style.left = '-9999px';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+          }
+        } catch (err) { /* swallow */ }
+
+        toast.classList.add('is-visible');
+        clearTimeout(hideTimer);
+        hideTimer = setTimeout(function () {
+          toast.classList.remove('is-visible');
+        }, 1400);
+      });
+    })();
+  </script>
 </body>
-
 </html>
+
+<style id="__om-edit-overrides">
+.hello >:is(h1,h2,h3,h4,h5,h6,p,li,dt,dd,blockquote,figcaption,label,span,a,em,strong,small,td,th,caption) { color: rgb(109, 31, 66) !important }
+[aria-label="Primary"] >.nav-resume { color: rgb(155, 152, 201) !important }
+[aria-label="Primary"] >.nav-resume { color: rgb(77, 71, 181) !important }
+[aria-label="Primary"] >.nav-resume { color: rgb(82, 76, 180) !important }
+[aria-label="Primary"] >.nav-resume { color: rgb(94, 88, 201) !important }
+</style>

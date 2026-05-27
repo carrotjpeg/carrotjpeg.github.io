@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CS 61C CPU — Evana Thomson</title>
+  <meta name="description" content="CS 61C Spring 2026 — single-cycle and 2-stage pipelined RISC-V CPU built in Logisim Evolution." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="preload" href="../fonts/Seasons.otf" as="font" type="font/otf" crossorigin />
+  <link rel="preload" href="../fonts/Lazydog.otf" as="font" type="font/otf" crossorigin />
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600&family=Lilita+One&display=swap" />
+
+  <link rel="stylesheet" href="../css/fonts.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body data-page="projects">
+
+  <div id="site-nav-mount"></div>
+
+  <main class="page">
+
+    <header class="pd-head">
+      <div class="pd-eyebrow">
+        <div>cs 61c cpu</div>
+        <div class="sub">project page</div>
+      </div>
+    </header>
+
+    <div class="pd-media" style="display:block">
+      <div class="pd-images">
+        <img class="pd-img" style="width:100%" src="../images/projects/cs61c-cpu.png" alt="Full datapath of a 2-stage pipelined RISC-V CPU laid out in Logisim Evolution" />
+      </div>
+    </div>
+
+    <div class="pd-text" style="max-width:none">
+      <p>Designed and implemented a 32-bit RISC-V CPU in Logisim Evolution over the course of a month, starting from a single-cycle datapath and extending it into a 2-stage pipelined processor capable of running the full RV32I instruction subset covered in CS 61C.</p>
+
+      <p>Built the core datapath blocks from scratch — program counter, register file interface, immediate generator, branch comparator, ALU control, and partial load/store logic — then wired the control signals so every R, I, S, B, U, and J-type instruction produced correct architectural state after each clock edge.</p>
+
+      <p>Extended the design into a <span>two-stage pipeline</span> by splitting fetch from execute/memory/writeback, adding pipeline registers for PC and instruction, and resolving control and data hazards with branch flushing and forwarding from the writeback path.</p>
+
+      <p>Verified the CPU against the staff test suite and a set of custom RISC-V programs, including recursive function calls, memory-mapped I/O, and a small benchmark — all passing in simulation. </p>
+    </div>
+
+    <a class="pd-back" href="../projects.html">← back to all projects</a>
+
+  </main>
+
+  <footer class="site-foot">
+    <span>© 2026 Evana Thomson</span>
+    <span>Built with Carrots &amp; Care ·
+      <a href="https://github.com/carrotjpeg/carrotjpeg.github.io" target="_blank" rel="noopener" style="border-bottom:1px solid currentColor">source</a>
+    </span>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

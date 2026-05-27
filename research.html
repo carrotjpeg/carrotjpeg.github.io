@@ -1,118 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9G61XN2FL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evana Thomson — Research</title>
+  <meta name="description" content="Undergraduate research at the QB3 Nanotechnology Lab — electron-beam lithography, CNT growth, and PCB design for biosensing devices." />
 
-        gtag('config', 'G-Q9G61XN2FL');
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Research | Evana Thomson</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="images/lightbulb_favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="preload" href="fonts/Seasons.otf" as="font" type="font/otf" crossorigin />
+  <link rel="preload" href="fonts/Lazydog.otf" as="font" type="font/otf" crossorigin />
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600&family=Lilita+One&display=swap" />
+
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    .pdf-embed {
+      margin: 0;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #f3f4f6;
+      box-shadow:
+        0 0 0 1px rgba(162, 181, 237, 0.22),
+        0 0 22px rgba(162, 181, 237, 0.38),
+        0 12px 30px -6px rgba(162, 181, 237, 0.5);
+    }
+    .pdf-embed iframe {
+      display: block;
+      width: 100%;
+      height: clamp(520px, 75vh, 820px);
+      border: 0;
+      background: #fff;
+    }
+    .pdf-embed figcaption {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--s-4);
+      padding: 10px clamp(14px, 1.6vw, 20px);
+      font-family: var(--font-sans);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      background: #fff;
+      border-top: 1px solid var(--rule);
+    }
+    .pdf-embed figcaption a {
+      color: var(--text-heading);
+      letter-spacing: 0.08em;
+      transition: opacity .15s ease;
+    }
+    .pdf-embed figcaption a:hover { opacity: 0.7; }
+  </style>
 </head>
 
-<body>
-    <header>
-        <a href="index.html" class="home-icon">
-            <img src="images/lightbulb.png" alt="Home" class="lightbulb">
-        </a>
+<body data-page="research">
+
+  <div id="site-nav-mount"></div>
+
+  <main class="page">
+
+    <!-- ── PAGE HEAD ────────────────────────────────────────────── -->
+    <header class="pd-head">
+      <div class="pd-eyebrow">
+        <div>research</div>
+        <div class="sub">qb3 nanotechnology lab · aug 2025 – present</div>
+      </div>
     </header>
 
-    <nav>
-        <div class="nav-buttons">
-            <button onclick="location.href='index.html#about'">About Me</button>
-            <button onclick="location.href='projects.html'">Projects</button>
-            <button onclick="location.href='research.html'">Research</button>
-            <button onclick="location.href='clubs.html'">clubs</button>
-        </div>
-    </nav>
-
-    <section id="research">
-        <h3>Research</h3>
+    <!-- ── HERO: lab group + role blurb ─────────────────────────── -->
+    <section class="proj-section proj-hero">
+      <div class="proj-hero-figure">
+        <img class="proj-img" src="images/research/lab-group.png" alt="The QB3 Nanotechnology Lab team in cleanroom blue coats, hairnets and safety glasses." style="max-height: 380px;" />
+      </div>
+      <div class="proj-blurb">
+        <p>I joined the QB3 Nanotechnology Lab in August 2025 and have been working under Dr. Khalid to develop an electron-beam lithography system and grow carbon nanotubes on chip for a biosensing device. Most of my work has focused on learning the lab's procedures and operating its equipment, including writing official lab documentation for the electron-beam evaporation system. I have also designed and built PCBs for multiple subsystems and oversaw the full process from chip design through in-lab fabrication.</p>
+      </div>
     </section>
 
-    <script>
-        window.addEventListener('load', () => {
-            document.body.classList.add('loaded');
-        });
-    </script>
+    <!-- ── 01 · LITHOGRAPHY & CNT ──────────────────────────────── -->
+    <section class="proj-section">
+      <div class="proj-kicker">01 · electron-beam lithography &amp; cnts</div>
+      <h2>Low Cost Lithography, Controlled CNT Growth.</h2>
+      <div class="gap"></div>
+      <div class="proj-split">
+        <div class="proj-media">
+          <img class="proj-img" src="images/research/surface-plot.png" alt="3D surface-roughness profilometer plot of a CNT forest grown on chip — a dense field of green-to-red peaks rising about 56 µm tall over a 700 × 500 µm area." style="max-width: 78%; margin: 0 auto;" />
+        </div>
+        <div>
+          <p>The lab is researching low-cost, scalable lithography methods to reduce bottlenecks in chip production and make the process more accessible. In parallel, we are developing chips that enable controlled carbon-nanotube growth to enhance energy-storage efficiency and power output.</p>
+          <p>The profilometer scan to the left shows one of our early CNT forests &mdash; roughly 56&nbsp;µm tall across a 700&nbsp;×&nbsp;500&nbsp;µm window &mdash; used to characterize growth uniformity across the chip.</p>
+        </div>
+      </div>
 
-    <!-- Email Copy Widget -->
-    <div class="email-copy" id="emailCopy">
-        <span class="email-text">evana@berkeley.edu</span>
-        <div class="copy-popup" id="copyPopup">copied to clipboard!</div>
+      <div class="proj-grid-2" style="margin-top: clamp(16px, 2vw, 24px)">
+        <img class="proj-img" src="images/research/wafers-chamber.png" alt="Inside the electron-beam evaporator — six patterned wafers loaded on the planetary stage above a labeled witness wafer reading '18 Jun 2025 · 50 nm Al₂O₃ · 20 nm Ti'." style="max-width: 75%; margin: 0 auto;" />
+        <img class="proj-img" src="images/research/spin-coater.png" alt="The lab's spin coater with the bowl open, foil-lined cup loaded with a chip, and the touchscreen recipe controller to the side." style="max-width: 75%; margin: 0 auto;" />
+      </div>
+    </section>
+
+    <!-- ── 02 · LEARNING THE LAB ───────────────────────────────── -->
+    <section class="proj-section">
+      <div class="proj-kicker">02 · learning the lab</div>
+      <h2>Equipment, Procedures, and First Principles.</h2>
+      <div class="gap"></div>
+      <div class="proj-split reverse">
+        <div class="proj-media">
+          <img class="proj-img" src="images/research/rlc-whiteboard.png" alt="Whiteboard derivation of the steady-state current through a driven RC circuit — sketched schematic, complex-impedance form, and the final magnitude and phase expressions." />
+        </div>
+        <div>
+          <p>Most of my first months were spent learning how the lab runs &mdash; spin coating, electron-beam evaporation, ALD, profilometry &mdash; and working out the physics behind each step from scratch with Dr. Khalid at the whiteboard.</p>
+          <p>I also wrote the official lab documentation for the electron-beam evaporation system: recipe templates, chamber-load and pump-down procedures, and the safety/interlock notes used by new students before they go on the tool.</p>
+        </div>
+      </div>
+
+      <div class="gap"></div>
+
+      <figure class="pdf-embed">
+        <iframe src="assets/evap-doc.pdf#view=FitH" title="Electron-beam evaporation system — official lab documentation (PDF)" loading="lazy"></iframe>
+        <figcaption>
+          <span>e&#8209;beam evaporation &mdash; lab documentation</span>
+          <a href="assets/evap-doc.pdf" target="_blank" rel="noopener">open in new tab ↗</a>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ── 03 · ALD CONTROL BOARD ─────────────────────────────── -->
+    <section class="proj-section">
+      <div class="proj-kicker">03 · ald control board</div>
+      <h2>ALD Control Board</h2>
+      <div class="gap"></div>
+      <div class="proj-split">
+        <div class="proj-media">
+          <img class="proj-img" src="images/research/ald-schematic.png" alt="KiCad PCB layout of the ALD control board — five relay channels, fuse block, Teensy footprint, terminal blocks and a DB-15 connector, with red top-layer routing across the board." style="max-width: 78%;" />
+        </div>
+        <div>
+          <p>I worked to convert a 70-page internal write-up of the ALD Control Board into an actual PCB that is ready to be manufactured. The board switches the precursor and purge valves for an atomic-layer-deposition recipe and reports state back over Ethernet.</p>
+          <p>Revisions were made to integrate the board with a Teensy 4.1 microcontroller, including the relay-driver fan-out, the DB-15 valve connector, and the SD/Ethernet headers used for recipe storage and remote control. The firmware was finalized in parallel so the hardware and software hand-off at the same revision.</p>
+        </div>
+      </div>
+
+      <div class="proj-grid-2" style="margin-top: clamp(16px, 2vw, 24px)">
+        <img class="proj-img" src="images/research/ald-pcb-top.png" alt="Top-down 3D render of the manufactured ALD control PCB — five blue relays in a column, green terminal blocks down the left edge, DB-15 connector on the right, and the Teensy + Ethernet headers at the bottom." style="max-width: 75%; margin: 0 auto;" />
+        <img class="proj-img" src="images/research/ald-pcb-3d.png" alt="Perspective 3D render of the ALD control PCB showing the relay and terminal-block heights, the DB-15 valve connector, and the SD/Ethernet pin headers." style="max-width: 75%; margin: 0 auto;" />
+      </div>
+    </section>
+
+    <!-- ── 04 · BRAIN ON A CHIP ───────────────────────────────── -->
+    <section class="proj-section">
+      <div class="proj-kicker">04 · brain on a chip</div>
+      <h2>Routing the Brain on a Chip PCB.</h2>
+      <div class="gap"></div>
+      <div class="proj-split reverse">
+        <div class="proj-media">
+          <img class="proj-img" src="images/research/brain-chip-layout.png" alt="KiCad layout of the Brain-on-a-Chip carrier PCB — a central die area surrounded on all four sides by dense pin-header banks, with red top-layer and blue bottom-layer fan-out traces routing every pad outward." />
+        </div>
+        <div>
+          <p>In March I helped Dr. Khalid with the layout for the Brain-on-a-Chip PCB &mdash; a carrier board that breaks out a central electrode array to four banks of dense pin headers around the perimeter.</p>
+          <p>The hard part was the fan-out: every pad in the central die area needs an isolated trace to one specific header pin, with matched lengths where possible and no crossings on a given layer. I worked on routing the top (red) and bottom (blue) signal layers so the geometry stays clean as the board scales up in channel count.</p>
+        </div>
+      </div>
+    </section>
+
+    <div style="margin-top: clamp(48px, 6vw, 72px)">
+      <a class="pd-back" href="index.html">← back home</a>
     </div>
 
-    <script>
-        const emailCopy = document.getElementById("emailCopy");
-        const popup = document.getElementById("copyPopup");
-        const email = "evana@berkeley.edu";
+  </main>
 
-        emailCopy.addEventListener("click", async () => {
-            try {
-                await navigator.clipboard.writeText(email);
-                popup.classList.add("show");
-                setTimeout(() => popup.classList.remove("show"), 1200);
-            } catch (err) {
-                window.prompt("Copy this email:", email);
-            }
-        });
-    </script>
+  <footer class="site-foot">
+    <span>© 2026 Evana Thomson</span>
+    <span>Built with Carrots &amp; Care ·
+      <a href="https://github.com/carrotjpeg/carrotjpeg.github.io" target="_blank" rel="noopener" style="border-bottom:1px solid currentColor">source</a>
+    </span>
+  </footer>
 
-    <section class="research-section">
-
-        <div class="research-columns">
-
-            <!-- LEFT COLUMN -->
-            <div class="research-left">
-                <p class="research-left-text">
-                    I joined the QB3 Nanotechnology Lab in August and have been working under Dr. Khalid to develop an
-                    electron-beam lithography system and grow CNTs on chip for a biosensing device.
-                </p>
-            </div>
-
-            <!-- LEFT IMAGE BLOCK -->
-            <div class="research-img-block img1-block">
-                <img src="images/research/down.png" alt="research photos" class="research-img1">
-            </div>
-
-            <!-- CENTER IMAGE BLOCK -->
-            <div class="research-img-block img2-block">
-                <img src="images/research/grptop.jpg" alt="QB3 Lab Team" class="research-img2">
-                <p class="research-caption img2-caption">TEAM IN THE LAB!</p>
-            </div>
-
-
-            <!-- CENTER COLUMN -->
-            <div class="research-center">
-
-                <p class="research-text">
-                    Most of my work this semester focused on learning the lab’s procedures and operating its equipment,
-                    including writing official lab documentation for the electron beam evaporation system. I also
-                    designed and built PCBs for multiple subsystems and oversaw the full process from chip design
-                    through in-lab fabrication.
-                </p>
-            </div>
-
-            <!-- RIGHT COLUMN -->
-            <div class="research-right">
-                <p class="research-caption">10/08 QB3 EVAPORATION CNT PROCESS</p>
-
-                <iframe src="evapdoc.pdf" class="research-pdf" title="QB3 Evaporation Documentation">
-                </iframe>
-            </div>
-
-        </div>
-    </section>
-
-
+  <script src="js/nav.js"></script>
 </body>
-
 </html>

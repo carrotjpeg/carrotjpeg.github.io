@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QB3 Mass Spectrometer — Evana Thomson</title>
+  <meta name="description" content="QB3 Linear Array — miniaturizing a parallel linear-array ion detector for breath-based viral diagnostics." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="preload" href="../fonts/Seasons.otf" as="font" type="font/otf" crossorigin />
+  <link rel="preload" href="../fonts/Lazydog.otf" as="font" type="font/otf" crossorigin />
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600&family=Lilita+One&display=swap" />
+
+  <link rel="stylesheet" href="../css/fonts.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body data-page="projects">
+
+  <div id="site-nav-mount"></div>
+
+  <main class="page">
+
+    <header class="pd-head">
+      <div class="pd-eyebrow">
+        <div>qb3 mass spectrometer</div>
+        <div class="sub">project page · spring 2026</div>
+      </div>
+    </header>
+
+    <!-- ── HERO: Final design + manufacturing ───────────────────── -->
+    <section class="proj-section proj-hero">
+      <div class="proj-hero-figure">
+        <div class="proj-grid-2" style="width:100%">
+          <img class="proj-img" src="../images/projects/qb3-final-top.png" alt="Top-down view of the assembled linear array — PCB and electrode stack between two steel end plates" />
+          <img class="proj-img" src="../images/projects/qb3-final-side.png" alt="Side view of the assembled linear array between its two steel end plates" />
+        </div>
+      </div>
+      <div class="proj-blurb">
+        <p>The linear array is the detector stage of a breath-based mass spectrometer being developed at QB3. The goal of this project was to test whether the detector — normally built at lab-bench scale — could be miniaturized while still meeting the electrical and mechanical requirements of the larger system.</p>
+        <p>The final assembly is a stack of laser-cut stainless-steel electrodes interfaced with a 6-layer PCB, held in place by ESD-resin alignment brackets and dowel pins, and compressed between two CNC'd steel end plates. All materials were chosen for ultra-high-vacuum compatibility.</p>
+      </div>
+    </section>
+
+    <!-- ── Research & brainstorming ─────────────────────────────── -->
+    <section class="proj-section">
+      <div class="proj-kicker">01 · research &amp; brainstorming</div>
+      <h2>Background Reading and First Iterations.</h2>
+      <div class="gap"></div>
+      <div class="proj-split">
+        <div class="proj-media">
+          <div class="proj-grid-2">
+            <img class="proj-img" src="../images/projects/qb3-iter-circle.png" alt="First-iteration concept — circular electrodes stacked on rods" />
+            <img class="proj-img" src="../images/projects/qb3-iter-square.png" alt="Second-iteration concept — square electrode with four corner dowels" />
+          </div>
+        </div>
+        <div>
+          <p>We reviewed prior work on parallel linear-array detectors, mainly papers from BYU and a NASA Martian particle detector. Those references informed our assumptions about ion mass ranges, expected signal currents, and the placement of a DC amplifier in the signal chain.</p>
+          <p>The first concept used circular electrodes held together by three rods and compressed end-to-end. It had good transmittance but was difficult to assemble and offered no clean way to interface with a PCB. The second concept was a 4-rod square stack with rods threaded through the electrodes; this improved the mechanical lock but the PCB still had to sit tangent to the top, which weakened the electrical connection.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Deciding on a design ─────────────────────────────────── -->
+    <section class="proj-section">
+      <div class="proj-kicker">02 · deciding on a design</div>
+      <h2>Settling on the Spade.</h2>
+      <div class="gap"></div>
+      <div class="proj-split reverse">
+        <div class="proj-media">
+          <img class="proj-img" src="../images/projects/qb3-final-cad.png" alt="Final spade-shaped electrode in copper, with stem for PCB contact and 37 micro-holes" />
+        </div>
+        <div>
+          <p>The third iteration was the spade. The flat face at the "stem" gave the PCB a direct mounting surface instead of a tangent contact, which made the electrical connection more reliable. The center hole was sized at 0.781&nbsp;mm against 3.125&nbsp;mm-thick stock to maintain the 4:1 electrode-to-hole ratio specified by the project.</p>
+          <p>For material, oxygen-free copper would have had the best conductivity but is difficult to machine to tight tolerances at this scale. We used stainless steel instead — compatible with CNC and laser cutting, vacuum-safe, and dimensionally stable enough for the datum features. Alignment brackets and spacers were printed in ESD resin, which is slightly conductive and lets static charge dissipate instead of building up.</p>
+          <p>The first spade had 19 small holes. After the manufacturing process was proven, we added a second ring of holes for 37 total, which raised the transmittance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PCB ───────────────────────────────────────────────────── -->
+    <section class="proj-section">
+      <div class="proj-kicker">03 · pcb</div>
+      <h2>Routing the PCB.</h2>
+      <div class="gap"></div>
+      <div class="proj-split reverse">
+        <div class="proj-media">
+          <div style="display:flex; flex-direction:column; gap:clamp(16px, 2vw, 24px); width:100%">
+            <img class="proj-img" src="../images/projects/qb3-pcb.png" alt="3D render of the linear-array PCB — long green board with a row of gold-plated electrode pads down the center" />
+            <img class="proj-img" src="../images/projects/qb3-pcb-layout.png" alt="KiCad PCB layout — 96 × 26 mm board showing the row of slotted electrode pads, GND_Out, and Amp+/Amp− differential outputs" />
+          </div>
+        </div>
+        <div>
+          <p>The PCB uses a 6-layer stackup with continuous ground planes on the top and bottom and the signal layers buried internally. The extra separation between signal traces and reference planes reduces parasitic capacitance and limits crosstalk between adjacent channels.</p>
+          <p>Traces exit each pad at a slight angle so that adjacent conductors spread apart quickly. This shortens the parallel run between channels in the high-density pad region and gives a more gradual impedance transition from pad to trace. Mounting holes are sized for M2 hardware.</p>
+          <p>A second board variant adds an accelerator section on a separate ground pour, with 2512 resistors used to step the high-voltage input down to each accelerator plate while keeping the low-voltage detection side isolated.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Build &amp; test ────────────────────────────────────────── -->
+    <section class="proj-section">
+      <div class="proj-kicker">04 · build &amp; test</div>
+      <h2>Manufacturing and Validation.</h2>
+      <div class="gap"></div>
+      <div class="proj-split">
+        <div class="proj-media">
+          <img class="proj-img" src="../images/projects/qb3-spade-microscope.png" alt="Microscope view of a manufactured spade electrode showing the laser-cut hole pattern" />
+        </div>
+        <div>
+          <p>Spades were cut from 1/4" steel sheet on the Fablight laser cutter and then deburred by hand using files and a belt sander. Alignment brackets were SLA-printed in ESD resin and reamed on a mill with a 3&nbsp;mm reamer, using PLA support inserts to keep thin walls from deflecting. The steel base brackets were CNC'd and reamed to the same tolerance so the dowel pins seat without play.</p>
+          <p>Transmittance was measured as <em>area of holes / total surface area</em> and compared against the ≥60% target. Electrical isolation between adjacent spades was checked through the assembled PCB stackup.</p>
+          <p>Possible next steps include powder-bed fusion for finer electrode geometry, an oxygen-free-copper revision, and adding an on-board amplifier so the signal does not have to leave the PCB before being conditioned.</p>
+        </div>
+      </div>
+    </section>
+
+    <div style="margin-top: clamp(48px, 6vw, 72px)">
+      <a class="pd-back" href="../projects.html">← back to all projects</a>
+    </div>
+
+  </main>
+
+  <footer class="site-foot">
+    <span>© 2026 Evana Thomson</span>
+    <span>Built with Carrots &amp; Care ·
+      <a href="https://github.com/carrotjpeg/carrotjpeg.github.io" target="_blank" rel="noopener" style="border-bottom:1px solid currentColor">source</a>
+    </span>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

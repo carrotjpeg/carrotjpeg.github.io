@@ -1,0 +1,50 @@
+/* ============================================================
+   FONTS
+   ------------------------------------------------------------
+   Your three custom fonts (Seasons, Sauce, Lazydog) load from
+   /fonts/. We accept several common filenames + extensions so
+   you can drop your files in without renaming. If the local
+   file is missing, the Google Font fallback in styles.css
+   takes over so the site never breaks.
+   ============================================================ */
+
+/* ---- Seasons (elegant serif, used for name + "Hello!") ---- */
+@font-face {
+  font-family: 'Seasons';
+  src: url('../fonts/Seasons.woff2') format('woff2'),
+       url('../fonts/Seasons.woff')  format('woff'),
+       url('../fonts/Seasons.otf')   format('opentype'),
+       url('../fonts/Seasons.ttf')   format('truetype'),
+       url('../fonts/the-seasons.woff2') format('woff2'),
+       url('../fonts/TheSeasons.otf')    format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---- Sauce (clean sans, body / sidebar / chips) ---- */
+@font-face {
+  font-family: 'Sauce';
+  src: url('../fonts/Sauce.woff2')      format('woff2'),
+       url('../fonts/Sauce.woff')       format('woff'),
+       url('../fonts/Sauce.otf')        format('opentype'),
+       url('../fonts/Sauce.ttf')        format('truetype'),
+       url('../fonts/sauce-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---- Lazydog (chunky display, used for page headers + nav) ---- */
+@font-face {
+  font-family: 'Lazydog';
+  src: url('../fonts/Lazydog.woff2')      format('woff2'),
+       url('../fonts/Lazydog.woff')       format('woff'),
+       url('../fonts/Lazydog.otf')        format('opentype'),
+       url('../fonts/Lazydog.ttf')        format('truetype'),
+       url('../fonts/LazyDog.otf')        format('opentype'),
+       url('../fonts/lazy-dog.woff2')     format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
