@@ -124,7 +124,7 @@ h1, h2, h3, h4, p { margin: 0; }
 .page {
   max-width: var(--page-max);
   margin: 0 auto;
-  padding: clamp(40px, 7vw, 88px) var(--gutter) var(--s-9);
+  padding: clamp(24px, 4vw, 48px) var(--gutter) var(--s-9);
 }
 
 /* About page = fits in one viewport, vertically centered between nav & footer */
@@ -274,7 +274,7 @@ body[data-page="coursework"] main.page {
   padding-top: var(--s-5);
 }
 body[data-page="coursework"] .about-content {
-  padding-top: 90px;
+  padding-top: clamp(16px, 2.5vw, 40px);
 }
 .coursework-title {
   font-family: var(--font-display);
@@ -413,21 +413,13 @@ body[data-page="projects"] main.page {
   transition: filter .35s ease, transform .6s ease;
 }
 .project-tile .ph {
-  /* striped placeholder so empty tiles read as "drop image here" */
-  background:
-    repeating-linear-gradient(
-      45deg,
-      rgba(255,255,255,.35) 0 14px,
-      rgba(255,255,255,0)   14px 28px),
-    var(--tile-bg, #c7ccd5);
+  /* clean white placeholder while images load */
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-sans);
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,.9);
+  font-size: 0;
+  color: transparent;
 }
 .project-tile .overlay {
   position: absolute;
@@ -486,6 +478,20 @@ body[data-page="projects"] main.page {
 }
 @media (max-width: 520px) {
   .projects-grid { grid-template-columns: 1fr; }
+}
+
+/* tighter rhythm on the research page so it doesn't feel sparse */
+body[data-page="research"] .proj-section {
+  margin-top: clamp(28px, 3.5vw, 48px);
+}
+body[data-page="research"] .proj-section + .proj-section {
+  padding-top: clamp(24px, 3vw, 40px);
+}
+body[data-page="research"] .proj-section.proj-hero {
+  margin-top: clamp(8px, 1vw, 16px);
+}
+body[data-page="research"] .pd-head {
+  margin-bottom: clamp(8px, 1.4vw, 16px);
 }
 
 /* ============================================================
